@@ -1,0 +1,9 @@
+General
+- geocoder not installed
+- letsrate gem bug
+
+Vinisha
+
+Natalie
+
+Kudus
