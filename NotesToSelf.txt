@@ -5,5 +5,8 @@ General
 Vinisha
 
 Natalie
+Sat 8:18pm - starting on writing associations
+8:28pm - added playdate associations and edited wrong associations (see gdocs)
+8:32pm - join table for migrations
 
 Kudus

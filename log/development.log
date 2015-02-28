@@ -251,3 +251,11 @@ WHERE c.contype = 'f'
   AND t3.nspname = ANY (current_schemas(false))
 ORDER BY c.conname
 [0m
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-27 17:53:02 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (1.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/Natalie/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/railties-4.2.0/lib/rails/templates/rails/welcome/index.html.erb (4.2ms)
+Completed 200 OK in 105ms (Views: 85.4ms | ActiveRecord: 0.0ms)
+  [1m[36mEvent Load (72.0ms)[0m  [1mSELECT "events".* FROM "events"[0m
