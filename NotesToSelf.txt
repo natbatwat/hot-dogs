@@ -8,5 +8,6 @@ Natalie
 Sat 8:18pm - starting on writing associations
 8:28pm - added playdate associations and edited wrong associations (see gdocs)
 8:32pm - join table for migrations
+9:52pm - created join tables and tested on console. some dummy seed data.
 
 Kudus
