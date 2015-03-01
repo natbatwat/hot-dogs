@@ -7,6 +7,15 @@
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
   %body
+
+    %h1 Hotdogs
+
     %p.notice= notice
     %p.alert= alert
+
+    .index
+    %ul
+    %li= link_to("Events", events_path)
+
     = yield
+
