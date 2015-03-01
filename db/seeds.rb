@@ -5,3 +5,12 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+
+# event. name. date. place. time. event_rating
+
+Event.delete_all
+
+ev1 = Event.create(name:'Doggy Brunch', place:'Gaucho, Hampstead')
+ev2 = Event.create(name:'Doggy Walks', place:'Regents Park')
+ev1 = Event.create(name:'Doggy Speed Dates', place:'The Duke of York, St Johns Wood')
