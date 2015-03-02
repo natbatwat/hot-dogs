@@ -1,9 +1,13 @@
+-# USER PROFILE PAGE #
+-# User information #
 = @user.email
 = @user.address 
 
+-# Google Maps #
 #map-canvas
   = @user.address
 
+-# Add Buddy Button #
 %button{:data => {:dog2_id => @user.id}}
   %span Add Buddy
   %span.hide Buddy Requested
