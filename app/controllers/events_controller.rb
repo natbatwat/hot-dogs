@@ -11,23 +11,25 @@ class EventsController < ApplicationController
   def create
     @event = Event.create(event_params)
     if @event.save
-      redirect_to @event
+      redirect_to events_path
+      flash[:notice] = "You successfully created an event!"
     else
-      redirect_to(events_path)
+      # render 'newevent'
+      flash[:notice] = "Something went wrong in the creation of your event, try again!"
     end
   end
 
   def edit
     @event = Event.find(params[:id])
-    puts @event
   end
 
   def update
     @event = Event.find(params[:id])
     if @event.update(event_params)
       redirect_to @event
+      flash[:notice] = "You successfully updated an event!"
     else
-      render 'new'
+      # render 'new'
     end
   end
 
@@ -39,6 +41,7 @@ class EventsController < ApplicationController
     @event = Event.find(params[:id])
     @event.destroy
     redirect_to events_path
+    flash[:notice] = "You successfully deleted an event!"
   end
 
   private
