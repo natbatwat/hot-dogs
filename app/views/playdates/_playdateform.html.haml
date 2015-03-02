@@ -2,6 +2,8 @@
     .playdate-form
         =minimal_form_for @playdate do |f|
             %p= f.hidden_field :dog1_id, :value => current_user.id 
+            
+            %p= f.input :dog2_id, placeholder: 'who do you want to date?'
 
             %p= f.input :name, wrapper_html: { class: 'playdate-name' }, required: true, placeholder: 'name your playdate!'
 

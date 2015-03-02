@@ -16,6 +16,7 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'acts-as-taggable-on', '~> 3.4'
 gem 'bootstrap-sass', '~> 3.3.3'
 gem 'omniauth-facebook'
+gem 'formtastic', '~> 3.0'
 
 gem 'chronic'
 gem "paperclip", "~> 4.2"
