@@ -4,8 +4,15 @@
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
     %title HotdogsApp
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+ 
+
+    %script{:src => "https://maps.googleapis.com/maps/api/js?key=AIzaSyA00iEetE8yy2uZY4ejEskfM6zypsXnhps&libraries=places"}
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
+    
+
+    -# "https://maps.googleapis.com/maps/api/js?key=AIzaSyA00iEetE8yy2uZY4ejEskfM6zypsXnhps&libraries=places"
+
   %body
 
     %h1 Hotdogs
@@ -15,7 +22,8 @@
 
     .index
     %ul
-    %li= link_to("Events", events_path)
+      %li= link_to("Events", events_path)
 
     = yield
 
+    =image_tag "pointer.jpg"
