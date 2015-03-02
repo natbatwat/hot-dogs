@@ -1,11 +1,10 @@
 Rails.application.routes.draw do
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   post '/rate' => 'rater#create', :as => 'rate'
-<<<<<<< HEAD
   
   # originally => 
   # devise_for :users
-  devise_for :users, controllers: { sessions: "users/sessions" }
+  devise_for :users, controllers: { sessions: "users/sessions", :omniauth_callbacks => "users/omniauth_callbacks" }
   resources :users do 
     resources :reviews
   end
@@ -14,20 +13,12 @@ Rails.application.routes.draw do
 
   get '/', to: 'events#home', as: :home
   
-=======
-  devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
->>>>>>> development
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-<<<<<<< HEAD
   root 'events#home'
-=======
-  root 'welcomes#index'
->>>>>>> development
 
-  resources :events
   
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
