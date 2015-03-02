@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150302130401) do
+ActiveRecord::Schema.define(version: 20150302151001) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -24,6 +24,7 @@ ActiveRecord::Schema.define(version: 20150302130401) do
     t.integer  "event_rating"
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
+    t.integer  "organizer_id"
   end
 
   create_table "events_users", force: :cascade do |t|
@@ -35,8 +36,6 @@ ActiveRecord::Schema.define(version: 20150302130401) do
   add_index "events_users", ["user_id"], name: "index_events_users_on_user_id", using: :btree
 
   create_table "playdates", force: :cascade do |t|
-    t.string   "dog1_id"
-    t.string   "dog2_id"
     t.date     "date"
     t.string   "place"
     t.time     "time"
@@ -44,6 +43,8 @@ ActiveRecord::Schema.define(version: 20150302130401) do
     t.datetime "updated_at",  null: false
     t.string   "name"
     t.string   "description"
+    t.integer  "dog1_id"
+    t.integer  "dog2_id"
   end
 
   create_table "playdates_users", force: :cascade do |t|
@@ -56,10 +57,10 @@ ActiveRecord::Schema.define(version: 20150302130401) do
 
   create_table "reviews", force: :cascade do |t|
     t.text     "content"
-    t.string   "user_id"
-    t.string   "author_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer  "user_id"
+    t.integer  "author_id"
   end
 
   create_table "taggings", force: :cascade do |t|
