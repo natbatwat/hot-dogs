@@ -4842,3 +4842,737 @@ Started GET "/assets/reviews-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127
 
 
 Started GET "/assets/application-b2ec01780ed7346511fb6ed7a8116916.js?body=1" for 127.0.0.1 at 2015-03-02 15:50:08 +0000
+
+
+Started GET "/playdates" for 127.0.0.1 at 2015-03-02 15:52:19 +0000
+Processing by PlaydatesController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mPlaydate Load (0.5ms)[0m  [1mSELECT "playdates".* FROM "playdates" INNER JOIN "playdates_users" ON "playdates"."id" = "playdates_users"."playdate_id" WHERE "playdates_users"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered playdates/index.html.haml within layouts/application (3.2ms)
+Completed 500 Internal Server Error in 256ms
+
+ActionView::Template::Error (Missing partial playdates/_nav, application/_nav with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :haml, :jbuilder]}. Searched in:
+  * "/Users/Natalie/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates"
+  * "/Users/Natalie/Desktop/generalassembly/hotdogs/app/views"
+  * "/Users/Natalie/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/rails_admin-0.6.6/app/views"
+  * "/Users/Natalie/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/kaminari-0.16.3/app/views"
+  * "/Users/Natalie/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/devise-3.4.1/app/views"
+):
+    18:     .index
+    19:     %ul
+    20:     %li= link_to("Events", events_path)
+    21:     = render 'nav'
+    22:     = yield
+  app/views/layouts/application.html.haml:21:in `_app_views_layouts_application_html_haml__243597469240083206_70207328727840'
+
+
+  Rendered /Users/Natalie/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (7.5ms)
+  Rendered /Users/Natalie/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (5.2ms)
+  Rendered /Users/Natalie/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/Natalie/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.8ms)
+  Rendered /Users/Natalie/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (39.8ms)
+
+
+Started GET "/playdates" for 127.0.0.1 at 2015-03-02 15:52:34 +0000
+Processing by PlaydatesController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mPlaydate Load (0.2ms)[0m  [1mSELECT "playdates".* FROM "playdates" INNER JOIN "playdates_users" ON "playdates"."id" = "playdates_users"."playdate_id" WHERE "playdates_users"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered playdates/index.html.haml within layouts/application (2.8ms)
+  Rendered layouts/_nav.html.haml (1.8ms)
+Completed 200 OK in 261ms (Views: 259.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application-d75e4a4a5b177d2e3007b75d1fe9dada.css?body=1" for 127.0.0.1 at 2015-03-02 15:52:34 +0000
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-02 15:52:34 +0000
+
+
+Started GET "/assets/bootstrap/alert-7c03e11fecf6b3ef100f76ae4f08586e.js?body=1" for 127.0.0.1 at 2015-03-02 15:52:34 +0000
+
+
+Started GET "/assets/bootstrap/carousel-93f34f850a932957c93b7605c79faf45.js?body=1" for 127.0.0.1 at 2015-03-02 15:52:34 +0000
+
+
+Started GET "/assets/bootstrap/button-98bba85be4dcdd597554e0b7ce8e33a2.js?body=1" for 127.0.0.1 at 2015-03-02 15:52:34 +0000
+
+
+Started GET "/assets/bootstrap/affix-31984abe1036c1c2f684af192191ce9f.js?body=1" for 127.0.0.1 at 2015-03-02 15:52:34 +0000
+
+
+Started GET "/assets/bootstrap/dropdown-65c3929585250221f53bae696936ed44.js?body=1" for 127.0.0.1 at 2015-03-02 15:52:34 +0000
+
+
+Started GET "/assets/bootstrap/collapse-7a82a3d4fb154ded3d2702465e21ca00.js?body=1" for 127.0.0.1 at 2015-03-02 15:52:35 +0000
+
+
+Started GET "/assets/bootstrap/tab-a90a1841af8c1eae12bfa5283a8093b0.js?body=1" for 127.0.0.1 at 2015-03-02 15:52:35 +0000
+
+
+Started GET "/assets/bootstrap/transition-9e4de96204f41141474e9dbb59570af9.js?body=1" for 127.0.0.1 at 2015-03-02 15:52:35 +0000
+
+
+Started GET "/assets/bootstrap/scrollspy-e550695030be1d627d1ba91b14792316.js?body=1" for 127.0.0.1 at 2015-03-02 15:52:35 +0000
+
+
+Started GET "/assets/bootstrap/modal-ce380b9327d2cf6c826d8df818ea48a1.js?body=1" for 127.0.0.1 at 2015-03-02 15:52:35 +0000
+
+
+Started GET "/assets/bootstrap/tooltip-4d90d4ee015d2df34a7696864b2ea83c.js?body=1" for 127.0.0.1 at 2015-03-02 15:52:35 +0000
+
+
+Started GET "/assets/bootstrap/popover-5a060f876311e7fcb18f35058070de5a.js?body=1" for 127.0.0.1 at 2015-03-02 15:52:35 +0000
+
+
+Started GET "/assets/bootstrap-sprockets-00b1738c651720f44abc4bbf70bedb3e.js?body=1" for 127.0.0.1 at 2015-03-02 15:52:35 +0000
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-02 15:52:35 +0000
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-02 15:52:35 +0000
+
+
+Started GET "/assets/events-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-02 15:52:35 +0000
+
+
+Started GET "/assets/jquery.raty-c82d49558fb10304a5bc21476147dae4.js?body=1" for 127.0.0.1 at 2015-03-02 15:52:35 +0000
+
+
+Started GET "/assets/letsrate-4d03cf7e7a11899cdc7957804b58f8cc.js?body=1" for 127.0.0.1 at 2015-03-02 15:52:35 +0000
+
+
+Started GET "/assets/playdates-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-02 15:52:35 +0000
+
+
+Started GET "/assets/reviews-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-02 15:52:35 +0000
+
+
+Started GET "/assets/application-b2ec01780ed7346511fb6ed7a8116916.js?body=1" for 127.0.0.1 at 2015-03-02 15:52:35 +0000
+
+
+Started GET "/playdates" for 127.0.0.1 at 2015-03-02 15:52:51 +0000
+Processing by PlaydatesController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mPlaydate Load (0.5ms)[0m  [1mSELECT "playdates".* FROM "playdates" INNER JOIN "playdates_users" ON "playdates"."id" = "playdates_users"."playdate_id" WHERE "playdates_users"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered playdates/index.html.haml within layouts/application (4.1ms)
+  Rendered layouts/_nav.html.haml (1.0ms)
+Completed 200 OK in 250ms (Views: 248.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/bootstrap/affix-31984abe1036c1c2f684af192191ce9f.js?body=1" for 127.0.0.1 at 2015-03-02 15:52:51 +0000
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-02 15:52:51 +0000
+
+
+Started GET "/assets/bootstrap/button-98bba85be4dcdd597554e0b7ce8e33a2.js?body=1" for 127.0.0.1 at 2015-03-02 15:52:51 +0000
+
+
+Started GET "/assets/application-d75e4a4a5b177d2e3007b75d1fe9dada.css?body=1" for 127.0.0.1 at 2015-03-02 15:52:51 +0000
+
+
+Started GET "/assets/bootstrap/carousel-93f34f850a932957c93b7605c79faf45.js?body=1" for 127.0.0.1 at 2015-03-02 15:52:51 +0000
+
+
+Started GET "/assets/bootstrap/alert-7c03e11fecf6b3ef100f76ae4f08586e.js?body=1" for 127.0.0.1 at 2015-03-02 15:52:51 +0000
+
+
+Started GET "/assets/bootstrap/collapse-7a82a3d4fb154ded3d2702465e21ca00.js?body=1" for 127.0.0.1 at 2015-03-02 15:52:51 +0000
+
+
+Started GET "/assets/bootstrap/dropdown-65c3929585250221f53bae696936ed44.js?body=1" for 127.0.0.1 at 2015-03-02 15:52:51 +0000
+
+
+Started GET "/assets/bootstrap/tab-a90a1841af8c1eae12bfa5283a8093b0.js?body=1" for 127.0.0.1 at 2015-03-02 15:52:51 +0000
+
+
+Started GET "/assets/bootstrap/transition-9e4de96204f41141474e9dbb59570af9.js?body=1" for 127.0.0.1 at 2015-03-02 15:52:51 +0000
+
+
+Started GET "/assets/bootstrap/scrollspy-e550695030be1d627d1ba91b14792316.js?body=1" for 127.0.0.1 at 2015-03-02 15:52:51 +0000
+
+
+Started GET "/assets/bootstrap/modal-ce380b9327d2cf6c826d8df818ea48a1.js?body=1" for 127.0.0.1 at 2015-03-02 15:52:51 +0000
+
+
+Started GET "/assets/bootstrap/tooltip-4d90d4ee015d2df34a7696864b2ea83c.js?body=1" for 127.0.0.1 at 2015-03-02 15:52:51 +0000
+
+
+Started GET "/assets/bootstrap/popover-5a060f876311e7fcb18f35058070de5a.js?body=1" for 127.0.0.1 at 2015-03-02 15:52:51 +0000
+
+
+Started GET "/assets/bootstrap-sprockets-00b1738c651720f44abc4bbf70bedb3e.js?body=1" for 127.0.0.1 at 2015-03-02 15:52:51 +0000
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-02 15:52:51 +0000
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-02 15:52:51 +0000
+
+
+Started GET "/assets/events-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-02 15:52:51 +0000
+
+
+Started GET "/assets/jquery.raty-c82d49558fb10304a5bc21476147dae4.js?body=1" for 127.0.0.1 at 2015-03-02 15:52:51 +0000
+
+
+Started GET "/assets/letsrate-4d03cf7e7a11899cdc7957804b58f8cc.js?body=1" for 127.0.0.1 at 2015-03-02 15:52:51 +0000
+
+
+Started GET "/assets/playdates-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-02 15:52:51 +0000
+
+
+Started GET "/assets/reviews-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-02 15:52:51 +0000
+
+
+Started GET "/assets/application-b2ec01780ed7346511fb6ed7a8116916.js?body=1" for 127.0.0.1 at 2015-03-02 15:52:51 +0000
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-02 15:52:58 +0000
+Processing by EventsController#home as HTML
+  Rendered events/home.html.haml within layouts/application (0.1ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered layouts/_nav.html.haml (0.1ms)
+Completed 200 OK in 233ms (Views: 232.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application-d75e4a4a5b177d2e3007b75d1fe9dada.css?body=1" for 127.0.0.1 at 2015-03-02 15:52:58 +0000
+
+
+Started GET "/assets/bootstrap/affix-31984abe1036c1c2f684af192191ce9f.js?body=1" for 127.0.0.1 at 2015-03-02 15:52:58 +0000
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-02 15:52:58 +0000
+
+
+Started GET "/assets/bootstrap/alert-7c03e11fecf6b3ef100f76ae4f08586e.js?body=1" for 127.0.0.1 at 2015-03-02 15:52:58 +0000
+
+
+Started GET "/assets/bootstrap/button-98bba85be4dcdd597554e0b7ce8e33a2.js?body=1" for 127.0.0.1 at 2015-03-02 15:52:58 +0000
+
+
+Started GET "/assets/bootstrap/carousel-93f34f850a932957c93b7605c79faf45.js?body=1" for 127.0.0.1 at 2015-03-02 15:52:58 +0000
+
+
+Started GET "/assets/bootstrap/collapse-7a82a3d4fb154ded3d2702465e21ca00.js?body=1" for 127.0.0.1 at 2015-03-02 15:52:58 +0000
+
+
+Started GET "/assets/bootstrap/dropdown-65c3929585250221f53bae696936ed44.js?body=1" for 127.0.0.1 at 2015-03-02 15:52:58 +0000
+
+
+Started GET "/assets/bootstrap/tab-a90a1841af8c1eae12bfa5283a8093b0.js?body=1" for 127.0.0.1 at 2015-03-02 15:52:58 +0000
+
+
+Started GET "/assets/bootstrap/transition-9e4de96204f41141474e9dbb59570af9.js?body=1" for 127.0.0.1 at 2015-03-02 15:52:58 +0000
+
+
+Started GET "/assets/bootstrap/scrollspy-e550695030be1d627d1ba91b14792316.js?body=1" for 127.0.0.1 at 2015-03-02 15:52:58 +0000
+
+
+Started GET "/assets/bootstrap/modal-ce380b9327d2cf6c826d8df818ea48a1.js?body=1" for 127.0.0.1 at 2015-03-02 15:52:58 +0000
+
+
+Started GET "/assets/bootstrap/tooltip-4d90d4ee015d2df34a7696864b2ea83c.js?body=1" for 127.0.0.1 at 2015-03-02 15:52:58 +0000
+
+
+Started GET "/assets/bootstrap/popover-5a060f876311e7fcb18f35058070de5a.js?body=1" for 127.0.0.1 at 2015-03-02 15:52:58 +0000
+
+
+Started GET "/assets/bootstrap-sprockets-00b1738c651720f44abc4bbf70bedb3e.js?body=1" for 127.0.0.1 at 2015-03-02 15:52:58 +0000
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-02 15:52:58 +0000
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-02 15:52:59 +0000
+
+
+Started GET "/assets/events-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-02 15:52:59 +0000
+
+
+Started GET "/assets/jquery.raty-c82d49558fb10304a5bc21476147dae4.js?body=1" for 127.0.0.1 at 2015-03-02 15:52:59 +0000
+
+
+Started GET "/assets/letsrate-4d03cf7e7a11899cdc7957804b58f8cc.js?body=1" for 127.0.0.1 at 2015-03-02 15:52:59 +0000
+
+
+Started GET "/assets/playdates-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-02 15:52:59 +0000
+
+
+Started GET "/assets/reviews-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-02 15:52:59 +0000
+
+
+Started GET "/assets/application-b2ec01780ed7346511fb6ed7a8116916.js?body=1" for 127.0.0.1 at 2015-03-02 15:52:59 +0000
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-02 15:53:52 +0000
+Processing by EventsController#home as HTML
+  Rendered events/home.html.haml within layouts/application (0.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav.html.haml (1.4ms)
+Completed 200 OK in 251ms (Views: 250.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/bootstrap/affix-31984abe1036c1c2f684af192191ce9f.js?body=1" for 127.0.0.1 at 2015-03-02 15:53:52 +0000
+
+
+Started GET "/assets/bootstrap/carousel-93f34f850a932957c93b7605c79faf45.js?body=1" for 127.0.0.1 at 2015-03-02 15:53:52 +0000
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-02 15:53:52 +0000
+
+
+Started GET "/assets/application-d75e4a4a5b177d2e3007b75d1fe9dada.css?body=1" for 127.0.0.1 at 2015-03-02 15:53:52 +0000
+
+
+Started GET "/assets/bootstrap/button-98bba85be4dcdd597554e0b7ce8e33a2.js?body=1" for 127.0.0.1 at 2015-03-02 15:53:52 +0000
+
+
+Started GET "/assets/bootstrap/alert-7c03e11fecf6b3ef100f76ae4f08586e.js?body=1" for 127.0.0.1 at 2015-03-02 15:53:52 +0000
+
+
+Started GET "/assets/bootstrap/collapse-7a82a3d4fb154ded3d2702465e21ca00.js?body=1" for 127.0.0.1 at 2015-03-02 15:53:52 +0000
+
+
+Started GET "/assets/bootstrap/dropdown-65c3929585250221f53bae696936ed44.js?body=1" for 127.0.0.1 at 2015-03-02 15:53:52 +0000
+
+
+Started GET "/assets/bootstrap/tab-a90a1841af8c1eae12bfa5283a8093b0.js?body=1" for 127.0.0.1 at 2015-03-02 15:53:52 +0000
+
+
+Started GET "/assets/bootstrap/transition-9e4de96204f41141474e9dbb59570af9.js?body=1" for 127.0.0.1 at 2015-03-02 15:53:52 +0000
+
+
+Started GET "/assets/bootstrap/scrollspy-e550695030be1d627d1ba91b14792316.js?body=1" for 127.0.0.1 at 2015-03-02 15:53:52 +0000
+
+
+Started GET "/assets/bootstrap/modal-ce380b9327d2cf6c826d8df818ea48a1.js?body=1" for 127.0.0.1 at 2015-03-02 15:53:52 +0000
+
+
+Started GET "/assets/bootstrap/tooltip-4d90d4ee015d2df34a7696864b2ea83c.js?body=1" for 127.0.0.1 at 2015-03-02 15:53:52 +0000
+
+
+Started GET "/assets/bootstrap/popover-5a060f876311e7fcb18f35058070de5a.js?body=1" for 127.0.0.1 at 2015-03-02 15:53:52 +0000
+
+
+Started GET "/assets/bootstrap-sprockets-00b1738c651720f44abc4bbf70bedb3e.js?body=1" for 127.0.0.1 at 2015-03-02 15:53:52 +0000
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-02 15:53:52 +0000
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-02 15:53:52 +0000
+
+
+Started GET "/assets/events-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-02 15:53:52 +0000
+
+
+Started GET "/assets/jquery.raty-c82d49558fb10304a5bc21476147dae4.js?body=1" for 127.0.0.1 at 2015-03-02 15:53:52 +0000
+
+
+Started GET "/assets/letsrate-4d03cf7e7a11899cdc7957804b58f8cc.js?body=1" for 127.0.0.1 at 2015-03-02 15:53:52 +0000
+
+
+Started GET "/assets/playdates-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-02 15:53:52 +0000
+
+
+Started GET "/assets/reviews-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-02 15:53:52 +0000
+
+
+Started GET "/assets/application-b2ec01780ed7346511fb6ed7a8116916.js?body=1" for 127.0.0.1 at 2015-03-02 15:53:52 +0000
+
+
+Started GET "/playdates/new" for 127.0.0.1 at 2015-03-02 15:53:55 +0000
+Processing by PlaydatesController#new as HTML
+  Rendered playdates/_playdateform.html.haml (21.0ms)
+  Rendered playdates/new.html.haml within layouts/application (23.2ms)
+Completed 500 Internal Server Error in 28ms
+
+ActionView::Template::Error (Association :user not found):
+    11:             %p Time
+    12:             %p= f.input :time, wrapper_html: { class: 'playdate-time' }, required: true
+    13:             
+    14:             %p= f.association :user
+    15:             .submit
+    16:             %p= f.button :submit, "Create Playdate", class: "submit-button"
+  app/views/playdates/_playdateform.html.haml:14:in `block in _app_views_playdates__playdateform_html_haml__610068224055501492_70207365958980'
+  app/helpers/minimal_form_helper.rb:5:in `minimal_form_for'
+  app/views/playdates/_playdateform.html.haml:3:in `_app_views_playdates__playdateform_html_haml__610068224055501492_70207365958980'
+  app/views/playdates/new.html.haml:2:in `_app_views_playdates_new_html_haml__2749893147713951645_70207366746180'
+
+
+  Rendered /Users/Natalie/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (9.6ms)
+  Rendered /Users/Natalie/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /Users/Natalie/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/Natalie/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.8ms)
+  Rendered /Users/Natalie/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (34.3ms)
+
+
+Started GET "/playdates/new" for 127.0.0.1 at 2015-03-02 15:53:56 +0000
+Processing by PlaydatesController#new as HTML
+  Rendered playdates/_playdateform.html.haml (15.8ms)
+  Rendered playdates/new.html.haml within layouts/application (17.2ms)
+Completed 500 Internal Server Error in 23ms
+
+ActionView::Template::Error (Association :user not found):
+    11:             %p Time
+    12:             %p= f.input :time, wrapper_html: { class: 'playdate-time' }, required: true
+    13:             
+    14:             %p= f.association :user
+    15:             .submit
+    16:             %p= f.button :submit, "Create Playdate", class: "submit-button"
+  app/views/playdates/_playdateform.html.haml:14:in `block in _app_views_playdates__playdateform_html_haml__610068224055501492_70207365317000'
+  app/helpers/minimal_form_helper.rb:5:in `minimal_form_for'
+  app/views/playdates/_playdateform.html.haml:3:in `_app_views_playdates__playdateform_html_haml__610068224055501492_70207365317000'
+  app/views/playdates/new.html.haml:2:in `_app_views_playdates_new_html_haml__2749893147713951645_70207346391260'
+
+
+  Rendered /Users/Natalie/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (9.5ms)
+  Rendered /Users/Natalie/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (3.6ms)
+  Rendered /Users/Natalie/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/Natalie/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.8ms)
+  Rendered /Users/Natalie/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (30.5ms)
+
+
+Started GET "/playdates/new" for 127.0.0.1 at 2015-03-02 15:54:22 +0000
+Processing by PlaydatesController#new as HTML
+  Rendered playdates/_playdateform.html.haml (15.2ms)
+  Rendered playdates/new.html.haml within layouts/application (16.8ms)
+Completed 500 Internal Server Error in 21ms
+
+ActionView::Template::Error (Association :users_playdates not found):
+    11:             %p Time
+    12:             %p= f.input :time, wrapper_html: { class: 'playdate-time' }, required: true
+    13:             
+    14:             %p= f.association :users_playdates
+    15:             .submit
+    16:             %p= f.button :submit, "Create Playdate", class: "submit-button"
+  app/views/playdates/_playdateform.html.haml:14:in `block in _app_views_playdates__playdateform_html_haml__610068224055501492_70207358742400'
+  app/helpers/minimal_form_helper.rb:5:in `minimal_form_for'
+  app/views/playdates/_playdateform.html.haml:3:in `_app_views_playdates__playdateform_html_haml__610068224055501492_70207358742400'
+  app/views/playdates/new.html.haml:2:in `_app_views_playdates_new_html_haml__2749893147713951645_70207346391260'
+
+
+  Rendered /Users/Natalie/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (9.6ms)
+  Rendered /Users/Natalie/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /Users/Natalie/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/Natalie/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.8ms)
+  Rendered /Users/Natalie/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (31.7ms)
+
+
+Started GET "/playdates/new" for 127.0.0.1 at 2015-03-02 15:57:21 +0000
+Processing by PlaydatesController#new as HTML
+  Rendered playdates/_playdateform.html.haml (19.1ms)
+  Rendered playdates/new.html.haml within layouts/application (20.2ms)
+Completed 500 Internal Server Error in 25ms
+
+ActionView::Template::Error (Association :users_playdates not found):
+    13:             %p Time
+    14:             %p= f.input :time, wrapper_html: { class: 'playdate-time' }, required: true
+    15:             
+    16:             %p= f.association :users_playdates
+    17:             .submit
+    18:             %p= f.button :submit, "Create Playdate", class: "submit-button"
+  app/views/playdates/_playdateform.html.haml:16:in `block in _app_views_playdates__playdateform_html_haml__610068224055501492_70207306035180'
+  app/helpers/minimal_form_helper.rb:5:in `minimal_form_for'
+  app/views/playdates/_playdateform.html.haml:3:in `_app_views_playdates__playdateform_html_haml__610068224055501492_70207306035180'
+  app/views/playdates/new.html.haml:2:in `_app_views_playdates_new_html_haml__2749893147713951645_70207346391260'
+
+
+  Rendered /Users/Natalie/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (11.4ms)
+  Rendered /Users/Natalie/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (3.7ms)
+  Rendered /Users/Natalie/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/Natalie/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.8ms)
+  Rendered /Users/Natalie/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (35.0ms)
+
+
+Started GET "/playdates/new" for 127.0.0.1 at 2015-03-02 15:57:24 +0000
+Processing by PlaydatesController#new as HTML
+  Rendered playdates/_playdateform.html.haml (21.4ms)
+  Rendered playdates/new.html.haml within layouts/application (22.6ms)
+Completed 500 Internal Server Error in 27ms
+
+ActionView::Template::Error (Association :users_playdates not found):
+    13:             %p Time
+    14:             %p= f.input :time, wrapper_html: { class: 'playdate-time' }, required: true
+    15:             
+    16:             %p= f.association :users_playdates
+    17:             .submit
+    18:             %p= f.button :submit, "Create Playdate", class: "submit-button"
+  app/views/playdates/_playdateform.html.haml:16:in `block in _app_views_playdates__playdateform_html_haml__610068224055501492_70207366388580'
+  app/helpers/minimal_form_helper.rb:5:in `minimal_form_for'
+  app/views/playdates/_playdateform.html.haml:3:in `_app_views_playdates__playdateform_html_haml__610068224055501492_70207366388580'
+  app/views/playdates/new.html.haml:2:in `_app_views_playdates_new_html_haml__2749893147713951645_70207366746180'
+
+
+  Rendered /Users/Natalie/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (11.7ms)
+  Rendered /Users/Natalie/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (4.4ms)
+  Rendered /Users/Natalie/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/Natalie/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.8ms)
+  Rendered /Users/Natalie/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (35.6ms)
+
+
+Started GET "/playdates/new" for 127.0.0.1 at 2015-03-02 15:57:24 +0000
+Processing by PlaydatesController#new as HTML
+  Rendered playdates/_playdateform.html.haml (22.8ms)
+  Rendered playdates/new.html.haml within layouts/application (24.0ms)
+Completed 500 Internal Server Error in 28ms
+
+ActionView::Template::Error (Association :users_playdates not found):
+    13:             %p Time
+    14:             %p= f.input :time, wrapper_html: { class: 'playdate-time' }, required: true
+    15:             
+    16:             %p= f.association :users_playdates
+    17:             .submit
+    18:             %p= f.button :submit, "Create Playdate", class: "submit-button"
+  app/views/playdates/_playdateform.html.haml:16:in `block in _app_views_playdates__playdateform_html_haml__610068224055501492_70207306035180'
+  app/helpers/minimal_form_helper.rb:5:in `minimal_form_for'
+  app/views/playdates/_playdateform.html.haml:3:in `_app_views_playdates__playdateform_html_haml__610068224055501492_70207306035180'
+  app/views/playdates/new.html.haml:2:in `_app_views_playdates_new_html_haml__2749893147713951645_70207346391260'
+
+
+  Rendered /Users/Natalie/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (9.4ms)
+  Rendered /Users/Natalie/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (4.9ms)
+  Rendered /Users/Natalie/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/Natalie/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.0ms)
+  Rendered /Users/Natalie/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (35.4ms)
+
+
+Started GET "/playdates/new" for 127.0.0.1 at 2015-03-02 15:57:29 +0000
+Processing by PlaydatesController#new as HTML
+  Rendered playdates/_playdateform.html.haml (15.6ms)
+  Rendered playdates/new.html.haml within layouts/application (16.8ms)
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered layouts/_nav.html.haml (0.4ms)
+Completed 200 OK in 280ms (Views: 278.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-02 15:57:30 +0000
+
+
+Started GET "/assets/bootstrap/affix-31984abe1036c1c2f684af192191ce9f.js?body=1" for 127.0.0.1 at 2015-03-02 15:57:30 +0000
+
+
+Started GET "/assets/bootstrap/alert-7c03e11fecf6b3ef100f76ae4f08586e.js?body=1" for 127.0.0.1 at 2015-03-02 15:57:30 +0000
+
+
+Started GET "/assets/application-d75e4a4a5b177d2e3007b75d1fe9dada.css?body=1" for 127.0.0.1 at 2015-03-02 15:57:30 +0000
+
+
+Started GET "/assets/bootstrap/button-98bba85be4dcdd597554e0b7ce8e33a2.js?body=1" for 127.0.0.1 at 2015-03-02 15:57:30 +0000
+
+
+Started GET "/assets/bootstrap/carousel-93f34f850a932957c93b7605c79faf45.js?body=1" for 127.0.0.1 at 2015-03-02 15:57:30 +0000
+
+
+Started GET "/assets/bootstrap/collapse-7a82a3d4fb154ded3d2702465e21ca00.js?body=1" for 127.0.0.1 at 2015-03-02 15:57:30 +0000
+
+
+Started GET "/assets/bootstrap/dropdown-65c3929585250221f53bae696936ed44.js?body=1" for 127.0.0.1 at 2015-03-02 15:57:30 +0000
+
+
+Started GET "/assets/bootstrap/tab-a90a1841af8c1eae12bfa5283a8093b0.js?body=1" for 127.0.0.1 at 2015-03-02 15:57:30 +0000
+
+
+Started GET "/assets/bootstrap/transition-9e4de96204f41141474e9dbb59570af9.js?body=1" for 127.0.0.1 at 2015-03-02 15:57:30 +0000
+
+
+Started GET "/assets/bootstrap/scrollspy-e550695030be1d627d1ba91b14792316.js?body=1" for 127.0.0.1 at 2015-03-02 15:57:30 +0000
+
+
+Started GET "/assets/bootstrap/modal-ce380b9327d2cf6c826d8df818ea48a1.js?body=1" for 127.0.0.1 at 2015-03-02 15:57:30 +0000
+
+
+Started GET "/assets/bootstrap/tooltip-4d90d4ee015d2df34a7696864b2ea83c.js?body=1" for 127.0.0.1 at 2015-03-02 15:57:30 +0000
+
+
+Started GET "/assets/bootstrap/popover-5a060f876311e7fcb18f35058070de5a.js?body=1" for 127.0.0.1 at 2015-03-02 15:57:30 +0000
+
+
+Started GET "/assets/bootstrap-sprockets-00b1738c651720f44abc4bbf70bedb3e.js?body=1" for 127.0.0.1 at 2015-03-02 15:57:30 +0000
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-02 15:57:30 +0000
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-02 15:57:30 +0000
+
+
+Started GET "/assets/events-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-02 15:57:30 +0000
+
+
+Started GET "/assets/jquery.raty-c82d49558fb10304a5bc21476147dae4.js?body=1" for 127.0.0.1 at 2015-03-02 15:57:30 +0000
+
+
+Started GET "/assets/playdates-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-02 15:57:30 +0000
+
+
+Started GET "/assets/reviews-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-02 15:57:30 +0000
+
+
+Started GET "/assets/letsrate-4d03cf7e7a11899cdc7957804b58f8cc.js?body=1" for 127.0.0.1 at 2015-03-02 15:57:30 +0000
+
+
+Started GET "/assets/application-b2ec01780ed7346511fb6ed7a8116916.js?body=1" for 127.0.0.1 at 2015-03-02 15:57:30 +0000
+
+
+Started GET "/playdates/new" for 127.0.0.1 at 2015-03-02 16:00:43 +0000
+Processing by PlaydatesController#new as HTML
+  Rendered playdates/_playdateform.html.haml (9.3ms)
+  Rendered playdates/new.html.haml within layouts/application (10.4ms)
+Completed 500 Internal Server Error in 15ms
+
+ActionView::Template::Error (No input found for fake):
+    1: .form
+    2:     .playdate-form
+    3:         =minimal_form_for @playdate do |f|
+    4:             %p= f.input :dog1_id, disabled:true, as: :fake
+    5: 
+    6:             %p= f.input :name, wrapper_html: { class: 'playdate-name' }, required: true, placeholder: 'name your playdate!'
+    7: 
+  lib/minimal_form_builder.rb:12:in `input'
+  app/views/playdates/_playdateform.html.haml:4:in `block in _app_views_playdates__playdateform_html_haml__610068224055501492_70207357715000'
+  app/helpers/minimal_form_helper.rb:5:in `minimal_form_for'
+  app/views/playdates/_playdateform.html.haml:3:in `_app_views_playdates__playdateform_html_haml__610068224055501492_70207357715000'
+  app/views/playdates/new.html.haml:2:in `_app_views_playdates_new_html_haml__2749893147713951645_70207346391260'
+
+
+  Rendered /Users/Natalie/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (9.4ms)
+  Rendered /Users/Natalie/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /Users/Natalie/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/Natalie/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.7ms)
+  Rendered /Users/Natalie/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (29.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-02 16:01:07 +0000
+Processing by EventsController#home as HTML
+  Rendered events/home.html.haml within layouts/application (0.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav.html.haml (0.4ms)
+Completed 200 OK in 264ms (Views: 263.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application-d75e4a4a5b177d2e3007b75d1fe9dada.css?body=1" for 127.0.0.1 at 2015-03-02 16:01:07 +0000
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-02 16:01:07 +0000
+
+
+Started GET "/assets/bootstrap/affix-31984abe1036c1c2f684af192191ce9f.js?body=1" for 127.0.0.1 at 2015-03-02 16:01:07 +0000
+
+
+Started GET "/assets/bootstrap/carousel-93f34f850a932957c93b7605c79faf45.js?body=1" for 127.0.0.1 at 2015-03-02 16:01:07 +0000
+
+
+Started GET "/assets/bootstrap/button-98bba85be4dcdd597554e0b7ce8e33a2.js?body=1" for 127.0.0.1 at 2015-03-02 16:01:07 +0000
+
+
+Started GET "/assets/bootstrap/alert-7c03e11fecf6b3ef100f76ae4f08586e.js?body=1" for 127.0.0.1 at 2015-03-02 16:01:07 +0000
+
+
+Started GET "/assets/bootstrap/collapse-7a82a3d4fb154ded3d2702465e21ca00.js?body=1" for 127.0.0.1 at 2015-03-02 16:01:07 +0000
+
+
+Started GET "/assets/bootstrap/dropdown-65c3929585250221f53bae696936ed44.js?body=1" for 127.0.0.1 at 2015-03-02 16:01:07 +0000
+
+
+Started GET "/assets/bootstrap/tab-a90a1841af8c1eae12bfa5283a8093b0.js?body=1" for 127.0.0.1 at 2015-03-02 16:01:07 +0000
+
+
+Started GET "/assets/bootstrap/transition-9e4de96204f41141474e9dbb59570af9.js?body=1" for 127.0.0.1 at 2015-03-02 16:01:07 +0000
+
+
+Started GET "/assets/bootstrap/scrollspy-e550695030be1d627d1ba91b14792316.js?body=1" for 127.0.0.1 at 2015-03-02 16:01:07 +0000
+
+
+Started GET "/assets/bootstrap/modal-ce380b9327d2cf6c826d8df818ea48a1.js?body=1" for 127.0.0.1 at 2015-03-02 16:01:07 +0000
+
+
+Started GET "/assets/bootstrap/tooltip-4d90d4ee015d2df34a7696864b2ea83c.js?body=1" for 127.0.0.1 at 2015-03-02 16:01:07 +0000
+
+
+Started GET "/assets/bootstrap/popover-5a060f876311e7fcb18f35058070de5a.js?body=1" for 127.0.0.1 at 2015-03-02 16:01:07 +0000
+
+
+Started GET "/assets/bootstrap-sprockets-00b1738c651720f44abc4bbf70bedb3e.js?body=1" for 127.0.0.1 at 2015-03-02 16:01:07 +0000
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-02 16:01:07 +0000
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-02 16:01:07 +0000
+
+
+Started GET "/assets/events-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-02 16:01:07 +0000
+
+
+Started GET "/assets/jquery.raty-c82d49558fb10304a5bc21476147dae4.js?body=1" for 127.0.0.1 at 2015-03-02 16:01:07 +0000
+
+
+Started GET "/assets/letsrate-4d03cf7e7a11899cdc7957804b58f8cc.js?body=1" for 127.0.0.1 at 2015-03-02 16:01:07 +0000
+
+
+Started GET "/assets/playdates-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-02 16:01:07 +0000
+
+
+Started GET "/assets/reviews-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-02 16:01:07 +0000
+
+
+Started GET "/assets/application-b2ec01780ed7346511fb6ed7a8116916.js?body=1" for 127.0.0.1 at 2015-03-02 16:01:07 +0000
+
+
+Started GET "/playdates/new" for 127.0.0.1 at 2015-03-02 16:01:08 +0000
+Processing by PlaydatesController#new as HTML
+  Rendered playdates/_playdateform.html.haml (8.5ms)
+  Rendered playdates/new.html.haml within layouts/application (10.2ms)
+Completed 500 Internal Server Error in 16ms
+
+ActionView::Template::Error (No input found for fake):
+    1: .form
+    2:     .playdate-form
+    3:         =minimal_form_for @playdate do |f|
+    4:             %p= f.input :dog1_id, disabled:true, as: :fake
+    5: 
+    6:             %p= f.input :name, wrapper_html: { class: 'playdate-name' }, required: true, placeholder: 'name your playdate!'
+    7: 
+  lib/minimal_form_builder.rb:12:in `input'
+  app/views/playdates/_playdateform.html.haml:4:in `block in _app_views_playdates__playdateform_html_haml__610068224055501492_70207344369780'
+  app/helpers/minimal_form_helper.rb:5:in `minimal_form_for'
+  app/views/playdates/_playdateform.html.haml:3:in `_app_views_playdates__playdateform_html_haml__610068224055501492_70207344369780'
+  app/views/playdates/new.html.haml:2:in `_app_views_playdates_new_html_haml__2749893147713951645_70207366746180'
+
+
+  Rendered /Users/Natalie/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (9.4ms)
+  Rendered /Users/Natalie/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /Users/Natalie/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/Natalie/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.8ms)
+  Rendered /Users/Natalie/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (28.9ms)
+
+
+Started GET "/playdates/new" for 127.0.0.1 at 2015-03-02 16:01:09 +0000
+Processing by PlaydatesController#new as HTML
+  Rendered playdates/_playdateform.html.haml (5.5ms)
+  Rendered playdates/new.html.haml within layouts/application (6.6ms)
+Completed 500 Internal Server Error in 11ms
+
+ActionView::Template::Error (No input found for fake):
+    1: .form
+    2:     .playdate-form
+    3:         =minimal_form_for @playdate do |f|
+    4:             %p= f.input :dog1_id, disabled:true, as: :fake
+    5: 
+    6:             %p= f.input :name, wrapper_html: { class: 'playdate-name' }, required: true, placeholder: 'name your playdate!'
+    7: 
+  lib/minimal_form_builder.rb:12:in `input'
+  app/views/playdates/_playdateform.html.haml:4:in `block in _app_views_playdates__playdateform_html_haml__610068224055501492_70207357715000'
+  app/helpers/minimal_form_helper.rb:5:in `minimal_form_for'
+  app/views/playdates/_playdateform.html.haml:3:in `_app_views_playdates__playdateform_html_haml__610068224055501492_70207357715000'
+  app/views/playdates/new.html.haml:2:in `_app_views_playdates_new_html_haml__2749893147713951645_70207346391260'
+
+
+  Rendered /Users/Natalie/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (10.1ms)
+  Rendered /Users/Natalie/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /Users/Natalie/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/Natalie/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.8ms)
+  Rendered /Users/Natalie/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (49.7ms)

@@ -1,6 +1,8 @@
 .form
     .playdate-form
         =minimal_form_for @playdate do |f|
+            %p= f.hidden_field :dog1_id, :value => current_user.id 
+
             %p= f.input :name, wrapper_html: { class: 'playdate-name' }, required: true, placeholder: 'name your playdate!'
 
             %p= f.input :description, wrapper_html: { class: 'playdate-description' }, placeholder: 'what are you dogs gonna do?'
@@ -11,6 +13,5 @@
             %p Time
             %p= f.input :time, wrapper_html: { class: 'playdate-time' }, required: true
             
-            %p= f.association :user
             .submit
             %p= f.button :submit, "Create Playdate", class: "submit-button"
