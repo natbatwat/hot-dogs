@@ -2,9 +2,7 @@ class User < ActiveRecord::Base
   # DEVISE #
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
-  devise :database_authenticatable, :registerable,
-<<<<<<< HEAD
-         :recoverable, :rememberable, :trackable, :validatable
+  devise :database_authenticatable, :registerable, :recoverable, :rememberable, :trackable, :validatable, :omniauthable, :omniauth_providers => [:facebook]
 
   # ASSOCIATIONS #
   has_and_belongs_to_many :events
@@ -15,10 +13,7 @@ class User < ActiveRecord::Base
   # TAGGABLE #
   acts_as_taggable # alias for acts_as_taggable_on :tags
   acts_as_taggable_on :matches
-=======
-         :recoverable, :rememberable, :trackable, :validatable,
-         :omniauthable, :omniauth_providers => [:facebook]
-
+        
   def self.from_omniauth(auth)
     where(provider: auth.provider, uid: auth.uid).first_or_create do |user|
       user.email = auth.info.email
@@ -35,5 +30,4 @@ class User < ActiveRecord::Base
       end
     end
   end
->>>>>>> development
 end
