@@ -5,15 +5,19 @@ Rails.application.routes.draw do
   # originally => 
   # devise_for :users
   devise_for :users, controllers: { sessions: "users/sessions" }
-  resources :users
+  resources :users do 
+    resources :reviews
+  end
   resources :playdates
   resources :events
-  resources :reviews
+
+  get '/', to: 'events#home', as: :home
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  # root 'welcome#index'
+  root 'events#home'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

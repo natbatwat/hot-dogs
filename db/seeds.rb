@@ -7,11 +7,14 @@ Review.delete_all
 # USERS #
 u1 = User.create(
   email:"bob@email.com",
+  encrypted_password: "password",
   dog_name: "bax",
   owner_name: "bob",
   )
+
 u2 = User.create(
   email:"sally@email.com",
+  encrypted_password: "password",
   dog_name: "ted",
   owner_name: "sally",
   )
