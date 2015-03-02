@@ -14,4 +14,6 @@ Sun 3:20pm - starting on acts as taggable gem
 3:53pm - made reviews a nested route
 4:00pm - welcome page is created as events#home and has the route of '/'
 
+Mon 3:00pm - realized that id datatype should all be integers
+
 Kudus

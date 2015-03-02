@@ -11,7 +11,7 @@ class PlaydatesController < ApplicationController
   def create
     @playdate = Playdate.create(playdate_params)
     if @playdate.save
-      # redirect_to user's playdate page
+      redirect_to playdates_path
       flash[:notice] = "You successfully created a playdate!"
     else
       # redirect_to playdate form
