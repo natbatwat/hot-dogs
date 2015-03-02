@@ -3,6 +3,9 @@
   %head
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
     %title HotdogsApp
+    -if user_signed_in?
+      %p you are logged in as 
+      = current_user.email
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
  
 
@@ -17,13 +20,14 @@
 
     %h1 Hotdogs
 
+    = render :partial => 'layouts/register'
+
     %p.notice= notice
     %p.alert= alert
 
     .index
     %ul
       %li= link_to("Events", events_path)
-
+    = render 'layouts/nav'
     = yield
 
-    =image_tag "pointer.jpg"
