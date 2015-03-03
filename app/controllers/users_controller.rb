@@ -8,13 +8,14 @@ class UsersController < ApplicationController
   end
 
   def update
-    @user = User.find(params[:id])
+    @user = current_user
     @user.update(user_params)
+    current_user.preferences_list.add(value.value)
   end
+
 
   def questionnaire
     @user = User.find(params[:id])
-    # @user.update(user_params)
   end
 
   def user_params
