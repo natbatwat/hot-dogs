@@ -2,9 +2,7 @@ Rails.application.routes.draw do
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   post '/rate' => 'rater#create', :as => 'rate'
   
-  # originally => 
-  # devise_for :users
-  devise_for :users, controllers: { sessions: "users/sessions", :omniauth_callbacks => "users/omniauth_callbacks" }
+  devise_for :users, controllers: { :sessions => "users/sessions", :registrations => "users/registrations", :omniauth_callbacks => "users/omniauth_callbacks" }
   resources :users do 
     resources :reviews
   end
@@ -12,6 +10,7 @@ Rails.application.routes.draw do
   resources :events
 
   get '/', to: 'events#home', as: :home
+  get '/users/questionnaire', to: 'users#questionnaire', as: :questionnaire
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

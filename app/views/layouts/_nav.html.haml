@@ -6,3 +6,6 @@
   %li= link_to('All Events', events_path)
   %li= link_to('New Playdate', new_playdate_path)
   %li= link_to('New Event', new_event_path)
+
+%ul
+  %li=link_to('Profile', user_path(current_user))
