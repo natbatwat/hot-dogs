@@ -8,9 +8,13 @@ class UsersController < ApplicationController
   end
 
   def update
-    @user = current_user
-    @user.update(user_params)
-    current_user.preferences_list.add(value.value)
+    @user = User.find(params[:id])
+    @user.update
+  end
+
+  def update_preferences
+    preferences = params[:user]
+    current_user.preference_list.add(preferences)
     binding.pry
     redirect_to user_path(current_user)
   end
