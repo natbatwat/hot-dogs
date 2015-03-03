@@ -6,20 +6,14 @@
     -if user_signed_in?
       %p you are logged in as
       = current_user.email
-    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
 
+    = stylesheet_link_tag    'application', media: 'all'
+ 
 
     %script{:src => "https://maps.googleapis.com/maps/api/js?key=AIzaSyA00iEetE8yy2uZY4ejEskfM6zypsXnhps&libraries=places"}
-    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application'
     = csrf_meta_tags
-<<<<<<< HEAD
-    
-=======
 
-
-    -# "https://maps.googleapis.com/maps/api/js?key=AIzaSyA00iEetE8yy2uZY4ejEskfM6zypsXnhps&libraries=places"
-
->>>>>>> 2b7a9df68c2838f52d4fce8c91e2a306253508d1
   %body
 
     %h1 Hotdogs
@@ -29,20 +23,10 @@
     %p.notice= notice
     %p.alert= alert
 
-<<<<<<< HEAD
-    .index
-    %ul
-      %li= link_to("Events", events_path)
-    = render 'layouts/nav'
-    = yield
-
-
-    =image_tag "pointer.jpg"
-=======
     
     - if user_signed_in?
       .nav
         = render 'layouts/nav'
 
     = yield
->>>>>>> b93ea10c89153aacc258144a89ef81b4bebafe76
+

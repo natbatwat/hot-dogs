@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 $(document).ready(function(){
   function changeBuddyStatus(){
     $this = $(this);
