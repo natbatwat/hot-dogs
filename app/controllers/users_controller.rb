@@ -11,6 +11,8 @@ class UsersController < ApplicationController
     @user = current_user
     @user.update(user_params)
     current_user.preferences_list.add(value.value)
+    binding.pry
+    redirect_to user_path(current_user)
   end
 
 
