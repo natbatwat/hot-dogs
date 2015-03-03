@@ -33562,6 +33562,100 @@ ActionController::RoutingError (No route matches [POST] "/users/11/questionnaire
   Rendered /Users/Natalie/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/routing_error.text.erb (4.3ms)
 
 
+<<<<<<< HEAD
+Started GET "/users/12/questionnaire" for 127.0.0.1 at 2015-03-03 17:47:42 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#questionnaire as HTML
+  Parameters: {"id"=>"12"}
+  [1m[35mUser Load (1.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 12]]
+  Rendered users/_questionnaire.html.haml (3.4ms)
+  Rendered users/questionnaire.html.haml within layouts/application (9.8ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 12]]
+  Rendered layouts/_register.html.haml (3.4ms)
+  Rendered layouts/_nav.html.haml (3.2ms)
+Completed 200 OK in 534ms (Views: 485.8ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-03 17:47:43 +0000
+
+
+Started GET "/assets/application-2196ca3f6c44130e761b846696675fc0.css?body=1" for 127.0.0.1 at 2015-03-03 17:47:43 +0000
+
+
+Started GET "/assets/bootstrap/alert-7c03e11fecf6b3ef100f76ae4f08586e.js?body=1" for 127.0.0.1 at 2015-03-03 17:47:43 +0000
+
+
+Started GET "/assets/bootstrap/affix-31984abe1036c1c2f684af192191ce9f.js?body=1" for 127.0.0.1 at 2015-03-03 17:47:43 +0000
+
+
+Started GET "/assets/bootstrap/button-98bba85be4dcdd597554e0b7ce8e33a2.js?body=1" for 127.0.0.1 at 2015-03-03 17:47:43 +0000
+
+
+Started GET "/assets/bootstrap/carousel-93f34f850a932957c93b7605c79faf45.js?body=1" for 127.0.0.1 at 2015-03-03 17:47:43 +0000
+
+
+Started GET "/assets/bootstrap/collapse-7a82a3d4fb154ded3d2702465e21ca00.js?body=1" for 127.0.0.1 at 2015-03-03 17:47:43 +0000
+
+
+Started GET "/assets/bootstrap/dropdown-65c3929585250221f53bae696936ed44.js?body=1" for 127.0.0.1 at 2015-03-03 17:47:43 +0000
+
+
+Started GET "/assets/bootstrap/tab-a90a1841af8c1eae12bfa5283a8093b0.js?body=1" for 127.0.0.1 at 2015-03-03 17:47:43 +0000
+
+
+Started GET "/assets/bootstrap/transition-9e4de96204f41141474e9dbb59570af9.js?body=1" for 127.0.0.1 at 2015-03-03 17:47:43 +0000
+
+
+Started GET "/assets/bootstrap/scrollspy-e550695030be1d627d1ba91b14792316.js?body=1" for 127.0.0.1 at 2015-03-03 17:47:43 +0000
+
+
+Started GET "/assets/bootstrap/modal-ce380b9327d2cf6c826d8df818ea48a1.js?body=1" for 127.0.0.1 at 2015-03-03 17:47:43 +0000
+
+
+Started GET "/assets/bootstrap/tooltip-4d90d4ee015d2df34a7696864b2ea83c.js?body=1" for 127.0.0.1 at 2015-03-03 17:47:43 +0000
+
+
+Started GET "/assets/bootstrap/popover-5a060f876311e7fcb18f35058070de5a.js?body=1" for 127.0.0.1 at 2015-03-03 17:47:43 +0000
+
+
+Started GET "/assets/bootstrap-sprockets-00b1738c651720f44abc4bbf70bedb3e.js?body=1" for 127.0.0.1 at 2015-03-03 17:47:43 +0000
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-03 17:47:43 +0000
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-03 17:47:43 +0000
+
+
+Started GET "/assets/events-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-03 17:47:43 +0000
+
+
+Started GET "/assets/jquery.raty-c82d49558fb10304a5bc21476147dae4.js?body=1" for 127.0.0.1 at 2015-03-03 17:47:43 +0000
+
+
+Started GET "/assets/letsrate-4d03cf7e7a11899cdc7957804b58f8cc.js?body=1" for 127.0.0.1 at 2015-03-03 17:47:43 +0000
+
+
+Started GET "/assets/match-ed7f93ddc57fb9fd680731406964ac3a.js?body=1" for 127.0.0.1 at 2015-03-03 17:47:43 +0000
+
+
+Started GET "/assets/playdates-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-03 17:47:43 +0000
+
+
+Started GET "/assets/questionnaire-542dc3695e8778ec6521b977ee2c1941.js?body=1" for 127.0.0.1 at 2015-03-03 17:47:43 +0000
+
+
+Started GET "/assets/reviews-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-03 17:47:43 +0000
+
+
+Started GET "/assets/users-6e85b600bf18ae7a0103a591c6a28fe2.js?body=1" for 127.0.0.1 at 2015-03-03 17:47:43 +0000
+
+
+Started GET "/assets/application-98205145ec7528965e8577324a75dcb2.js?body=1" for 127.0.0.1 at 2015-03-03 17:47:43 +0000
+
+
+Started GET "/assets/application-2196ca3f6c44130e761b846696675fc0.css?body=1" for 127.0.0.1 at 2015-03-03 17:47:48 +0000
+=======
 Started GET "/" for 127.0.0.1 at 2015-03-03 16:03:27 +0000
   [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
 Processing by EventsController#home as HTML
@@ -41759,6 +41853,7 @@ Started GET "/assets/users-6e85b600bf18ae7a0103a591c6a28fe2.js?body=1" for 127.0
 
 Started GET "/assets/application-809290863312badbd52191ab5b21dc74.js?body=1" for 127.0.0.1 at 2015-03-03 17:09:55 +0000
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 Started GET "/" for ::1 at 2015-03-03 17:40:10 +0000
@@ -42725,6 +42820,9 @@ Started GET "/assets/users-6e85b600bf18ae7a0103a591c6a28fe2.js?body=1" for ::1 a
 
 
 Started GET "/assets/application-809290863312badbd52191ab5b21dc74.js?body=1" for ::1 at 2015-03-03 17:43:47 +0000
+=======
+>>>>>>> development
+>>>>>>> cee80265ae61aae202120f643005d1bdb9722b02
 =======
 >>>>>>> b93ea10c89153aacc258144a89ef81b4bebafe76
 >>>>>>> 2b7a9df68c2838f52d4fce8c91e2a306253508d1
