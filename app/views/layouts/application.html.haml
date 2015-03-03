@@ -20,6 +20,8 @@
 
     %h1 Hotdogs
 
+    = render :partial => 'layouts/register'
+
     %p.notice= notice
     %p.alert= alert
 
@@ -28,5 +30,3 @@
       %li= link_to("Events", events_path)
     = render 'layouts/nav'
     = yield
-
-    =image_tag "pointer.jpg"
