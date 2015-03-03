@@ -1,9 +1,26 @@
-= @user.email
-= @user.address 
+.profile-page
+  = image_tag @user.gravatar_url
 
-#map-canvas
-  = @user.address
+  -# USER PROFILE PAGE #
+  -# User information #
+  %p= @user.email
+  %p#address= @user.address 
+  %p= @user.owner_name 
+  %p= @user.owner_picture 
+  %p= @user.dog_name 
+  %p= @user.dog_picture 
+  %p= @user.dog_age
+  %p= @user.dog_bio 
+  %p= @user.gender 
+  %p= @user.breed 
+  %p= @user.neutered 
+  %p= @user.interest 
+  %p= @user.match_list 
 
-%button{:data => {:dog2_id => @user.id}}
-  %span Add Buddy
-  %span.hide Buddy Requested
+  -# Google Maps #
+  #map-canvas
+
+  -# Add Buddy Button #
+  %button{:data => {:dog2_id => @user.id}}
+    %span Add Buddy
+    %span.hide Buddy Requested

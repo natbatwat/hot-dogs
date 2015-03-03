@@ -1,0 +1,24 @@
+%h2 Questionnaire
+-# = simple_form_for @user do |f| 
+#questionnaire
+  %p What gender dogs do you want to date?
+  %input.qn{:type=>"radio", :name => 'gender', :value => 'male'}Male
+  %input.qn{:type=>"radio", :name => 'gender', :value => 'female'}Female
+  %input.qn{:type=>"radio", :name => 'gender', :value => 'both'}Both
+
+  %p Do you want to date neutered/ spayed dogs?
+  %input.qn{:type=>"radio", :name => 'neutered', :value => 'neutered'}Yes
+  %input.qn{:type=>"radio", :name => 'neutered', :value => 'unneutered'}Nope
+
+  %p When are you usually free for a doggie date?
+  %input.qn{:type=>"checkbox", :name => 'availability', :value => 'weekday-evening'}Weekday Evenings
+  %input.qn{:type=>"checkbox", :name => 'availability', :value => 'weekday-daytime'}Weekday Daytime
+  %input.qn{:type=>"checkbox", :name => 'availability', :value => 'weekends'}Weekends
+
+  %p What kind of activities are you interested in?
+  %input.qn{:type=>"checkbox", :name => 'activity', :value => 'indoor'}Indoor
+  %input.qn{:type=>"checkbox", :name => 'activity', :value => 'outdoor'}Outdoor
+
+  %p
+    %button#qn-submit Date Me
+

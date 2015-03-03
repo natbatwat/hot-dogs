@@ -16,4 +16,7 @@ Sun 3:20pm - starting on acts as taggable gem
 
 Mon 3:00pm - realized that id datatype should all be integers
 
+Tues 11:41pm - changed nav bar to conditional - user signed in or not
+
+
 Kudus

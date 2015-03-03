@@ -4,17 +4,17 @@
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
     %title HotdogsApp
     -if user_signed_in?
-      %p you are logged in as 
+      %p you are logged in as
       = current_user.email
+
     = stylesheet_link_tag    'application', media: 'all'
  
 
     %script{:src => "https://maps.googleapis.com/maps/api/js?key=AIzaSyA00iEetE8yy2uZY4ejEskfM6zypsXnhps&libraries=places"}
+
+    %script{:src => "https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"}
     = javascript_include_tag 'application'
     = csrf_meta_tags
-    
-
-    -# "https://maps.googleapis.com/maps/api/js?key=AIzaSyA00iEetE8yy2uZY4ejEskfM6zypsXnhps&libraries=places"
 
   %body
 
@@ -25,9 +25,10 @@
     %p.notice= notice
     %p.alert= alert
 
-    .index
-    %ul
-      %li= link_to("Events", events_path)
-    = render 'layouts/nav'
+    
+    - if user_signed_in?
+      .nav
+        = render 'layouts/nav'
+
     = yield
 
