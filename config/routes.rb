@@ -15,11 +15,7 @@ Rails.application.routes.draw do
   get '/suggestmedates', to: 'playdates#suggest', as: :suggest
 
   put 'users/:id/update_preferences', to: 'users#update_preferences', as: :update_preferences
-  
-  # The priority is based upon order of creation: first created -> highest priority.
-  # See how all your routes lay out with "rake routes".
 
-  # You can have the root of your site routed with "root"
   root 'events#home'
 
 end
