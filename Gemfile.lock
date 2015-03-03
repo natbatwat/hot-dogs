@@ -89,6 +89,7 @@ GEM
     geocoder (1.2.7)
     globalid (0.3.3)
       activesupport (>= 4.1.0)
+    gravtastic (3.2.6)
     haml (4.0.6)
       tilt
     haml-rails (0.8.2)
@@ -276,6 +277,7 @@ DEPENDENCIES
   devise
   formtastic (~> 3.0)
   geocoder
+  gravtastic
   haml-rails (~> 0.8)
   jbuilder (~> 2.0)
   jquery-rails

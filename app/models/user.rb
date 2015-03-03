@@ -4,6 +4,10 @@ class User < ActiveRecord::Base
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable, :recoverable, :rememberable, :trackable, :validatable, :omniauthable, :omniauth_providers => [:facebook]
 
+  # GRAVATASTIC #
+  include Gravtastic
+  gravtastic :default => "wavatar" 
+
   # ASSOCIATIONS #
   has_and_belongs_to_many :events
   has_many :buddies,  class_name:"User", foreign_key:"buddy_id"
@@ -13,7 +17,8 @@ class User < ActiveRecord::Base
   # TAGGABLE #
   acts_as_taggable # alias for acts_as_taggable_on :tags
   acts_as_taggable_on :matches
-        
+
+  # OMNIAUTH #
   def self.from_omniauth(auth)
     where(provider: auth.provider, uid: auth.uid).first_or_create do |user|
       user.email = auth.info.email
