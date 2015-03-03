@@ -15,6 +15,7 @@ class UsersController < ApplicationController
   def update_preferences
     preferences = params[:user]
     current_user.preference_list.add(preferences)
+    current_user.save
     
   end
 

@@ -18,6 +18,9 @@
 = @user.interest 
 = @user.match_list 
 
+%p Preferences:
+= current_user.preference_list
+
 -# Google Maps #
 #map-canvas
   = @user.address
