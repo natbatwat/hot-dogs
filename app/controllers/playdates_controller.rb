@@ -43,6 +43,9 @@ class PlaydatesController < ApplicationController
     flash[:notice] = "You successfully deleted a playdate!"
   end
 
+  def suggest
+  end
+
   private
   def playdate_params
     params.require(:playdate).permit(:name, :date, :place, :time, :event_rating)

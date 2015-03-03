@@ -1,10 +1,30 @@
+<<<<<<< HEAD
 = image_tag @user.gravatar_url
 = @user.email
 = @user.address
+=======
+-# USER PROFILE PAGE #
+-# User information #
+= @user.email
+= @user.address 
+= @user.owner_name 
+= @user.owner_picture 
+= @user.dog_name 
+= @user.dog_picture 
+= @user.dog_age
+= @user.dog_bio 
+= @user.gender 
+= @user.breed 
+= @user.neutered 
+= @user.interest 
+= @user.match_list 
+>>>>>>> b93ea10c89153aacc258144a89ef81b4bebafe76
 
+-# Google Maps #
 #map-canvas
   = @user.address
 
+-# Add Buddy Button #
 %button{:data => {:dog2_id => @user.id}}
   %span Add Buddy
   %span.hide Buddy Requested
