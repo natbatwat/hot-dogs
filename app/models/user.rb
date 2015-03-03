@@ -11,8 +11,8 @@ class User < ActiveRecord::Base
   has_and_belongs_to_many :playdates, dependent: :destroy
 
   # TAGGABLE #
-  acts_as_taggable # alias for acts_as_taggable_on :tags
-  acts_as_taggable_on :matches
+  acts_as_taggable
+  acts_as_taggable_on :matches, :preferences
         
   def self.from_omniauth(auth)
     where(provider: auth.provider, uid: auth.uid).first_or_create do |user|
