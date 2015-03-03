@@ -25,8 +25,9 @@
     %p.notice= notice
     %p.alert= alert
 
-    .index
-    %ul
-      %li= link_to("Events", events_path)
-    = render 'layouts/nav'
+    
+    - if user_signed_in?
+      .nav
+        = render 'layouts/nav'
+
     = yield
