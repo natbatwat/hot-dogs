@@ -1,7 +1,8 @@
 $(document).ready(function(){
   console.log('ready');
-  // var currentURL = window.location.pathname
-  // var ajaxURL = currentURL.substring(0, currentURL.length - 13)
+
+  var currentURL = window.location.pathname
+  var ajaxURL = currentURL.substring(0, currentURL.length - 13)
 
   $('.qn').click(function(){
     console.log('checked')
@@ -23,6 +24,7 @@ $(document).ready(function(){
         dataType: 'json',
         data: {user:preferences}
       });
+      window.location.pathname = ajaxURL
     }
     else {
       console.log('nothing checked');

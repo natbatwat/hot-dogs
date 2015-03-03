@@ -15,8 +15,7 @@ class UsersController < ApplicationController
   def update_preferences
     preferences = params[:user]
     current_user.preference_list.add(preferences)
-    binding.pry
-    redirect_to user_path(current_user)
+    
   end
 
 
