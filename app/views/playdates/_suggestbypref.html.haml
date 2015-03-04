@@ -2,9 +2,15 @@
   %p You like these things:
   = current_user.preference_list
 
-  %p These hot dogs like the same things too: 
-  - suggested_dates = current_user.find_related_preferences
-  - suggested_dates.each do |dog|
+  %p You are highly matches with these hot dogs: 
+  - high_matches = User.tagged_with(current_user.preference_list, :any => true)
+  - high_matches.each do |dog|
+    =link_to(dog.dog_name, user_path(dog))
+
+
+  %p These hot dogs might be your dark horse: 
+  - low_matches = User.tagged_with(current_user.preference_list, :any => true)
+  - low_matches.each do |dog|
     =link_to(dog.dog_name, user_path(dog))
 
 -# .search-by

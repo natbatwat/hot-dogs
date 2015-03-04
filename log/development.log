@@ -75274,3 +75274,1015 @@ Started GET "/assets/users-e34c9418c0be04889133177f28523e58.js?body=1" for 127.0
   [1m[35m (0.4ms)[0m  COMMIT
   [1m[36mUser Load (1.5ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY "users"."id" ASC LIMIT 1[0m
   [1m[35mActsAsTaggableOn::Tag Load (0.9ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND "taggings"."context" = $3  [["taggable_id", 32], ["taggable_type", "User"], ["context", "preferences"]]
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-04 15:06:04 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by EventsController#home as HTML
+  Rendered events/home.html.haml within layouts/application (2.8ms)
+  Rendered layouts/_register.html.haml (1.6ms)
+Completed 200 OK in 428ms (Views: 415.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap/alert-7c03e11fecf6b3ef100f76ae4f08586e.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:05 +0000
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:05 +0000
+
+
+Started GET "/assets/bootstrap/collapse-7a82a3d4fb154ded3d2702465e21ca00.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:05 +0000
+
+
+Started GET "/assets/bootstrap/carousel-93f34f850a932957c93b7605c79faf45.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:05 +0000
+
+
+Started GET "/assets/bootstrap/button-98bba85be4dcdd597554e0b7ce8e33a2.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:05 +0000
+
+
+Started GET "/assets/bootstrap/affix-31984abe1036c1c2f684af192191ce9f.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:05 +0000
+
+
+Started GET "/assets/bootstrap/dropdown-65c3929585250221f53bae696936ed44.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:05 +0000
+
+
+Started GET "/assets/bootstrap/tab-a90a1841af8c1eae12bfa5283a8093b0.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:05 +0000
+
+
+Started GET "/assets/bootstrap/transition-9e4de96204f41141474e9dbb59570af9.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:05 +0000
+
+
+Started GET "/assets/bootstrap/scrollspy-e550695030be1d627d1ba91b14792316.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:05 +0000
+
+
+Started GET "/assets/bootstrap/modal-ce380b9327d2cf6c826d8df818ea48a1.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:05 +0000
+
+
+Started GET "/assets/bootstrap/tooltip-4d90d4ee015d2df34a7696864b2ea83c.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:05 +0000
+
+
+Started GET "/assets/bootstrap/popover-5a060f876311e7fcb18f35058070de5a.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:05 +0000
+
+
+Started GET "/assets/bootstrap-sprockets-00b1738c651720f44abc4bbf70bedb3e.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:05 +0000
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:05 +0000
+
+
+Started GET "/assets/buddy-580d1eaac8f55e59a3fae282a68b2b40.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:05 +0000
+
+
+Started GET "/assets/events-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:05 +0000
+
+
+Started GET "/assets/jquery.raty-c82d49558fb10304a5bc21476147dae4.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:05 +0000
+
+
+Started GET "/assets/letsrate-4d03cf7e7a11899cdc7957804b58f8cc.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:05 +0000
+
+
+Started GET "/assets/playdates-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:05 +0000
+
+
+Started GET "/assets/questionnaire-18ba34f13851bc3e019c56c492b603d1.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:05 +0000
+
+
+Started GET "/assets/reviews-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:05 +0000
+
+
+Started GET "/assets/users-e34c9418c0be04889133177f28523e58.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:05 +0000
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-03-04 15:06:06 +0000
+Processing by Users::SessionsController#new as HTML
+  Rendered users/shared/_links.html.erb (12.2ms)
+  Rendered users/sessions/new.html.erb within layouts/application (244.7ms)
+  Rendered layouts/_register.html.haml (0.3ms)
+Completed 200 OK in 560ms (Views: 537.1ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/assets/bootstrap/alert-7c03e11fecf6b3ef100f76ae4f08586e.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:07 +0000
+
+
+Started GET "/assets/bootstrap/button-98bba85be4dcdd597554e0b7ce8e33a2.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:07 +0000
+
+
+Started GET "/assets/bootstrap/affix-31984abe1036c1c2f684af192191ce9f.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:07 +0000
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:07 +0000
+
+
+Started GET "/assets/bootstrap/carousel-93f34f850a932957c93b7605c79faf45.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:07 +0000
+
+
+Started GET "/assets/bootstrap/collapse-7a82a3d4fb154ded3d2702465e21ca00.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:07 +0000
+
+
+Started GET "/assets/bootstrap/dropdown-65c3929585250221f53bae696936ed44.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:07 +0000
+
+
+Started GET "/assets/bootstrap/tab-a90a1841af8c1eae12bfa5283a8093b0.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:07 +0000
+
+
+Started GET "/assets/bootstrap/transition-9e4de96204f41141474e9dbb59570af9.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:07 +0000
+
+
+Started GET "/assets/bootstrap/scrollspy-e550695030be1d627d1ba91b14792316.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:07 +0000
+
+
+Started GET "/assets/bootstrap/modal-ce380b9327d2cf6c826d8df818ea48a1.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:07 +0000
+
+
+Started GET "/assets/bootstrap/tooltip-4d90d4ee015d2df34a7696864b2ea83c.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:07 +0000
+
+
+Started GET "/assets/bootstrap/popover-5a060f876311e7fcb18f35058070de5a.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:07 +0000
+
+
+Started GET "/assets/bootstrap-sprockets-00b1738c651720f44abc4bbf70bedb3e.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:07 +0000
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:07 +0000
+
+
+Started GET "/assets/buddy-580d1eaac8f55e59a3fae282a68b2b40.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:07 +0000
+
+
+Started GET "/assets/events-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:07 +0000
+
+
+Started GET "/assets/jquery.raty-c82d49558fb10304a5bc21476147dae4.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:07 +0000
+
+
+Started GET "/assets/letsrate-4d03cf7e7a11899cdc7957804b58f8cc.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:07 +0000
+
+
+Started GET "/assets/playdates-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:07 +0000
+
+
+Started GET "/assets/questionnaire-18ba34f13851bc3e019c56c492b603d1.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:07 +0000
+
+
+Started GET "/assets/reviews-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:07 +0000
+
+
+Started GET "/assets/users-e34c9418c0be04889133177f28523e58.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:07 +0000
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2015-03-04 15:06:11 +0000
+Processing by Users::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Wzzv/3KYi5kpnL+p5uZiG4f3ne3JUbaOXrE2UM5ibWnnIYYrx9GYbM0nSjHYTiyB6jaoAMKa+NiX6pGiea45Zg==", "user"=>{"email"=>"bob@email.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (1.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["email", "bob@email.com"]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "users" SET "last_sign_in_at" = $1, "current_sign_in_at" = $2, "last_sign_in_ip" = $3, "current_sign_in_ip" = $4, "sign_in_count" = $5, "updated_at" = $6 WHERE "users"."id" = $7  [["last_sign_in_at", "2015-03-04 15:06:11.249309"], ["current_sign_in_at", "2015-03-04 15:06:11.249309"], ["last_sign_in_ip", "127.0.0.1/32"], ["current_sign_in_ip", "127.0.0.1/32"], ["sign_in_count", 1], ["updated_at", "2015-03-04 15:06:11.251387"], ["id", 32]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 163ms (ActiveRecord: 2.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-04 15:06:11 +0000
+Processing by EventsController#home as HTML
+  Rendered events/home.html.haml within layouts/application (0.1ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 32]]
+  Rendered layouts/_register.html.haml (0.3ms)
+  Rendered layouts/_nav.html.haml (3.1ms)
+Completed 200 OK in 303ms (Views: 302.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:11 +0000
+
+
+Started GET "/assets/bootstrap/affix-31984abe1036c1c2f684af192191ce9f.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:11 +0000
+
+
+Started GET "/assets/bootstrap/button-98bba85be4dcdd597554e0b7ce8e33a2.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:11 +0000
+
+
+Started GET "/assets/bootstrap/collapse-7a82a3d4fb154ded3d2702465e21ca00.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:11 +0000
+
+
+Started GET "/assets/bootstrap/alert-7c03e11fecf6b3ef100f76ae4f08586e.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:11 +0000
+
+
+Started GET "/assets/bootstrap/carousel-93f34f850a932957c93b7605c79faf45.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:11 +0000
+
+
+Started GET "/assets/bootstrap/dropdown-65c3929585250221f53bae696936ed44.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:11 +0000
+
+
+Started GET "/assets/bootstrap/tab-a90a1841af8c1eae12bfa5283a8093b0.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:11 +0000
+
+
+Started GET "/assets/bootstrap/transition-9e4de96204f41141474e9dbb59570af9.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:11 +0000
+
+
+Started GET "/assets/bootstrap/scrollspy-e550695030be1d627d1ba91b14792316.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:11 +0000
+
+
+Started GET "/assets/bootstrap/modal-ce380b9327d2cf6c826d8df818ea48a1.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:11 +0000
+
+
+Started GET "/assets/bootstrap/tooltip-4d90d4ee015d2df34a7696864b2ea83c.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:11 +0000
+
+
+Started GET "/assets/bootstrap/popover-5a060f876311e7fcb18f35058070de5a.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:11 +0000
+
+
+Started GET "/assets/bootstrap-sprockets-00b1738c651720f44abc4bbf70bedb3e.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:11 +0000
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:11 +0000
+
+
+Started GET "/assets/buddy-580d1eaac8f55e59a3fae282a68b2b40.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:11 +0000
+
+
+Started GET "/assets/events-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:11 +0000
+
+
+Started GET "/assets/jquery.raty-c82d49558fb10304a5bc21476147dae4.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:11 +0000
+
+
+Started GET "/assets/letsrate-4d03cf7e7a11899cdc7957804b58f8cc.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:11 +0000
+
+
+Started GET "/assets/playdates-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:11 +0000
+
+
+Started GET "/assets/questionnaire-18ba34f13851bc3e019c56c492b603d1.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:11 +0000
+
+
+Started GET "/assets/reviews-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:11 +0000
+
+
+Started GET "/assets/users-e34c9418c0be04889133177f28523e58.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:12 +0000
+
+
+Started GET "/users/32" for 127.0.0.1 at 2015-03-04 15:06:13 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"32"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 32]]
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 32]]
+  [1m[36mActsAsTaggableOn::Tag Load (1.3ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'preferences' AND taggings.tagger_id IS NULL)[0m  [["taggable_id", 32], ["taggable_type", "User"]]
+  Rendered users/show.html.haml within layouts/application (54.8ms)
+  Rendered layouts/_register.html.haml (0.3ms)
+  Rendered layouts/_nav.html.haml (0.4ms)
+Completed 200 OK in 371ms (Views: 362.0ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:14 +0000
+
+
+Started GET "/assets/bootstrap/affix-31984abe1036c1c2f684af192191ce9f.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:14 +0000
+
+
+Started GET "/assets/bootstrap/carousel-93f34f850a932957c93b7605c79faf45.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:14 +0000
+
+
+Started GET "/assets/bootstrap/button-98bba85be4dcdd597554e0b7ce8e33a2.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:14 +0000
+
+
+Started GET "/assets/bootstrap/collapse-7a82a3d4fb154ded3d2702465e21ca00.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:14 +0000
+
+
+Started GET "/assets/bootstrap/alert-7c03e11fecf6b3ef100f76ae4f08586e.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:14 +0000
+
+
+Started GET "/assets/bootstrap/tab-a90a1841af8c1eae12bfa5283a8093b0.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:14 +0000
+
+
+Started GET "/assets/bootstrap/transition-9e4de96204f41141474e9dbb59570af9.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:14 +0000
+
+
+Started GET "/assets/bootstrap/dropdown-65c3929585250221f53bae696936ed44.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:14 +0000
+
+
+Started GET "/assets/bootstrap/scrollspy-e550695030be1d627d1ba91b14792316.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:14 +0000
+
+
+Started GET "/assets/bootstrap/modal-ce380b9327d2cf6c826d8df818ea48a1.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:14 +0000
+
+
+Started GET "/assets/bootstrap/tooltip-4d90d4ee015d2df34a7696864b2ea83c.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:14 +0000
+
+
+Started GET "/assets/bootstrap/popover-5a060f876311e7fcb18f35058070de5a.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:14 +0000
+
+
+Started GET "/assets/bootstrap-sprockets-00b1738c651720f44abc4bbf70bedb3e.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:14 +0000
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:14 +0000
+
+
+Started GET "/assets/buddy-580d1eaac8f55e59a3fae282a68b2b40.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:14 +0000
+
+
+Started GET "/assets/events-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:14 +0000
+
+
+Started GET "/assets/jquery.raty-c82d49558fb10304a5bc21476147dae4.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:14 +0000
+
+
+Started GET "/assets/letsrate-4d03cf7e7a11899cdc7957804b58f8cc.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:14 +0000
+
+
+Started GET "/assets/playdates-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:14 +0000
+
+
+Started GET "/assets/questionnaire-18ba34f13851bc3e019c56c492b603d1.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:14 +0000
+
+
+Started GET "/assets/reviews-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:14 +0000
+
+
+Started GET "/assets/users-e34c9418c0be04889133177f28523e58.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:14 +0000
+
+
+Started GET "/users/32" for 127.0.0.1 at 2015-03-04 15:06:29 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"32"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 32]]
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 32]]
+  [1m[35mActsAsTaggableOn::Tag Load (1.1ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'preferences' AND taggings.tagger_id IS NULL)  [["taggable_id", 32], ["taggable_type", "User"]]
+  Rendered users/show.html.haml within layouts/application (14.5ms)
+  Rendered layouts/_register.html.haml (0.3ms)
+  Rendered layouts/_nav.html.haml (0.7ms)
+Completed 200 OK in 320ms (Views: 316.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/bootstrap/affix-31984abe1036c1c2f684af192191ce9f.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:30 +0000
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:30 +0000
+
+
+Started GET "/assets/bootstrap/button-98bba85be4dcdd597554e0b7ce8e33a2.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:30 +0000
+
+
+Started GET "/assets/bootstrap/alert-7c03e11fecf6b3ef100f76ae4f08586e.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:30 +0000
+
+
+Started GET "/assets/bootstrap/collapse-7a82a3d4fb154ded3d2702465e21ca00.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:30 +0000
+
+
+Started GET "/assets/bootstrap/carousel-93f34f850a932957c93b7605c79faf45.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:30 +0000
+
+
+Started GET "/assets/bootstrap/dropdown-65c3929585250221f53bae696936ed44.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:30 +0000
+
+
+Started GET "/assets/bootstrap/tab-a90a1841af8c1eae12bfa5283a8093b0.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:30 +0000
+
+
+Started GET "/assets/bootstrap/transition-9e4de96204f41141474e9dbb59570af9.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:30 +0000
+
+
+Started GET "/assets/bootstrap/scrollspy-e550695030be1d627d1ba91b14792316.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:30 +0000
+
+
+Started GET "/assets/bootstrap/modal-ce380b9327d2cf6c826d8df818ea48a1.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:30 +0000
+
+
+Started GET "/assets/bootstrap/tooltip-4d90d4ee015d2df34a7696864b2ea83c.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:30 +0000
+
+
+Started GET "/assets/bootstrap/popover-5a060f876311e7fcb18f35058070de5a.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:30 +0000
+
+
+Started GET "/assets/bootstrap-sprockets-00b1738c651720f44abc4bbf70bedb3e.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:30 +0000
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:30 +0000
+
+
+Started GET "/assets/buddy-580d1eaac8f55e59a3fae282a68b2b40.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:30 +0000
+
+
+Started GET "/assets/events-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:30 +0000
+
+
+Started GET "/assets/jquery.raty-c82d49558fb10304a5bc21476147dae4.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:30 +0000
+
+
+Started GET "/assets/letsrate-4d03cf7e7a11899cdc7957804b58f8cc.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:30 +0000
+
+
+Started GET "/assets/playdates-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:30 +0000
+
+
+Started GET "/assets/questionnaire-18ba34f13851bc3e019c56c492b603d1.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:30 +0000
+
+
+Started GET "/assets/reviews-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:30 +0000
+
+
+Started GET "/assets/users-e34c9418c0be04889133177f28523e58.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:30 +0000
+
+
+Started GET "/suggestmedates" for 127.0.0.1 at 2015-03-04 15:06:41 +0000
+Processing by PlaydatesController#suggest as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 32]]
+  [1m[35mActsAsTaggableOn::Tag Load (0.5ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'preferences' AND taggings.tagger_id IS NULL)  [["taggable_id", 32], ["taggable_type", "User"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'preferences' AND taggings.tagger_id IS NULL)[0m  [["taggable_id", 32], ["taggable_type", "User"]]
+  [1m[35mUser Load (3.6ms)[0m  SELECT users.*, COUNT(tags.id) AS count FROM users, tags, taggings WHERE (users.id != 32 AND users.id = taggings.taggable_id AND taggings.taggable_type = 'User' AND taggings.tag_id = tags.id AND tags.name IN ('weekends','neutered','male','indoor') AND taggings.context = 'preferences') GROUP BY users.id, users.email, users.encrypted_password, users.reset_password_token, users.reset_password_sent_at, users.remember_created_at, users.sign_in_count, users.current_sign_in_at, users.last_sign_in_at, users.current_sign_in_ip, users.last_sign_in_ip, users.created_at, users.updated_at, users.dog_name, users.owner_name, users.dog_age, users.dog_bio, users.owner_bio, users.gender, users.breed, users.neutered, users.address, users.reported, users.user_rating, users.dog_picture, users.owner_picture, users.provider, users.uid  ORDER BY count DESC
+  Rendered playdates/_suggestbypref.html.haml (10.8ms)
+  Rendered playdates/suggest.html.haml within layouts/application (12.9ms)
+  Rendered layouts/_register.html.haml (0.3ms)
+  Rendered layouts/_nav.html.haml (0.7ms)
+Completed 200 OK in 285ms (Views: 278.8ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:42 +0000
+
+
+Started GET "/assets/bootstrap/alert-7c03e11fecf6b3ef100f76ae4f08586e.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:42 +0000
+
+
+Started GET "/assets/bootstrap/button-98bba85be4dcdd597554e0b7ce8e33a2.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:42 +0000
+
+
+Started GET "/assets/bootstrap/affix-31984abe1036c1c2f684af192191ce9f.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:42 +0000
+
+
+Started GET "/assets/bootstrap/carousel-93f34f850a932957c93b7605c79faf45.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:42 +0000
+
+
+Started GET "/assets/bootstrap/collapse-7a82a3d4fb154ded3d2702465e21ca00.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:42 +0000
+
+
+Started GET "/suggestmedates" for 127.0.0.1 at 2015-03-04 15:06:42 +0000
+Processing by PlaydatesController#suggest as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 32]]
+  [1m[35mActsAsTaggableOn::Tag Load (1.1ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'preferences' AND taggings.tagger_id IS NULL)  [["taggable_id", 32], ["taggable_type", "User"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'preferences' AND taggings.tagger_id IS NULL)[0m  [["taggable_id", 32], ["taggable_type", "User"]]
+  [1m[35mUser Load (2.9ms)[0m  SELECT users.*, COUNT(tags.id) AS count FROM users, tags, taggings WHERE (users.id != 32 AND users.id = taggings.taggable_id AND taggings.taggable_type = 'User' AND taggings.tag_id = tags.id AND tags.name IN ('weekends','neutered','male','indoor') AND taggings.context = 'preferences') GROUP BY users.id, users.email, users.encrypted_password, users.reset_password_token, users.reset_password_sent_at, users.remember_created_at, users.sign_in_count, users.current_sign_in_at, users.last_sign_in_at, users.current_sign_in_ip, users.last_sign_in_ip, users.created_at, users.updated_at, users.dog_name, users.owner_name, users.dog_age, users.dog_bio, users.owner_bio, users.gender, users.breed, users.neutered, users.address, users.reported, users.user_rating, users.dog_picture, users.owner_picture, users.provider, users.uid  ORDER BY count DESC
+  Rendered playdates/_suggestbypref.html.haml (12.9ms)
+  Rendered playdates/suggest.html.haml within layouts/application (14.1ms)
+  Rendered layouts/_register.html.haml (0.3ms)
+  Rendered layouts/_nav.html.haml (0.3ms)
+Completed 200 OK in 323ms (Views: 317.0ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/assets/bootstrap/dropdown-65c3929585250221f53bae696936ed44.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:42 +0000
+
+
+Started GET "/assets/bootstrap/tab-a90a1841af8c1eae12bfa5283a8093b0.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:42 +0000
+
+
+Started GET "/assets/bootstrap/transition-9e4de96204f41141474e9dbb59570af9.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:42 +0000
+
+
+Started GET "/assets/bootstrap/scrollspy-e550695030be1d627d1ba91b14792316.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:42 +0000
+
+
+Started GET "/assets/bootstrap/modal-ce380b9327d2cf6c826d8df818ea48a1.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:42 +0000
+
+
+Started GET "/assets/bootstrap/dropdown-65c3929585250221f53bae696936ed44.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:42 +0000
+
+
+Started GET "/assets/bootstrap/tab-a90a1841af8c1eae12bfa5283a8093b0.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:42 +0000
+
+
+Started GET "/assets/bootstrap/transition-9e4de96204f41141474e9dbb59570af9.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:42 +0000
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:42 +0000
+
+
+Started GET "/assets/bootstrap/scrollspy-e550695030be1d627d1ba91b14792316.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:42 +0000
+
+
+Started GET "/assets/bootstrap/affix-31984abe1036c1c2f684af192191ce9f.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:42 +0000
+
+
+Started GET "/assets/bootstrap/button-98bba85be4dcdd597554e0b7ce8e33a2.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:42 +0000
+
+
+Started GET "/assets/bootstrap/alert-7c03e11fecf6b3ef100f76ae4f08586e.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:42 +0000
+
+
+Started GET "/assets/bootstrap/carousel-93f34f850a932957c93b7605c79faf45.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:42 +0000
+
+
+Started GET "/assets/bootstrap/collapse-7a82a3d4fb154ded3d2702465e21ca00.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:42 +0000
+
+
+Started GET "/assets/bootstrap/modal-ce380b9327d2cf6c826d8df818ea48a1.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:42 +0000
+
+
+Started GET "/assets/bootstrap/tooltip-4d90d4ee015d2df34a7696864b2ea83c.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:42 +0000
+
+
+Started GET "/assets/bootstrap/popover-5a060f876311e7fcb18f35058070de5a.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:42 +0000
+
+
+Started GET "/assets/bootstrap-sprockets-00b1738c651720f44abc4bbf70bedb3e.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:42 +0000
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:42 +0000
+
+
+Started GET "/assets/buddy-580d1eaac8f55e59a3fae282a68b2b40.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:42 +0000
+
+
+Started GET "/assets/events-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:42 +0000
+
+
+Started GET "/assets/jquery.raty-c82d49558fb10304a5bc21476147dae4.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:42 +0000
+
+
+Started GET "/assets/letsrate-4d03cf7e7a11899cdc7957804b58f8cc.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:43 +0000
+
+
+Started GET "/assets/playdates-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:43 +0000
+
+
+Started GET "/assets/questionnaire-18ba34f13851bc3e019c56c492b603d1.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:43 +0000
+
+
+Started GET "/assets/reviews-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:43 +0000
+
+
+Started GET "/assets/users-e34c9418c0be04889133177f28523e58.js?body=1" for 127.0.0.1 at 2015-03-04 15:06:43 +0000
+
+
+Started GET "/suggestmedates" for 127.0.0.1 at 2015-03-04 15:07:22 +0000
+Processing by PlaydatesController#suggest as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 32]]
+  [1m[35mActsAsTaggableOn::Tag Load (1.0ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'preferences' AND taggings.tagger_id IS NULL)  [["taggable_id", 32], ["taggable_type", "User"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'preferences' AND taggings.tagger_id IS NULL)[0m  [["taggable_id", 32], ["taggable_type", "User"]]
+  [1m[35mUser Load (1.7ms)[0m  SELECT users.*, COUNT(tags.id) AS count FROM users, tags, taggings WHERE (users.id != 32 AND users.id = taggings.taggable_id AND taggings.taggable_type = 'User' AND taggings.tag_id = tags.id AND tags.name IN ('weekends','neutered','male','indoor') AND taggings.context = 'preferences') GROUP BY users.id, users.email, users.encrypted_password, users.reset_password_token, users.reset_password_sent_at, users.remember_created_at, users.sign_in_count, users.current_sign_in_at, users.last_sign_in_at, users.current_sign_in_ip, users.last_sign_in_ip, users.created_at, users.updated_at, users.dog_name, users.owner_name, users.dog_age, users.dog_bio, users.owner_bio, users.gender, users.breed, users.neutered, users.address, users.reported, users.user_rating, users.dog_picture, users.owner_picture, users.provider, users.uid  ORDER BY count DESC
+  Rendered playdates/_suggestbypref.html.haml (8.0ms)
+  Rendered playdates/suggest.html.haml within layouts/application (9.1ms)
+  Rendered layouts/_register.html.haml (0.3ms)
+  Rendered layouts/_nav.html.haml (3.9ms)
+Completed 200 OK in 315ms (Views: 311.0ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/assets/bootstrap/dropdown-65c3929585250221f53bae696936ed44.js?body=1" for 127.0.0.1 at 2015-03-04 15:07:22 +0000
+
+
+Started GET "/assets/bootstrap/tab-a90a1841af8c1eae12bfa5283a8093b0.js?body=1" for 127.0.0.1 at 2015-03-04 15:07:22 +0000
+
+
+Started GET "/assets/bootstrap/transition-9e4de96204f41141474e9dbb59570af9.js?body=1" for 127.0.0.1 at 2015-03-04 15:07:22 +0000
+
+
+Started GET "/assets/bootstrap/tooltip-4d90d4ee015d2df34a7696864b2ea83c.js?body=1" for 127.0.0.1 at 2015-03-04 15:07:22 +0000
+
+
+Started GET "/assets/bootstrap/scrollspy-e550695030be1d627d1ba91b14792316.js?body=1" for 127.0.0.1 at 2015-03-04 15:07:22 +0000
+
+
+Started GET "/assets/bootstrap/modal-ce380b9327d2cf6c826d8df818ea48a1.js?body=1" for 127.0.0.1 at 2015-03-04 15:07:22 +0000
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-04 15:07:22 +0000
+
+
+Started GET "/assets/bootstrap/affix-31984abe1036c1c2f684af192191ce9f.js?body=1" for 127.0.0.1 at 2015-03-04 15:07:22 +0000
+
+
+Started GET "/assets/bootstrap/button-98bba85be4dcdd597554e0b7ce8e33a2.js?body=1" for 127.0.0.1 at 2015-03-04 15:07:22 +0000
+
+
+Started GET "/assets/bootstrap/alert-7c03e11fecf6b3ef100f76ae4f08586e.js?body=1" for 127.0.0.1 at 2015-03-04 15:07:22 +0000
+
+
+Started GET "/assets/bootstrap/carousel-93f34f850a932957c93b7605c79faf45.js?body=1" for 127.0.0.1 at 2015-03-04 15:07:22 +0000
+
+
+Started GET "/assets/bootstrap/collapse-7a82a3d4fb154ded3d2702465e21ca00.js?body=1" for 127.0.0.1 at 2015-03-04 15:07:22 +0000
+
+
+Started GET "/assets/bootstrap/popover-5a060f876311e7fcb18f35058070de5a.js?body=1" for 127.0.0.1 at 2015-03-04 15:07:22 +0000
+
+
+Started GET "/assets/bootstrap-sprockets-00b1738c651720f44abc4bbf70bedb3e.js?body=1" for 127.0.0.1 at 2015-03-04 15:07:22 +0000
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-04 15:07:22 +0000
+
+
+Started GET "/assets/buddy-580d1eaac8f55e59a3fae282a68b2b40.js?body=1" for 127.0.0.1 at 2015-03-04 15:07:22 +0000
+
+
+Started GET "/assets/events-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-04 15:07:22 +0000
+
+
+Started GET "/assets/jquery.raty-c82d49558fb10304a5bc21476147dae4.js?body=1" for 127.0.0.1 at 2015-03-04 15:07:22 +0000
+
+
+Started GET "/assets/letsrate-4d03cf7e7a11899cdc7957804b58f8cc.js?body=1" for 127.0.0.1 at 2015-03-04 15:07:22 +0000
+
+
+Started GET "/assets/playdates-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-04 15:07:22 +0000
+
+
+Started GET "/assets/questionnaire-18ba34f13851bc3e019c56c492b603d1.js?body=1" for 127.0.0.1 at 2015-03-04 15:07:22 +0000
+
+
+Started GET "/assets/reviews-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-04 15:07:22 +0000
+
+
+Started GET "/assets/users-e34c9418c0be04889133177f28523e58.js?body=1" for 127.0.0.1 at 2015-03-04 15:07:22 +0000
+
+
+Started GET "/suggestmedates" for 127.0.0.1 at 2015-03-04 15:07:23 +0000
+Processing by PlaydatesController#suggest as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 32]]
+  [1m[35mActsAsTaggableOn::Tag Load (0.6ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'preferences' AND taggings.tagger_id IS NULL)  [["taggable_id", 32], ["taggable_type", "User"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'preferences' AND taggings.tagger_id IS NULL)[0m  [["taggable_id", 32], ["taggable_type", "User"]]
+  [1m[35mUser Load (1.7ms)[0m  SELECT users.*, COUNT(tags.id) AS count FROM users, tags, taggings WHERE (users.id != 32 AND users.id = taggings.taggable_id AND taggings.taggable_type = 'User' AND taggings.tag_id = tags.id AND tags.name IN ('weekends','neutered','male','indoor') AND taggings.context = 'preferences') GROUP BY users.id, users.email, users.encrypted_password, users.reset_password_token, users.reset_password_sent_at, users.remember_created_at, users.sign_in_count, users.current_sign_in_at, users.last_sign_in_at, users.current_sign_in_ip, users.last_sign_in_ip, users.created_at, users.updated_at, users.dog_name, users.owner_name, users.dog_age, users.dog_bio, users.owner_bio, users.gender, users.breed, users.neutered, users.address, users.reported, users.user_rating, users.dog_picture, users.owner_picture, users.provider, users.uid  ORDER BY count DESC
+  Rendered playdates/_suggestbypref.html.haml (7.7ms)
+  Rendered playdates/suggest.html.haml within layouts/application (9.4ms)
+  Rendered layouts/_register.html.haml (0.3ms)
+  Rendered layouts/_nav.html.haml (0.5ms)
+Completed 200 OK in 309ms (Views: 305.7ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/assets/bootstrap/transition-9e4de96204f41141474e9dbb59570af9.js?body=1" for 127.0.0.1 at 2015-03-04 15:07:23 +0000
+
+
+Started GET "/assets/bootstrap/tab-a90a1841af8c1eae12bfa5283a8093b0.js?body=1" for 127.0.0.1 at 2015-03-04 15:07:23 +0000
+
+
+Started GET "/assets/bootstrap/scrollspy-e550695030be1d627d1ba91b14792316.js?body=1" for 127.0.0.1 at 2015-03-04 15:07:23 +0000
+
+
+Started GET "/assets/bootstrap/modal-ce380b9327d2cf6c826d8df818ea48a1.js?body=1" for 127.0.0.1 at 2015-03-04 15:07:23 +0000
+
+
+Started GET "/assets/bootstrap/tooltip-4d90d4ee015d2df34a7696864b2ea83c.js?body=1" for 127.0.0.1 at 2015-03-04 15:07:23 +0000
+
+
+Started GET "/assets/bootstrap/dropdown-65c3929585250221f53bae696936ed44.js?body=1" for 127.0.0.1 at 2015-03-04 15:07:23 +0000
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-04 15:07:23 +0000
+
+
+Started GET "/assets/bootstrap/affix-31984abe1036c1c2f684af192191ce9f.js?body=1" for 127.0.0.1 at 2015-03-04 15:07:23 +0000
+
+
+Started GET "/assets/bootstrap/alert-7c03e11fecf6b3ef100f76ae4f08586e.js?body=1" for 127.0.0.1 at 2015-03-04 15:07:23 +0000
+
+
+Started GET "/assets/bootstrap/button-98bba85be4dcdd597554e0b7ce8e33a2.js?body=1" for 127.0.0.1 at 2015-03-04 15:07:23 +0000
+
+
+Started GET "/assets/bootstrap/carousel-93f34f850a932957c93b7605c79faf45.js?body=1" for 127.0.0.1 at 2015-03-04 15:07:23 +0000
+
+
+Started GET "/assets/bootstrap/collapse-7a82a3d4fb154ded3d2702465e21ca00.js?body=1" for 127.0.0.1 at 2015-03-04 15:07:23 +0000
+
+
+Started GET "/assets/bootstrap/popover-5a060f876311e7fcb18f35058070de5a.js?body=1" for 127.0.0.1 at 2015-03-04 15:07:23 +0000
+
+
+Started GET "/assets/bootstrap-sprockets-00b1738c651720f44abc4bbf70bedb3e.js?body=1" for 127.0.0.1 at 2015-03-04 15:07:24 +0000
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-04 15:07:24 +0000
+
+
+Started GET "/assets/buddy-580d1eaac8f55e59a3fae282a68b2b40.js?body=1" for 127.0.0.1 at 2015-03-04 15:07:24 +0000
+
+
+Started GET "/assets/events-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-04 15:07:24 +0000
+
+
+Started GET "/assets/jquery.raty-c82d49558fb10304a5bc21476147dae4.js?body=1" for 127.0.0.1 at 2015-03-04 15:07:24 +0000
+
+
+Started GET "/assets/letsrate-4d03cf7e7a11899cdc7957804b58f8cc.js?body=1" for 127.0.0.1 at 2015-03-04 15:07:24 +0000
+
+
+Started GET "/assets/playdates-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-04 15:07:24 +0000
+
+
+Started GET "/assets/questionnaire-18ba34f13851bc3e019c56c492b603d1.js?body=1" for 127.0.0.1 at 2015-03-04 15:07:24 +0000
+
+
+Started GET "/assets/reviews-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-04 15:07:24 +0000
+
+
+Started GET "/assets/users-e34c9418c0be04889133177f28523e58.js?body=1" for 127.0.0.1 at 2015-03-04 15:07:24 +0000
+
+
+Started GET "/suggestmedates" for 127.0.0.1 at 2015-03-04 15:07:56 +0000
+Processing by PlaydatesController#suggest as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 32]]
+  [1m[35mActsAsTaggableOn::Tag Load (0.3ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'preferences' AND taggings.tagger_id IS NULL)  [["taggable_id", 32], ["taggable_type", "User"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'preferences' AND taggings.tagger_id IS NULL)[0m  [["taggable_id", 32], ["taggable_type", "User"]]
+  Rendered playdates/_suggestbypref.html.haml (8.0ms)
+  Rendered playdates/suggest.html.haml within layouts/application (9.1ms)
+  Rendered layouts/_register.html.haml (0.3ms)
+  Rendered layouts/_nav.html.haml (0.3ms)
+Completed 200 OK in 287ms (Views: 286.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/bootstrap/dropdown-65c3929585250221f53bae696936ed44.js?body=1" for 127.0.0.1 at 2015-03-04 15:07:56 +0000
+
+
+Started GET "/assets/bootstrap/tab-a90a1841af8c1eae12bfa5283a8093b0.js?body=1" for 127.0.0.1 at 2015-03-04 15:07:56 +0000
+
+
+Started GET "/assets/bootstrap/tooltip-4d90d4ee015d2df34a7696864b2ea83c.js?body=1" for 127.0.0.1 at 2015-03-04 15:07:56 +0000
+
+
+Started GET "/assets/bootstrap/transition-9e4de96204f41141474e9dbb59570af9.js?body=1" for 127.0.0.1 at 2015-03-04 15:07:56 +0000
+
+
+Started GET "/assets/bootstrap/modal-ce380b9327d2cf6c826d8df818ea48a1.js?body=1" for 127.0.0.1 at 2015-03-04 15:07:56 +0000
+
+
+Started GET "/assets/bootstrap/scrollspy-e550695030be1d627d1ba91b14792316.js?body=1" for 127.0.0.1 at 2015-03-04 15:07:56 +0000
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-04 15:07:56 +0000
+
+
+Started GET "/assets/bootstrap/affix-31984abe1036c1c2f684af192191ce9f.js?body=1" for 127.0.0.1 at 2015-03-04 15:07:56 +0000
+
+
+Started GET "/assets/bootstrap/alert-7c03e11fecf6b3ef100f76ae4f08586e.js?body=1" for 127.0.0.1 at 2015-03-04 15:07:56 +0000
+
+
+Started GET "/assets/bootstrap/button-98bba85be4dcdd597554e0b7ce8e33a2.js?body=1" for 127.0.0.1 at 2015-03-04 15:07:57 +0000
+
+
+Started GET "/assets/bootstrap/carousel-93f34f850a932957c93b7605c79faf45.js?body=1" for 127.0.0.1 at 2015-03-04 15:07:57 +0000
+
+
+Started GET "/assets/bootstrap/collapse-7a82a3d4fb154ded3d2702465e21ca00.js?body=1" for 127.0.0.1 at 2015-03-04 15:07:57 +0000
+
+
+Started GET "/assets/bootstrap/popover-5a060f876311e7fcb18f35058070de5a.js?body=1" for 127.0.0.1 at 2015-03-04 15:07:57 +0000
+
+
+Started GET "/assets/bootstrap-sprockets-00b1738c651720f44abc4bbf70bedb3e.js?body=1" for 127.0.0.1 at 2015-03-04 15:07:57 +0000
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-04 15:07:57 +0000
+
+
+Started GET "/assets/buddy-580d1eaac8f55e59a3fae282a68b2b40.js?body=1" for 127.0.0.1 at 2015-03-04 15:07:57 +0000
+
+
+Started GET "/assets/events-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-04 15:07:57 +0000
+
+
+Started GET "/assets/jquery.raty-c82d49558fb10304a5bc21476147dae4.js?body=1" for 127.0.0.1 at 2015-03-04 15:07:57 +0000
+
+
+Started GET "/assets/letsrate-4d03cf7e7a11899cdc7957804b58f8cc.js?body=1" for 127.0.0.1 at 2015-03-04 15:07:57 +0000
+
+
+Started GET "/assets/playdates-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-04 15:07:57 +0000
+
+
+Started GET "/assets/questionnaire-18ba34f13851bc3e019c56c492b603d1.js?body=1" for 127.0.0.1 at 2015-03-04 15:07:57 +0000
+
+
+Started GET "/assets/reviews-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-04 15:07:57 +0000
+
+
+Started GET "/assets/users-e34c9418c0be04889133177f28523e58.js?body=1" for 127.0.0.1 at 2015-03-04 15:07:57 +0000
+  [1m[36mUser Load (1.5ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mActsAsTaggableOn::Tag Load (0.9ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'preferences' AND taggings.tagger_id IS NULL)  [["taggable_id", 32], ["taggable_type", "User"]]
+  [1m[36mUser Load (3.6ms)[0m  [1mSELECT users.*, COUNT(tags.id) AS count FROM users, tags, taggings WHERE (users.id != 32 AND users.id = taggings.taggable_id AND taggings.taggable_type = 'User' AND taggings.tag_id = tags.id AND tags.name IN ('weekends','neutered','male','indoor') AND taggings.context = 'preferences') GROUP BY users.id, users.email, users.encrypted_password, users.reset_password_token, users.reset_password_sent_at, users.remember_created_at, users.sign_in_count, users.current_sign_in_at, users.last_sign_in_at, users.current_sign_in_ip, users.last_sign_in_ip, users.created_at, users.updated_at, users.dog_name, users.owner_name, users.dog_age, users.dog_bio, users.owner_bio, users.gender, users.breed, users.neutered, users.address, users.reported, users.user_rating, users.dog_picture, users.owner_picture, users.provider, users.uid  ORDER BY count DESC[0m
+  [1m[35mActsAsTaggableOn::Tag Load (0.5ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND "taggings"."context" = $3  [["taggable_id", 32], ["taggable_type", "User"], ["context", "preferences"]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.9ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'preferences' AND taggings.tagger_id IS NULL)[0m  [["taggable_id", 32], ["taggable_type", "User"]]
+  [1m[35mUser Load (1.6ms)[0m  SELECT users.*, COUNT(tags.id) AS count FROM users, tags, taggings WHERE (users.id != 32 AND users.id = taggings.taggable_id AND taggings.taggable_type = 'User' AND taggings.tag_id = tags.id AND tags.name IN ('weekends','neutered','male','indoor') AND taggings.context = 'preferences') GROUP BY users.id, users.email, users.encrypted_password, users.reset_password_token, users.reset_password_sent_at, users.remember_created_at, users.sign_in_count, users.current_sign_in_at, users.last_sign_in_at, users.current_sign_in_ip, users.last_sign_in_ip, users.created_at, users.updated_at, users.dog_name, users.owner_name, users.dog_age, users.dog_bio, users.owner_bio, users.gender, users.breed, users.neutered, users.address, users.reported, users.user_rating, users.dog_picture, users.owner_picture, users.provider, users.uid  ORDER BY count DESC
+  [1m[36mActsAsTaggableOn::Tag Load (0.9ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'preferences' AND taggings.tagger_id IS NULL)[0m  [["taggable_id", 32], ["taggable_type", "User"]]
+  [1m[35mActsAsTaggableOn::Tag Load (0.7ms)[0m  SELECT "tags".* FROM "tags" WHERE (LOWER(name) = LOWER('weekends') OR LOWER(name) = LOWER('neutered') OR LOWER(name) = LOWER('male') OR LOWER(name) = LOWER('indoor'))
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  users.* FROM "users" WHERE (EXISTS (SELECT 1 FROM taggings users_taggings_44ed959 WHERE users_taggings_44ed959.taggable_id = "users".id AND users_taggings_44ed959.taggable_type = 'User' AND users_taggings_44ed959.tag_id in (8, 1, 3, 9)))[0m
+
+
+Started GET "/suggestmedates" for 127.0.0.1 at 2015-03-04 15:12:06 +0000
+Processing by PlaydatesController#suggest as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 32]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.6ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'preferences' AND taggings.tagger_id IS NULL)[0m  [["taggable_id", 32], ["taggable_type", "User"]]
+  [1m[35mActsAsTaggableOn::Tag Load (1.4ms)[0m  SELECT "tags".* FROM "tags" WHERE (LOWER(name) = LOWER('weekends') OR LOWER(name) = LOWER('neutered') OR LOWER(name) = LOWER('male') OR LOWER(name) = LOWER('indoor'))
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  users.* FROM "users" WHERE (EXISTS (SELECT 1 FROM taggings users_taggings_44ed959 WHERE users_taggings_44ed959.taggable_id = "users".id AND users_taggings_44ed959.taggable_type = 'User' AND users_taggings_44ed959.tag_id in (8, 1, 3, 9)))[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "tags".* FROM "tags" WHERE (LOWER(name) = LOWER('weekends') OR LOWER(name) = LOWER('neutered') OR LOWER(name) = LOWER('male') OR LOWER(name) = LOWER('indoor'))
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  users.* FROM "users" WHERE (EXISTS (SELECT 1 FROM taggings users_taggings_44ed959 WHERE users_taggings_44ed959.taggable_id = "users".id AND users_taggings_44ed959.taggable_type = 'User' AND users_taggings_44ed959.tag_id in (8, 1, 3, 9)))[0m
+  Rendered playdates/_suggestbypref.html.haml (102.1ms)
+  Rendered playdates/suggest.html.haml within layouts/application (103.1ms)
+  Rendered layouts/_register.html.haml (0.2ms)
+  Rendered layouts/_nav.html.haml (0.4ms)
+Completed 200 OK in 432ms (Views: 428.4ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/assets/bootstrap/dropdown-65c3929585250221f53bae696936ed44.js?body=1" for 127.0.0.1 at 2015-03-04 15:12:07 +0000
+
+
+Started GET "/assets/bootstrap/tab-a90a1841af8c1eae12bfa5283a8093b0.js?body=1" for 127.0.0.1 at 2015-03-04 15:12:07 +0000
+
+
+Started GET "/assets/bootstrap/tooltip-4d90d4ee015d2df34a7696864b2ea83c.js?body=1" for 127.0.0.1 at 2015-03-04 15:12:07 +0000
+
+
+Started GET "/assets/bootstrap/transition-9e4de96204f41141474e9dbb59570af9.js?body=1" for 127.0.0.1 at 2015-03-04 15:12:07 +0000
+
+
+Started GET "/assets/bootstrap/modal-ce380b9327d2cf6c826d8df818ea48a1.js?body=1" for 127.0.0.1 at 2015-03-04 15:12:07 +0000
+
+
+Started GET "/assets/bootstrap/scrollspy-e550695030be1d627d1ba91b14792316.js?body=1" for 127.0.0.1 at 2015-03-04 15:12:07 +0000
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-04 15:12:07 +0000
+
+
+Started GET "/assets/bootstrap/affix-31984abe1036c1c2f684af192191ce9f.js?body=1" for 127.0.0.1 at 2015-03-04 15:12:07 +0000
+
+
+Started GET "/assets/bootstrap/alert-7c03e11fecf6b3ef100f76ae4f08586e.js?body=1" for 127.0.0.1 at 2015-03-04 15:12:07 +0000
+
+
+Started GET "/assets/bootstrap/button-98bba85be4dcdd597554e0b7ce8e33a2.js?body=1" for 127.0.0.1 at 2015-03-04 15:12:07 +0000
+
+
+Started GET "/assets/bootstrap/carousel-93f34f850a932957c93b7605c79faf45.js?body=1" for 127.0.0.1 at 2015-03-04 15:12:07 +0000
+
+
+Started GET "/assets/bootstrap/collapse-7a82a3d4fb154ded3d2702465e21ca00.js?body=1" for 127.0.0.1 at 2015-03-04 15:12:07 +0000
+
+
+Started GET "/assets/bootstrap/popover-5a060f876311e7fcb18f35058070de5a.js?body=1" for 127.0.0.1 at 2015-03-04 15:12:07 +0000
+
+
+Started GET "/assets/bootstrap-sprockets-00b1738c651720f44abc4bbf70bedb3e.js?body=1" for 127.0.0.1 at 2015-03-04 15:12:07 +0000
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-04 15:12:07 +0000
+
+
+Started GET "/assets/buddy-580d1eaac8f55e59a3fae282a68b2b40.js?body=1" for 127.0.0.1 at 2015-03-04 15:12:07 +0000
+
+
+Started GET "/assets/events-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-04 15:12:07 +0000
+
+
+Started GET "/assets/jquery.raty-c82d49558fb10304a5bc21476147dae4.js?body=1" for 127.0.0.1 at 2015-03-04 15:12:07 +0000
+
+
+Started GET "/assets/letsrate-4d03cf7e7a11899cdc7957804b58f8cc.js?body=1" for 127.0.0.1 at 2015-03-04 15:12:07 +0000
+
+
+Started GET "/assets/playdates-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-04 15:12:07 +0000
+
+
+Started GET "/assets/questionnaire-18ba34f13851bc3e019c56c492b603d1.js?body=1" for 127.0.0.1 at 2015-03-04 15:12:07 +0000
+
+
+Started GET "/assets/reviews-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-04 15:12:07 +0000
+
+
+Started GET "/assets/users-e34c9418c0be04889133177f28523e58.js?body=1" for 127.0.0.1 at 2015-03-04 15:12:07 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mSQL (5.2ms)[0m  DELETE FROM "users"
+  [1m[36mSQL (1.0ms)[0m  [1mDELETE FROM "events"[0m
+  [1m[35mSQL (0.9ms)[0m  DELETE FROM "playdates"
+  [1m[36mSQL (0.5ms)[0m  [1mDELETE FROM "reviews"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (0.9ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'bob@email.com' LIMIT 1[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "dog_name", "dog_age", "breed", "owner_name", "address", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["email", "bob@email.com"], ["encrypted_password", "$2a$10$HUr30RvbKN0JxXMTBsLNpOxnID9jc7yw46n9sGl2JettYWl3PhMwG"], ["dog_name", "bax"], ["dog_age", 1], ["breed", "golden retriever"], ["owner_name", "bob"], ["address", "\n  Imperial Wharf, \n  Townmead Road, Fulham, \n  London, SW6 2TW"], ["created_at", "2015-03-04 15:13:02.073406"], ["updated_at", "2015-03-04 15:13:02.073406"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  [1m[35mActsAsTaggableOn::Tag Load (1.2ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'preferences' AND taggings.tagger_id IS NULL)  [["taggable_id", 38], ["taggable_type", "User"]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  UPDATE "users" SET "updated_at" = $1 WHERE "users"."id" = $2  [["updated_at", "2015-03-04 15:13:02.111110"], ["id", 38]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.8ms)[0m  [1mSELECT "tags".* FROM "tags" WHERE (LOWER(name) = LOWER('indoor') OR LOWER(name) = LOWER('male') OR LOWER(name) = LOWER('neutered') OR LOWER(name) = LOWER('weekends'))[0m
+  [1m[35mActsAsTaggableOn::Tag Load (0.9ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'preferences' AND taggings.tagger_id IS NULL)  [["taggable_id", 38], ["taggable_type", "User"]]
+  [1m[36mActsAsTaggableOn::Tagging Exists (0.6ms)[0m  [1mSELECT  1 AS one FROM "taggings" WHERE ("taggings"."tag_id" = 8 AND "taggings"."taggable_type" = 'User' AND "taggings"."taggable_id" = 38 AND "taggings"."context" = 'preferences' AND "taggings"."tagger_id" IS NULL AND "taggings"."tagger_type" IS NULL) LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "taggings" ("tag_id", "context", "taggable_id", "taggable_type", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["tag_id", 8], ["context", "preferences"], ["taggable_id", 38], ["taggable_type", "User"], ["created_at", "2015-03-04 15:13:02.235088"]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.3ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = $1 LIMIT 1[0m  [["id", 8]]
+  [1m[35mSQL (0.3ms)[0m  UPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) + 1 WHERE "tags"."id" = $1  [["id", 8]]
+  [1m[36mActsAsTaggableOn::Tagging Exists (0.7ms)[0m  [1mSELECT  1 AS one FROM "taggings" WHERE ("taggings"."tag_id" = 1 AND "taggings"."taggable_type" = 'User' AND "taggings"."taggable_id" = 38 AND "taggings"."context" = 'preferences' AND "taggings"."tagger_id" IS NULL AND "taggings"."tagger_type" IS NULL) LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "taggings" ("tag_id", "context", "taggable_id", "taggable_type", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["tag_id", 1], ["context", "preferences"], ["taggable_id", 38], ["taggable_type", "User"], ["created_at", "2015-03-04 15:13:02.244653"]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.2ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mSQL (0.2ms)[0m  UPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) + 1 WHERE "tags"."id" = $1  [["id", 1]]
+  [1m[36mActsAsTaggableOn::Tagging Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "taggings" WHERE ("taggings"."tag_id" = 3 AND "taggings"."taggable_type" = 'User' AND "taggings"."taggable_id" = 38 AND "taggings"."context" = 'preferences' AND "taggings"."tagger_id" IS NULL AND "taggings"."tagger_type" IS NULL) LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "taggings" ("tag_id", "context", "taggable_id", "taggable_type", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["tag_id", 3], ["context", "preferences"], ["taggable_id", 38], ["taggable_type", "User"], ["created_at", "2015-03-04 15:13:02.249746"]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.3ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mSQL (0.2ms)[0m  UPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) + 1 WHERE "tags"."id" = $1  [["id", 3]]
+  [1m[36mActsAsTaggableOn::Tagging Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "taggings" WHERE ("taggings"."tag_id" = 9 AND "taggings"."taggable_type" = 'User' AND "taggings"."taggable_id" = 38 AND "taggings"."context" = 'preferences' AND "taggings"."tagger_id" IS NULL AND "taggings"."tagger_type" IS NULL) LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "taggings" ("tag_id", "context", "taggable_id", "taggable_type", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["tag_id", 9], ["context", "preferences"], ["taggable_id", 38], ["taggable_type", "User"], ["created_at", "2015-03-04 15:13:02.254867"]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.2ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = $1 LIMIT 1[0m  [["id", 9]]
+  [1m[35mSQL (0.2ms)[0m  UPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) + 1 WHERE "tags"."id" = $1  [["id", 9]]
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (0.6ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'sally@email.com' LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "dog_name", "dog_age", "breed", "owner_name", "address", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["email", "sally@email.com"], ["encrypted_password", "$2a$10$baonDKe460itYBjJp0j8SuC.cu9PCH68h5gTHlCssNKaonQRm0fSW"], ["dog_name", "ted"], ["dog_age", 7], ["breed", "Cavalier King Charles Spaniel"], ["owner_name", "sally"], ["address", "\n  Grosvenor Square, \n  London, \n  W1K"], ["created_at", "2015-03-04 15:13:02.336217"], ["updated_at", "2015-03-04 15:13:02.336217"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  [1m[35mActsAsTaggableOn::Tag Load (0.7ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'preferences' AND taggings.tagger_id IS NULL)  [["taggable_id", 39], ["taggable_type", "User"]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "users" SET "updated_at" = $1 WHERE "users"."id" = $2  [["updated_at", "2015-03-04 15:13:02.346241"], ["id", 39]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.4ms)[0m  [1mSELECT "tags".* FROM "tags" WHERE (LOWER(name) = LOWER('outdoor') OR LOWER(name) = LOWER('female') OR LOWER(name) = LOWER('unneutered') OR LOWER(name) = LOWER('weekday-daytime'))[0m
+  [1m[35mActsAsTaggableOn::Tag Exists (0.3ms)[0m  SELECT  1 AS one FROM "tags" WHERE "tags"."name" = 'female' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "tags" ("name") VALUES ($1) RETURNING "id"[0m  [["name", "female"]]
+  [1m[35mActsAsTaggableOn::Tag Load (0.4ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'preferences' AND taggings.tagger_id IS NULL)  [["taggable_id", 39], ["taggable_type", "User"]]
+  [1m[36mActsAsTaggableOn::Tagging Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "taggings" WHERE ("taggings"."tag_id" = 2 AND "taggings"."taggable_type" = 'User' AND "taggings"."taggable_id" = 39 AND "taggings"."context" = 'preferences' AND "taggings"."tagger_id" IS NULL AND "taggings"."tagger_type" IS NULL) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "taggings" ("tag_id", "context", "taggable_id", "taggable_type", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["tag_id", 2], ["context", "preferences"], ["taggable_id", 39], ["taggable_type", "User"], ["created_at", "2015-03-04 15:13:02.354825"]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.2ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mSQL (0.2ms)[0m  UPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) + 1 WHERE "tags"."id" = $1  [["id", 2]]
+  [1m[36mActsAsTaggableOn::Tagging Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "taggings" WHERE ("taggings"."tag_id" = 10 AND "taggings"."taggable_type" = 'User' AND "taggings"."taggable_id" = 39 AND "taggings"."context" = 'preferences' AND "taggings"."tagger_id" IS NULL AND "taggings"."tagger_type" IS NULL) LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "taggings" ("tag_id", "context", "taggable_id", "taggable_type", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["tag_id", 10], ["context", "preferences"], ["taggable_id", 39], ["taggable_type", "User"], ["created_at", "2015-03-04 15:13:02.359252"]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.2ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = $1 LIMIT 1[0m  [["id", 10]]
+  [1m[35mSQL (0.2ms)[0m  UPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) + 1 WHERE "tags"."id" = $1  [["id", 10]]
+  [1m[36mActsAsTaggableOn::Tagging Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "taggings" WHERE ("taggings"."tag_id" = 7 AND "taggings"."taggable_type" = 'User' AND "taggings"."taggable_id" = 39 AND "taggings"."context" = 'preferences' AND "taggings"."tagger_id" IS NULL AND "taggings"."tagger_type" IS NULL) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "taggings" ("tag_id", "context", "taggable_id", "taggable_type", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["tag_id", 7], ["context", "preferences"], ["taggable_id", 39], ["taggable_type", "User"], ["created_at", "2015-03-04 15:13:02.363757"]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.1ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mSQL (0.1ms)[0m  UPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) + 1 WHERE "tags"."id" = $1  [["id", 7]]
+  [1m[36mActsAsTaggableOn::Tagging Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "taggings" WHERE ("taggings"."tag_id" = 5 AND "taggings"."taggable_type" = 'User' AND "taggings"."taggable_id" = 39 AND "taggings"."context" = 'preferences' AND "taggings"."tagger_id" IS NULL AND "taggings"."tagger_type" IS NULL) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "taggings" ("tag_id", "context", "taggable_id", "taggable_type", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["tag_id", 5], ["context", "preferences"], ["taggable_id", 39], ["taggable_type", "User"], ["created_at", "2015-03-04 15:13:02.367885"]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.1ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  [1m[35mSQL (0.1ms)[0m  UPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) + 1 WHERE "tags"."id" = $1  [["id", 5]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'scruffy@woofy.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "dog_name", "dog_age", "breed", "owner_name", "address", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["email", "scruffy@woofy.com"], ["encrypted_password", "$2a$10$9VfFtLNlVy5WaUZPiVQn9OX1ecbPe8Rn5IX1u.DjylJJnnuSKvW0u"], ["dog_name", "Mr Scruff"], ["dog_age", 2], ["breed", "Yorkshire Terrier"], ["owner_name", "Vinisha"], ["address", "\n  12 Queen's Terrace,\n  London,\n  NW8 6DF\n  "], ["created_at", "2015-03-04 15:13:02.451063"], ["updated_at", "2015-03-04 15:13:02.451063"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  [1m[35mActsAsTaggableOn::Tag Load (0.5ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'preferences' AND taggings.tagger_id IS NULL)  [["taggable_id", 40], ["taggable_type", "User"]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "users" SET "updated_at" = $1 WHERE "users"."id" = $2  [["updated_at", "2015-03-04 15:13:02.457039"], ["id", 40]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.4ms)[0m  [1mSELECT "tags".* FROM "tags" WHERE (LOWER(name) = LOWER('indoor') OR LOWER(name) = LOWER('male') OR LOWER(name) = LOWER('neutered') OR LOWER(name) = LOWER('weekends'))[0m
+  [1m[35mActsAsTaggableOn::Tag Load (0.4ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'preferences' AND taggings.tagger_id IS NULL)  [["taggable_id", 40], ["taggable_type", "User"]]
+  [1m[36mActsAsTaggableOn::Tagging Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "taggings" WHERE ("taggings"."tag_id" = 8 AND "taggings"."taggable_type" = 'User' AND "taggings"."taggable_id" = 40 AND "taggings"."context" = 'preferences' AND "taggings"."tagger_id" IS NULL AND "taggings"."tagger_type" IS NULL) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "taggings" ("tag_id", "context", "taggable_id", "taggable_type", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["tag_id", 8], ["context", "preferences"], ["taggable_id", 40], ["taggable_type", "User"], ["created_at", "2015-03-04 15:13:02.462965"]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.2ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = $1 LIMIT 1[0m  [["id", 8]]
+  [1m[35mSQL (0.2ms)[0m  UPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) + 1 WHERE "tags"."id" = $1  [["id", 8]]
+  [1m[36mActsAsTaggableOn::Tagging Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "taggings" WHERE ("taggings"."tag_id" = 1 AND "taggings"."taggable_type" = 'User' AND "taggings"."taggable_id" = 40 AND "taggings"."context" = 'preferences' AND "taggings"."tagger_id" IS NULL AND "taggings"."tagger_type" IS NULL) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "taggings" ("tag_id", "context", "taggable_id", "taggable_type", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["tag_id", 1], ["context", "preferences"], ["taggable_id", 40], ["taggable_type", "User"], ["created_at", "2015-03-04 15:13:02.467984"]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.1ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mSQL (0.1ms)[0m  UPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) + 1 WHERE "tags"."id" = $1  [["id", 1]]
+  [1m[36mActsAsTaggableOn::Tagging Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "taggings" WHERE ("taggings"."tag_id" = 3 AND "taggings"."taggable_type" = 'User' AND "taggings"."taggable_id" = 40 AND "taggings"."context" = 'preferences' AND "taggings"."tagger_id" IS NULL AND "taggings"."tagger_type" IS NULL) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "taggings" ("tag_id", "context", "taggable_id", "taggable_type", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["tag_id", 3], ["context", "preferences"], ["taggable_id", 40], ["taggable_type", "User"], ["created_at", "2015-03-04 15:13:02.471921"]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.1ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mSQL (0.1ms)[0m  UPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) + 1 WHERE "tags"."id" = $1  [["id", 3]]
+  [1m[36mActsAsTaggableOn::Tagging Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "taggings" WHERE ("taggings"."tag_id" = 9 AND "taggings"."taggable_type" = 'User' AND "taggings"."taggable_id" = 40 AND "taggings"."context" = 'preferences' AND "taggings"."tagger_id" IS NULL AND "taggings"."tagger_type" IS NULL) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "taggings" ("tag_id", "context", "taggable_id", "taggable_type", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["tag_id", 9], ["context", "preferences"], ["taggable_id", 40], ["taggable_type", "User"], ["created_at", "2015-03-04 15:13:02.475841"]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.1ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = $1 LIMIT 1[0m  [["id", 9]]
+  [1m[35mSQL (0.1ms)[0m  UPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) + 1 WHERE "tags"."id" = $1  [["id", 9]]
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'spot@thedog.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "dog_name", "dog_age", "breed", "owner_name", "address", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["email", "spot@thedog.com"], ["encrypted_password", "$2a$10$oFIz4B3vjdtthzhBcGNrWO5CDmqEINSt8J4sljXlWd51mDelQSYWK"], ["dog_name", "Spot"], ["dog_age", 12], ["breed", "Poodle"], ["owner_name", "Vince Vaun"], ["address", "\n  South Lodge,\n  Grove End Road, \n  London, \n  NW8 9ER"], ["created_at", "2015-03-04 15:13:02.560251"], ["updated_at", "2015-03-04 15:13:02.560251"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mActsAsTaggableOn::Tag Load (0.2ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'preferences' AND taggings.tagger_id IS NULL)  [["taggable_id", 41], ["taggable_type", "User"]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "users" SET "updated_at" = $1 WHERE "users"."id" = $2  [["updated_at", "2015-03-04 15:13:02.566217"], ["id", 41]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.4ms)[0m  [1mSELECT "tags".* FROM "tags" WHERE (LOWER(name) = LOWER('outdoor') OR LOWER(name) = LOWER('female') OR LOWER(name) = LOWER('unneutered') OR LOWER(name) = LOWER('weekday-daytime'))[0m
+  [1m[35mActsAsTaggableOn::Tag Load (0.2ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'preferences' AND taggings.tagger_id IS NULL)  [["taggable_id", 41], ["taggable_type", "User"]]
+  [1m[36mActsAsTaggableOn::Tagging Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "taggings" WHERE ("taggings"."tag_id" = 2 AND "taggings"."taggable_type" = 'User' AND "taggings"."taggable_id" = 41 AND "taggings"."context" = 'preferences' AND "taggings"."tagger_id" IS NULL AND "taggings"."tagger_type" IS NULL) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "taggings" ("tag_id", "context", "taggable_id", "taggable_type", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["tag_id", 2], ["context", "preferences"], ["taggable_id", 41], ["taggable_type", "User"], ["created_at", "2015-03-04 15:13:02.571863"]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.1ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mSQL (0.2ms)[0m  UPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) + 1 WHERE "tags"."id" = $1  [["id", 2]]
+  [1m[36mActsAsTaggableOn::Tagging Exists (0.6ms)[0m  [1mSELECT  1 AS one FROM "taggings" WHERE ("taggings"."tag_id" = 10 AND "taggings"."taggable_type" = 'User' AND "taggings"."taggable_id" = 41 AND "taggings"."context" = 'preferences' AND "taggings"."tagger_id" IS NULL AND "taggings"."tagger_type" IS NULL) LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "taggings" ("tag_id", "context", "taggable_id", "taggable_type", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["tag_id", 10], ["context", "preferences"], ["taggable_id", 41], ["taggable_type", "User"], ["created_at", "2015-03-04 15:13:02.576997"]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.1ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = $1 LIMIT 1[0m  [["id", 10]]
+  [1m[35mSQL (0.2ms)[0m  UPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) + 1 WHERE "tags"."id" = $1  [["id", 10]]
+  [1m[36mActsAsTaggableOn::Tagging Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "taggings" WHERE ("taggings"."tag_id" = 7 AND "taggings"."taggable_type" = 'User' AND "taggings"."taggable_id" = 41 AND "taggings"."context" = 'preferences' AND "taggings"."tagger_id" IS NULL AND "taggings"."tagger_type" IS NULL) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "taggings" ("tag_id", "context", "taggable_id", "taggable_type", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["tag_id", 7], ["context", "preferences"], ["taggable_id", 41], ["taggable_type", "User"], ["created_at", "2015-03-04 15:13:02.581764"]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.1ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mSQL (0.3ms)[0m  UPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) + 1 WHERE "tags"."id" = $1  [["id", 7]]
+  [1m[36mActsAsTaggableOn::Tagging Exists (0.6ms)[0m  [1mSELECT  1 AS one FROM "taggings" WHERE ("taggings"."tag_id" = 5 AND "taggings"."taggable_type" = 'User' AND "taggings"."taggable_id" = 41 AND "taggings"."context" = 'preferences' AND "taggings"."tagger_id" IS NULL AND "taggings"."tagger_type" IS NULL) LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "taggings" ("tag_id", "context", "taggable_id", "taggable_type", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["tag_id", 5], ["context", "preferences"], ["taggable_id", 41], ["taggable_type", "User"], ["created_at", "2015-03-04 15:13:02.586570"]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.1ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  [1m[35mSQL (0.2ms)[0m  UPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) + 1 WHERE "tags"."id" = $1  [["id", 5]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'coco@pops.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "dog_name", "dog_age", "breed", "owner_name", "address", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["email", "coco@pops.com"], ["encrypted_password", "$2a$10$LZFAmNIEjMwbdKyKLgkvfe9pr3u9Ko5ne/1EuTKGX6DCd0BK63IDy"], ["dog_name", "coco"], ["dog_age", 15], ["breed", "Dachshund"], ["owner_name", "jane eyre"], ["address", "\n  2-3 Ladbroke Square, \n  London, \n  W11 3LX"], ["created_at", "2015-03-04 15:13:02.669637"], ["updated_at", "2015-03-04 15:13:02.669637"]]
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+  [1m[35mActsAsTaggableOn::Tag Load (0.3ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'preferences' AND taggings.tagger_id IS NULL)  [["taggable_id", 42], ["taggable_type", "User"]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "users" SET "updated_at" = $1 WHERE "users"."id" = $2  [["updated_at", "2015-03-04 15:13:02.678208"], ["id", 42]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.6ms)[0m  [1mSELECT "tags".* FROM "tags" WHERE (LOWER(name) = LOWER('indoor') OR LOWER(name) = LOWER('outdoor') OR LOWER(name) = LOWER('both') OR LOWER(name) = LOWER('unneutered') OR LOWER(name) = LOWER('weekday-evening'))[0m
+  [1m[35mActsAsTaggableOn::Tag Load (0.2ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'preferences' AND taggings.tagger_id IS NULL)  [["taggable_id", 42], ["taggable_type", "User"]]
+  [1m[36mActsAsTaggableOn::Tagging Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "taggings" WHERE ("taggings"."tag_id" = 8 AND "taggings"."taggable_type" = 'User' AND "taggings"."taggable_id" = 42 AND "taggings"."context" = 'preferences' AND "taggings"."tagger_id" IS NULL AND "taggings"."tagger_type" IS NULL) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "taggings" ("tag_id", "context", "taggable_id", "taggable_type", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["tag_id", 8], ["context", "preferences"], ["taggable_id", 42], ["taggable_type", "User"], ["created_at", "2015-03-04 15:13:02.685696"]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.1ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = $1 LIMIT 1[0m  [["id", 8]]
+  [1m[35mSQL (0.2ms)[0m  UPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) + 1 WHERE "tags"."id" = $1  [["id", 8]]
+  [1m[36mActsAsTaggableOn::Tagging Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "taggings" WHERE ("taggings"."tag_id" = 2 AND "taggings"."taggable_type" = 'User' AND "taggings"."taggable_id" = 42 AND "taggings"."context" = 'preferences' AND "taggings"."tagger_id" IS NULL AND "taggings"."tagger_type" IS NULL) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "taggings" ("tag_id", "context", "taggable_id", "taggable_type", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["tag_id", 2], ["context", "preferences"], ["taggable_id", 42], ["taggable_type", "User"], ["created_at", "2015-03-04 15:13:02.690077"]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.1ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mSQL (0.2ms)[0m  UPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) + 1 WHERE "tags"."id" = $1  [["id", 2]]
+  [1m[36mActsAsTaggableOn::Tagging Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "taggings" WHERE ("taggings"."tag_id" = 6 AND "taggings"."taggable_type" = 'User' AND "taggings"."taggable_id" = 42 AND "taggings"."context" = 'preferences' AND "taggings"."tagger_id" IS NULL AND "taggings"."tagger_type" IS NULL) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "taggings" ("tag_id", "context", "taggable_id", "taggable_type", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["tag_id", 6], ["context", "preferences"], ["taggable_id", 42], ["taggable_type", "User"], ["created_at", "2015-03-04 15:13:02.694243"]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.1ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = $1 LIMIT 1[0m  [["id", 6]]
+  [1m[35mSQL (0.1ms)[0m  UPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) + 1 WHERE "tags"."id" = $1  [["id", 6]]
+  [1m[36mActsAsTaggableOn::Tagging Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "taggings" WHERE ("taggings"."tag_id" = 7 AND "taggings"."taggable_type" = 'User' AND "taggings"."taggable_id" = 42 AND "taggings"."context" = 'preferences' AND "taggings"."tagger_id" IS NULL AND "taggings"."tagger_type" IS NULL) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "taggings" ("tag_id", "context", "taggable_id", "taggable_type", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["tag_id", 7], ["context", "preferences"], ["taggable_id", 42], ["taggable_type", "User"], ["created_at", "2015-03-04 15:13:02.698293"]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.1ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mSQL (0.1ms)[0m  UPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) + 1 WHERE "tags"."id" = $1  [["id", 7]]
+  [1m[36mActsAsTaggableOn::Tagging Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "taggings" WHERE ("taggings"."tag_id" = 4 AND "taggings"."taggable_type" = 'User' AND "taggings"."taggable_id" = 42 AND "taggings"."context" = 'preferences' AND "taggings"."tagger_id" IS NULL AND "taggings"."tagger_type" IS NULL) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "taggings" ("tag_id", "context", "taggable_id", "taggable_type", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["tag_id", 4], ["context", "preferences"], ["taggable_id", 42], ["taggable_type", "User"], ["created_at", "2015-03-04 15:13:02.702161"]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.1ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  [1m[35mSQL (0.4ms)[0m  UPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) + 1 WHERE "tags"."id" = $1  [["id", 4]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
