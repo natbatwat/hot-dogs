@@ -24,7 +24,7 @@ class User < ActiveRecord::Base
   # TAGGABLE #
 
   acts_as_taggable
-  acts_as_taggable_on :matches, :preferences
+  acts_as_taggable_on :preferences
 
   # OMNIAUTH #
 
