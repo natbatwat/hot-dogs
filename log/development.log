@@ -69373,3 +69373,421 @@ Started GET "/assets/users-e34c9418c0be04889133177f28523e58.js?body=1" for 127.0
 
 Started GET "/assets/application-80ae95e992827e4ac57a766683d0b7f3.js?body=1" for 127.0.0.1 at 2015-03-04 11:53:38 +0000
 >>>>>>> googlemaps
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-04 14:03:07 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by EventsController#home as HTML
+  Rendered events/home.html.haml within layouts/application (3.6ms)
+  Rendered layouts/_register.html.haml (4.9ms)
+Completed 200 OK in 3839ms (Views: 3778.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-04 14:03:11 +0000
+Processing by EventsController#home as HTML
+  Rendered events/home.html.haml within layouts/application (0.1ms)
+  Rendered layouts/_register.html.haml (0.3ms)
+Completed 200 OK in 340ms (Views: 339.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-04 14:03:11 +0000
+
+
+Started GET "/assets/bootstrap/affix-31984abe1036c1c2f684af192191ce9f.js?body=1" for 127.0.0.1 at 2015-03-04 14:03:11 +0000
+
+
+Started GET "/assets/bootstrap/alert-7c03e11fecf6b3ef100f76ae4f08586e.js?body=1" for 127.0.0.1 at 2015-03-04 14:03:11 +0000
+
+
+Started GET "/assets/bootstrap/button-98bba85be4dcdd597554e0b7ce8e33a2.js?body=1" for 127.0.0.1 at 2015-03-04 14:03:11 +0000
+
+
+Started GET "/assets/bootstrap/carousel-93f34f850a932957c93b7605c79faf45.js?body=1" for 127.0.0.1 at 2015-03-04 14:03:11 +0000
+
+
+Started GET "/assets/bootstrap/collapse-7a82a3d4fb154ded3d2702465e21ca00.js?body=1" for 127.0.0.1 at 2015-03-04 14:03:11 +0000
+
+
+Started GET "/assets/bootstrap/dropdown-65c3929585250221f53bae696936ed44.js?body=1" for 127.0.0.1 at 2015-03-04 14:03:11 +0000
+
+
+Started GET "/assets/bootstrap/tab-a90a1841af8c1eae12bfa5283a8093b0.js?body=1" for 127.0.0.1 at 2015-03-04 14:03:11 +0000
+
+
+Started GET "/assets/match-64e62ddc273c2f5847f30d698ca14b67.js?body=1" for 127.0.0.1 at 2015-03-04 14:03:11 +0000
+
+
+Started GET "/assets/questionnaire-18ba34f13851bc3e019c56c492b603d1.js?body=1" for 127.0.0.1 at 2015-03-04 14:03:11 +0000
+
+
+Started GET "/assets/bootstrap/transition-9e4de96204f41141474e9dbb59570af9.js?body=1" for 127.0.0.1 at 2015-03-04 14:03:12 +0000
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-04 14:03:12 +0000
+
+
+Started GET "/assets/bootstrap/modal-ce380b9327d2cf6c826d8df818ea48a1.js?body=1" for 127.0.0.1 at 2015-03-04 14:03:12 +0000
+
+
+Started GET "/assets/bootstrap/tooltip-4d90d4ee015d2df34a7696864b2ea83c.js?body=1" for 127.0.0.1 at 2015-03-04 14:03:12 +0000
+
+
+Started GET "/assets/bootstrap/popover-5a060f876311e7fcb18f35058070de5a.js?body=1" for 127.0.0.1 at 2015-03-04 14:03:12 +0000
+
+
+Started GET "/assets/bootstrap/scrollspy-e550695030be1d627d1ba91b14792316.js?body=1" for 127.0.0.1 at 2015-03-04 14:03:12 +0000
+
+
+Started GET "/assets/bootstrap-sprockets-00b1738c651720f44abc4bbf70bedb3e.js?body=1" for 127.0.0.1 at 2015-03-04 14:03:12 +0000
+
+
+Started GET "/assets/events-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-04 14:03:12 +0000
+
+
+Started GET "/assets/jquery.raty-c82d49558fb10304a5bc21476147dae4.js?body=1" for 127.0.0.1 at 2015-03-04 14:03:12 +0000
+
+
+Started GET "/assets/letsrate-4d03cf7e7a11899cdc7957804b58f8cc.js?body=1" for 127.0.0.1 at 2015-03-04 14:03:12 +0000
+
+
+Started GET "/assets/playdates-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-04 14:03:12 +0000
+
+
+Started GET "/assets/reviews-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-04 14:03:12 +0000
+
+
+Started GET "/assets/users-e34c9418c0be04889133177f28523e58.js?body=1" for 127.0.0.1 at 2015-03-04 14:03:12 +0000
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-03-04 14:04:28 +0000
+Processing by Users::SessionsController#new as HTML
+  Rendered users/shared/_links.html.erb (12.7ms)
+  Rendered users/sessions/new.html.erb within layouts/application (117.6ms)
+  Rendered layouts/_register.html.haml (0.3ms)
+Completed 200 OK in 496ms (Views: 472.9ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-04 14:04:29 +0000
+
+
+Started GET "/assets/bootstrap/alert-7c03e11fecf6b3ef100f76ae4f08586e.js?body=1" for 127.0.0.1 at 2015-03-04 14:04:29 +0000
+
+
+Started GET "/assets/bootstrap/carousel-93f34f850a932957c93b7605c79faf45.js?body=1" for 127.0.0.1 at 2015-03-04 14:04:29 +0000
+
+
+Started GET "/assets/bootstrap/affix-31984abe1036c1c2f684af192191ce9f.js?body=1" for 127.0.0.1 at 2015-03-04 14:04:29 +0000
+
+
+Started GET "/assets/bootstrap/button-98bba85be4dcdd597554e0b7ce8e33a2.js?body=1" for 127.0.0.1 at 2015-03-04 14:04:29 +0000
+
+
+Started GET "/assets/bootstrap/dropdown-65c3929585250221f53bae696936ed44.js?body=1" for 127.0.0.1 at 2015-03-04 14:04:29 +0000
+
+
+Started GET "/assets/bootstrap/collapse-7a82a3d4fb154ded3d2702465e21ca00.js?body=1" for 127.0.0.1 at 2015-03-04 14:04:29 +0000
+
+
+Started GET "/assets/bootstrap/tab-a90a1841af8c1eae12bfa5283a8093b0.js?body=1" for 127.0.0.1 at 2015-03-04 14:04:29 +0000
+
+
+Started GET "/assets/bootstrap/transition-9e4de96204f41141474e9dbb59570af9.js?body=1" for 127.0.0.1 at 2015-03-04 14:04:29 +0000
+
+
+Started GET "/assets/bootstrap/scrollspy-e550695030be1d627d1ba91b14792316.js?body=1" for 127.0.0.1 at 2015-03-04 14:04:29 +0000
+
+
+Started GET "/assets/bootstrap/modal-ce380b9327d2cf6c826d8df818ea48a1.js?body=1" for 127.0.0.1 at 2015-03-04 14:04:29 +0000
+
+
+Started GET "/assets/bootstrap/tooltip-4d90d4ee015d2df34a7696864b2ea83c.js?body=1" for 127.0.0.1 at 2015-03-04 14:04:29 +0000
+
+
+Started GET "/assets/bootstrap/popover-5a060f876311e7fcb18f35058070de5a.js?body=1" for 127.0.0.1 at 2015-03-04 14:04:29 +0000
+
+
+Started GET "/assets/bootstrap-sprockets-00b1738c651720f44abc4bbf70bedb3e.js?body=1" for 127.0.0.1 at 2015-03-04 14:04:29 +0000
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-04 14:04:29 +0000
+
+
+Started GET "/assets/events-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-04 14:04:29 +0000
+
+
+Started GET "/assets/jquery.raty-c82d49558fb10304a5bc21476147dae4.js?body=1" for 127.0.0.1 at 2015-03-04 14:04:29 +0000
+
+
+Started GET "/assets/letsrate-4d03cf7e7a11899cdc7957804b58f8cc.js?body=1" for 127.0.0.1 at 2015-03-04 14:04:29 +0000
+
+
+Started GET "/assets/playdates-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-04 14:04:29 +0000
+
+
+Started GET "/assets/reviews-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-04 14:04:29 +0000
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2015-03-04 14:04:33 +0000
+Processing by Users::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"a8dAf3ycu6GutZP7bdyce/19wgq7V8xlBCpzu+nvxXLMRIyc7Af/jiuJK2Y5vFI+J6FHH2p+xCrayE6UYgJ3wA==", "user"=>{"email"=>"bob@email.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.9ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["email", "bob@email.com"]]
+Completed 401 Unauthorized in 47ms
+Processing by Users::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"a8dAf3ycu6GutZP7bdyce/19wgq7V8xlBCpzu+nvxXLMRIyc7Af/jiuJK2Y5vFI+J6FHH2p+xCrayE6UYgJ3wA==", "user"=>{"email"=>"bob@email.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendered users/shared/_links.html.erb (6.6ms)
+  Rendered users/sessions/new.html.erb within layouts/application (19.6ms)
+  Rendered layouts/_register.html.haml (0.3ms)
+Completed 200 OK in 383ms (Views: 306.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap/alert-7c03e11fecf6b3ef100f76ae4f08586e.js?body=1" for 127.0.0.1 at 2015-03-04 14:04:34 +0000
+
+
+Started GET "/assets/bootstrap/button-98bba85be4dcdd597554e0b7ce8e33a2.js?body=1" for 127.0.0.1 at 2015-03-04 14:04:34 +0000
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-04 14:04:34 +0000
+
+
+Started GET "/assets/bootstrap/affix-31984abe1036c1c2f684af192191ce9f.js?body=1" for 127.0.0.1 at 2015-03-04 14:04:34 +0000
+
+
+Started GET "/assets/bootstrap/collapse-7a82a3d4fb154ded3d2702465e21ca00.js?body=1" for 127.0.0.1 at 2015-03-04 14:04:34 +0000
+
+
+Started GET "/assets/bootstrap/dropdown-65c3929585250221f53bae696936ed44.js?body=1" for 127.0.0.1 at 2015-03-04 14:04:34 +0000
+
+
+Started GET "/assets/bootstrap/carousel-93f34f850a932957c93b7605c79faf45.js?body=1" for 127.0.0.1 at 2015-03-04 14:04:34 +0000
+
+
+Started GET "/assets/bootstrap/tab-a90a1841af8c1eae12bfa5283a8093b0.js?body=1" for 127.0.0.1 at 2015-03-04 14:04:34 +0000
+
+
+Started GET "/assets/bootstrap/scrollspy-e550695030be1d627d1ba91b14792316.js?body=1" for 127.0.0.1 at 2015-03-04 14:04:34 +0000
+
+
+Started GET "/assets/bootstrap/transition-9e4de96204f41141474e9dbb59570af9.js?body=1" for 127.0.0.1 at 2015-03-04 14:04:34 +0000
+
+
+Started GET "/assets/bootstrap/modal-ce380b9327d2cf6c826d8df818ea48a1.js?body=1" for 127.0.0.1 at 2015-03-04 14:04:34 +0000
+
+
+Started GET "/assets/bootstrap/tooltip-4d90d4ee015d2df34a7696864b2ea83c.js?body=1" for 127.0.0.1 at 2015-03-04 14:04:34 +0000
+
+
+Started GET "/assets/bootstrap/popover-5a060f876311e7fcb18f35058070de5a.js?body=1" for 127.0.0.1 at 2015-03-04 14:04:34 +0000
+
+
+Started GET "/assets/bootstrap-sprockets-00b1738c651720f44abc4bbf70bedb3e.js?body=1" for 127.0.0.1 at 2015-03-04 14:04:34 +0000
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-04 14:04:34 +0000
+
+
+Started GET "/assets/events-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-04 14:04:34 +0000
+
+
+Started GET "/assets/jquery.raty-c82d49558fb10304a5bc21476147dae4.js?body=1" for 127.0.0.1 at 2015-03-04 14:04:34 +0000
+
+
+Started GET "/assets/letsrate-4d03cf7e7a11899cdc7957804b58f8cc.js?body=1" for 127.0.0.1 at 2015-03-04 14:04:34 +0000
+
+
+Started GET "/assets/playdates-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-04 14:04:34 +0000
+
+
+Started GET "/assets/reviews-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-04 14:04:34 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (4.5ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'events'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (3.7ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'events_users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (6.7ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'playdates'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (4.6ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'playdates_users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (3.7ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'reviews'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (3.8ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'taggings'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (3.7ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'tags'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (4.7ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'user_matches'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (3.6ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (3.6ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'votes'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mSQL (0.7ms)[0m  DELETE FROM "users"
+  [1m[36mSQL (0.6ms)[0m  [1mDELETE FROM "events"[0m
+  [1m[35mSQL (0.9ms)[0m  DELETE FROM "playdates"
+  [1m[36mSQL (0.5ms)[0m  [1mDELETE FROM "reviews"[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mUser Exists (0.7ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'bob@email.com' LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "dog_name", "dog_age", "breed", "owner_name", "address", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["email", "bob@email.com"], ["encrypted_password", "$2a$10$Cl0MxeXNGorlIAAXEVX0h.xdTDUkwQtGnXjYN7EX/yy6193cmFIGy"], ["dog_name", "bax"], ["dog_age", 1], ["breed", "golden retriever"], ["owner_name", "bob"], ["address", "\n  Imperial Wharf, \n  Townmead Road, Fulham, \n  London, SW6 2TW"], ["created_at", "2015-03-04 14:04:50.538044"], ["updated_at", "2015-03-04 14:04:50.538044"]]
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+  [1m[35mActsAsTaggableOn::Tag Load (1.0ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'preferences' AND taggings.tagger_id IS NULL)  [["taggable_id", 14], ["taggable_type", "User"]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'sally@email.com' LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "dog_name", "dog_age", "breed", "owner_name", "address", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["email", "sally@email.com"], ["encrypted_password", "$2a$10$2wE2LLZlK.AMOkFJ8Iz8LugQfl4UfbLPy0hzBlgpbBc2g7dZSHO3e"], ["dog_name", "ted"], ["dog_age", 7], ["breed", "Cavalier King Charles Spaniel"], ["owner_name", "sally"], ["address", "\n  Grosvenor Square, \n  London, \n  W1K"], ["created_at", "2015-03-04 14:04:50.659574"], ["updated_at", "2015-03-04 14:04:50.659574"]]
+  [1m[35m (11.8ms)[0m  COMMIT
+  [1m[36mActsAsTaggableOn::Tag Load (0.9ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'preferences' AND taggings.tagger_id IS NULL)[0m  [["taggable_id", 15], ["taggable_type", "User"]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'scruffy@woofy.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "dog_name", "dog_age", "breed", "owner_name", "address", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["email", "scruffy@woofy.com"], ["encrypted_password", "$2a$10$K2QLirWgNaVmx9eWsSoDQujCscHzX7F5nJpeh0aXPhPPIKuzsmqKi"], ["dog_name", "Mr Scruff"], ["dog_age", 2], ["breed", "Yorkshire Terrier"], ["owner_name", "Vinisha"], ["address", "\n  12 Queen's Terrace,\n  London,\n  NW8 6DF\n  "], ["created_at", "2015-03-04 14:04:50.763769"], ["updated_at", "2015-03-04 14:04:50.763769"]]
+  [1m[36m (17.9ms)[0m  [1mCOMMIT[0m
+  [1m[35mActsAsTaggableOn::Tag Load (0.9ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'preferences' AND taggings.tagger_id IS NULL)  [["taggable_id", 16], ["taggable_type", "User"]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'spot@thedog.com' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "dog_name", "dog_age", "breed", "owner_name", "address", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["email", "spot@thedog.com"], ["encrypted_password", "$2a$10$3ssPrEEBH08d8B2tg0NFQ.AbzDWk7Qc2f5T4t1i.MGD/q5yMikBN."], ["dog_name", "Spot"], ["dog_age", 12], ["breed", "Poodle"], ["owner_name", "Vince Vaun"], ["address", "\n  South Lodge,\n  Grove End Road, \n  London, \n  NW8 9ER"], ["created_at", "2015-03-04 14:04:50.868288"], ["updated_at", "2015-03-04 14:04:50.868288"]]
+  [1m[35m (24.1ms)[0m  COMMIT
+  [1m[36mActsAsTaggableOn::Tag Load (0.9ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'preferences' AND taggings.tagger_id IS NULL)[0m  [["taggable_id", 17], ["taggable_type", "User"]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'coco@pops.com' LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "dog_name", "dog_age", "breed", "owner_name", "address", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["email", "coco@pops.com"], ["encrypted_password", "$2a$10$3Q6lzSxc4sNetYlxFVf23uWW6ErakkwsSbLdkfFMHkOTUHcFbu35q"], ["dog_name", "coco"], ["dog_age", 15], ["breed", "Dachshund"], ["owner_name", "jane eyre"], ["address", "\n  2-3 Ladbroke Square, \n  London, \n  W11 3LX"], ["created_at", "2015-03-04 14:04:50.986655"], ["updated_at", "2015-03-04 14:04:50.986655"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mActsAsTaggableOn::Tag Load (0.9ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'preferences' AND taggings.tagger_id IS NULL)  [["taggable_id", 18], ["taggable_type", "User"]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'perdita@dalmations.com' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "dog_name", "dog_age", "breed", "owner_name", "address", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["email", "perdita@dalmations.com"], ["encrypted_password", "$2a$10$Tkx.YNUz0MCpHiHSqz8Et.OAFNPCfAiDq.3bDVseaazdwzHi8tPLq"], ["dog_name", "perdita"], ["dog_age", 5], ["breed", "Siberian Husky"], ["owner_name", "pongo"], ["address", "\n  Berkeley Square, \n  Mayfair, \n  London, \n  W1J"], ["created_at", "2015-03-04 14:04:51.072038"], ["updated_at", "2015-03-04 14:04:51.072038"]]
+  [1m[35m (0.7ms)[0m  COMMIT
+  [1m[36mActsAsTaggableOn::Tag Load (0.9ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'preferences' AND taggings.tagger_id IS NULL)[0m  [["taggable_id", 19], ["taggable_type", "User"]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (13.4ms)[0m  [1mINSERT INTO "playdates" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "date at bax house"], ["created_at", "2015-03-04 14:04:51.087251"], ["updated_at", "2015-03-04 14:04:51.087251"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "playdates" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "date at primrose hill park"], ["created_at", "2015-03-04 14:04:51.103306"], ["updated_at", "2015-03-04 14:04:51.103306"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "playdates" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "date at a cafe"], ["created_at", "2015-03-04 14:04:51.105816"], ["updated_at", "2015-03-04 14:04:51.105816"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "playdates" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "strole down marlyborne high street"], ["created_at", "2015-03-04 14:04:51.107732"], ["updated_at", "2015-03-04 14:04:51.107732"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "playdates" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "date at doggy yoga"], ["created_at", "2015-03-04 14:04:51.109497"], ["updated_at", "2015-03-04 14:04:51.109497"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "playdates" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "date at winter wonderland"], ["created_at", "2015-03-04 14:04:51.111501"], ["updated_at", "2015-03-04 14:04:51.111501"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "events" ("name", "place", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Doggy Brunch"], ["place", "Gaucho, Hampstead"], ["created_at", "2015-03-04 14:04:51.119860"], ["updated_at", "2015-03-04 14:04:51.119860"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "events" ("name", "place", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["name", "Doggy Walks"], ["place", "Regents Park"], ["created_at", "2015-03-04 14:04:51.123090"], ["updated_at", "2015-03-04 14:04:51.123090"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "events" ("name", "place", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Doggy Speed Dating"], ["place", "The Duke of York, St Johns Wood"], ["created_at", "2015-03-04 14:04:51.125060"], ["updated_at", "2015-03-04 14:04:51.125060"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "events" ("name", "place", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["name", "Dog Show"], ["place", "Royal Albert Hall"], ["created_at", "2015-03-04 14:04:51.126947"], ["updated_at", "2015-03-04 14:04:51.126947"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("name", "place", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Doggy Olympics"], ["place", "Hyde Park"], ["created_at", "2015-03-04 14:04:51.129085"], ["updated_at", "2015-03-04 14:04:51.129085"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "events" ("name", "place", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["name", "Doggy Obstical Course"], ["place", "Hampstead Heath"], ["created_at", "2015-03-04 14:04:51.131294"], ["updated_at", "2015-03-04 14:04:51.131294"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m

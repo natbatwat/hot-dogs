@@ -14,9 +14,9 @@ u1 = User.create(
   breed: "golden retriever",
   owner_name: "bob",
   address: "
-Imperial Wharf, 
-Townmead Road, Fulham, 
-London, SW6 2TW"
+  Imperial Wharf, 
+  Townmead Road, Fulham, 
+  London, SW6 2TW"
   )
 u1.preference_list.add("indoor", "male", "neutered", "weekends")
 
