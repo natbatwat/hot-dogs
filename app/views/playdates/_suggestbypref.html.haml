@@ -1,17 +1,19 @@
 .suggest-by-preference
   %p You like these things:
-  = current_user.preference_list
+  - current_user.preference_list.each do |pref|
+    %p=pref
+    %p You are highly matches with these hot dogs: 
+    - if current_user.preference_list.include?("female") == true
+      - high_matches = User.tagged_with(pref, :any => true) && User.where(gender:"#{female}")
+    - elsif current_user.preference_list.include?("male") == true
+      - high_matches = User.tagged_with(pref, :any => true) && User.where(gender:"#{male}")
+    - else
+      - high_matches = User.tagged_with(pref, :any => true) && User.where(gender:"#{both}")
+    = high_matches.dog_name
 
-  %p You are highly matches with these hot dogs: 
-  - high_matches = User.tagged_with(current_user.preference_list, :any => true)
-  - high_matches.each do |dog|
-    =link_to(dog.dog_name, user_path(dog))
-
-
-  %p These hot dogs might be your dark horse: 
-  - low_matches = User.tagged_with(current_user.preference_list, :any => true)
-  - low_matches.each do |dog|
-    =link_to(dog.dog_name, user_path(dog))
+    %p These hot dogs might be your dark horse: 
+    - low_matches = User.tagged_with(current_user.preference_list, :any => true)
+    =low_matches.dog_name
 
 -# .search-by
 -#   %button Male
