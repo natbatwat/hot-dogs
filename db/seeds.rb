@@ -19,6 +19,7 @@ u1 = User.create(
   London, SW6 2TW"
   )
 u1.preference_list = "indoor, male, neutered, weekends"
+u1.save
 
 u2 = User.create(
   email:"sally@email.com",
@@ -34,6 +35,7 @@ u2 = User.create(
   W1K"
   )
 u2.preference_list = "outdoor, female, unneutered, weekday-daytime"
+u2.save
 
 u3 = User.create!(
   email:"scruffy@woofy.com",
@@ -50,6 +52,7 @@ u3 = User.create!(
   "
   )
 u3.preference_list = "indoor, male, neutered, weekends"
+u3.save
 
 u4 = User.create(
   email:"spot@thedog.com",
@@ -66,6 +69,7 @@ u4 = User.create(
   NW8 9ER"
   )
 u4.preference_list = "outdoor, female, unneutered, weekday-daytime"
+u4.save
 
 u5 = User.create(
   email:"coco@pops.com",
@@ -81,6 +85,7 @@ u5 = User.create(
   W11 3LX"
   )
 u5.preference_list = "indoor, outdoor, both, unneutered, weekday-evening"
+u5.save
 
 u6 = User.create(
   email:"perdita@dalmations.com",
@@ -97,7 +102,7 @@ u6 = User.create(
   W1J"
   )
 u6.preference_list = "indoor, outdoor, both, unneutered, weekday-evening"
-
+u6.save
 
 p1 = Playdate.create(
   name:"date at bax house"

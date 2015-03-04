@@ -75026,3 +75026,251 @@ Started GET "/assets/users-e34c9418c0be04889133177f28523e58.js?body=1" for 127.0
   [1m[36mUser Load (1.5ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY "users"."id" ASC LIMIT 1[0m
   [1m[35mActsAsTaggableOn::Tag Load (0.8ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'preferences' AND taggings.tagger_id IS NULL)  [["taggable_id", 20], ["taggable_type", "User"]]
   [1m[36mActsAsTaggableOn::Tag Load (0.6ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND "taggings"."context" = $3[0m  [["taggable_id", 20], ["taggable_type", "User"], ["context", "preferences"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mSQL (1.4ms)[0m  DELETE FROM "users"
+  [1m[36mSQL (1.0ms)[0m  [1mDELETE FROM "events"[0m
+  [1m[35mSQL (1.0ms)[0m  DELETE FROM "playdates"
+  [1m[36mSQL (0.5ms)[0m  [1mDELETE FROM "reviews"[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mUser Exists (0.9ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'bob@email.com' LIMIT 1[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "dog_name", "dog_age", "breed", "owner_name", "address", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["email", "bob@email.com"], ["encrypted_password", "$2a$10$0ziL0yngedAg8IRXcUfZSOKpheOH4i.MhCupOjpMCWRAu6Hbqr3.m"], ["dog_name", "bax"], ["dog_age", 1], ["breed", "golden retriever"], ["owner_name", "bob"], ["address", "\n  Imperial Wharf, \n  Townmead Road, Fulham, \n  London, SW6 2TW"], ["created_at", "2015-03-04 15:03:40.059073"], ["updated_at", "2015-03-04 15:03:40.059073"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mActsAsTaggableOn::Tag Load (0.9ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'preferences' AND taggings.tagger_id IS NULL)  [["taggable_id", 26], ["taggable_type", "User"]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'sally@email.com' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "dog_name", "dog_age", "breed", "owner_name", "address", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["email", "sally@email.com"], ["encrypted_password", "$2a$10$ZsTTW838tySvBMlr.vnxhONN5dBswCrmEifd1px0yUQvx/USBi5lO"], ["dog_name", "ted"], ["dog_age", 7], ["breed", "Cavalier King Charles Spaniel"], ["owner_name", "sally"], ["address", "\n  Grosvenor Square, \n  London, \n  W1K"], ["created_at", "2015-03-04 15:03:40.165075"], ["updated_at", "2015-03-04 15:03:40.165075"]]
+  [1m[35m (17.0ms)[0m  COMMIT
+  [1m[36mActsAsTaggableOn::Tag Load (0.9ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'preferences' AND taggings.tagger_id IS NULL)[0m  [["taggable_id", 27], ["taggable_type", "User"]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'scruffy@woofy.com' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "dog_name", "dog_age", "breed", "owner_name", "address", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["email", "scruffy@woofy.com"], ["encrypted_password", "$2a$10$iYsnTnNn5v8982uEFD93ku8ZEXW.xGUwbd/OEXXbfYw2Gao.w/GSO"], ["dog_name", "Mr Scruff"], ["dog_age", 2], ["breed", "Yorkshire Terrier"], ["owner_name", "Vinisha"], ["address", "\n  12 Queen's Terrace,\n  London,\n  NW8 6DF\n  "], ["created_at", "2015-03-04 15:03:40.274531"], ["updated_at", "2015-03-04 15:03:40.274531"]]
+  [1m[36m (16.9ms)[0m  [1mCOMMIT[0m
+  [1m[35mActsAsTaggableOn::Tag Load (0.7ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'preferences' AND taggings.tagger_id IS NULL)  [["taggable_id", 28], ["taggable_type", "User"]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'spot@thedog.com' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "dog_name", "dog_age", "breed", "owner_name", "address", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["email", "spot@thedog.com"], ["encrypted_password", "$2a$10$gtWeNq2WS9CwNFgsrvjU1uLNQSSJTihA63Ud/9PL1XwkrfALJZKNm"], ["dog_name", "Spot"], ["dog_age", 12], ["breed", "Poodle"], ["owner_name", "Vince Vaun"], ["address", "\n  South Lodge,\n  Grove End Road, \n  London, \n  NW8 9ER"], ["created_at", "2015-03-04 15:03:40.379146"], ["updated_at", "2015-03-04 15:03:40.379146"]]
+  [1m[35m (25.0ms)[0m  COMMIT
+  [1m[36mActsAsTaggableOn::Tag Load (1.0ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'preferences' AND taggings.tagger_id IS NULL)[0m  [["taggable_id", 29], ["taggable_type", "User"]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'coco@pops.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "dog_name", "dog_age", "breed", "owner_name", "address", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["email", "coco@pops.com"], ["encrypted_password", "$2a$10$PhwlcAeiNl4sh7eGwdhYye.3/0lntgqCbnr7u3uIgZABB4sU689R6"], ["dog_name", "coco"], ["dog_age", 15], ["breed", "Dachshund"], ["owner_name", "jane eyre"], ["address", "\n  2-3 Ladbroke Square, \n  London, \n  W11 3LX"], ["created_at", "2015-03-04 15:03:40.497136"], ["updated_at", "2015-03-04 15:03:40.497136"]]
+  [1m[36m (17.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mActsAsTaggableOn::Tag Load (0.9ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'preferences' AND taggings.tagger_id IS NULL)  [["taggable_id", 30], ["taggable_type", "User"]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'perdita@dalmations.com' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "dog_name", "dog_age", "breed", "owner_name", "address", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["email", "perdita@dalmations.com"], ["encrypted_password", "$2a$10$DKsSO5VM8ddQe3Hl.irQY.UumJRFh9msWzmze3rulUHHIo9uR1dmG"], ["dog_name", "perdita"], ["dog_age", 5], ["breed", "Siberian Husky"], ["owner_name", "pongo"], ["address", "\n  Berkeley Square, \n  Mayfair, \n  London, \n  W1J"], ["created_at", "2015-03-04 15:03:40.601101"], ["updated_at", "2015-03-04 15:03:40.601101"]]
+  [1m[35m (24.0ms)[0m  COMMIT
+  [1m[36mActsAsTaggableOn::Tag Load (0.9ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'preferences' AND taggings.tagger_id IS NULL)[0m  [["taggable_id", 31], ["taggable_type", "User"]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "playdates" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "date at bax house"], ["created_at", "2015-03-04 15:03:40.641783"], ["updated_at", "2015-03-04 15:03:40.641783"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "playdates" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "date at primrose hill park"], ["created_at", "2015-03-04 15:03:40.644197"], ["updated_at", "2015-03-04 15:03:40.644197"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "playdates" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "date at a cafe"], ["created_at", "2015-03-04 15:03:40.646161"], ["updated_at", "2015-03-04 15:03:40.646161"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "playdates" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "strole down marlyborne high street"], ["created_at", "2015-03-04 15:03:40.647906"], ["updated_at", "2015-03-04 15:03:40.647906"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "playdates" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "date at doggy yoga"], ["created_at", "2015-03-04 15:03:40.649671"], ["updated_at", "2015-03-04 15:03:40.649671"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "playdates" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "date at winter wonderland"], ["created_at", "2015-03-04 15:03:40.651395"], ["updated_at", "2015-03-04 15:03:40.651395"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("name", "place", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Doggy Brunch"], ["place", "Gaucho, Hampstead"], ["created_at", "2015-03-04 15:03:40.659002"], ["updated_at", "2015-03-04 15:03:40.659002"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "events" ("name", "place", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["name", "Doggy Walks"], ["place", "Regents Park"], ["created_at", "2015-03-04 15:03:40.661496"], ["updated_at", "2015-03-04 15:03:40.661496"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "events" ("name", "place", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Doggy Speed Dating"], ["place", "The Duke of York, St Johns Wood"], ["created_at", "2015-03-04 15:03:40.663288"], ["updated_at", "2015-03-04 15:03:40.663288"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "events" ("name", "place", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["name", "Dog Show"], ["place", "Royal Albert Hall"], ["created_at", "2015-03-04 15:03:40.665258"], ["updated_at", "2015-03-04 15:03:40.665258"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "events" ("name", "place", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Doggy Olympics"], ["place", "Hyde Park"], ["created_at", "2015-03-04 15:03:40.667450"], ["updated_at", "2015-03-04 15:03:40.667450"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "events" ("name", "place", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["name", "Doggy Obstical Course"], ["place", "Hampstead Heath"], ["created_at", "2015-03-04 15:03:40.669539"], ["updated_at", "2015-03-04 15:03:40.669539"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[36mUser Load (1.5ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mActsAsTaggableOn::Tag Load (0.8ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND "taggings"."context" = $3  [["taggable_id", 26], ["taggable_type", "User"], ["context", "preferences"]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.5ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'preferences' AND taggings.tagger_id IS NULL)[0m  [["taggable_id", 26], ["taggable_type", "User"]]
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-04 15:04:42 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by EventsController#home as HTML
+  Rendered events/home.html.haml within layouts/application (5.6ms)
+  [1m[35mUser Load (0.8ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 20]]
+  Rendered layouts/_register.html.haml (3.1ms)
+Completed 200 OK in 571ms (Views: 515.7ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-04 15:04:43 +0000
+
+
+Started GET "/assets/bootstrap/button-98bba85be4dcdd597554e0b7ce8e33a2.js?body=1" for 127.0.0.1 at 2015-03-04 15:04:43 +0000
+
+
+Started GET "/assets/bootstrap/alert-7c03e11fecf6b3ef100f76ae4f08586e.js?body=1" for 127.0.0.1 at 2015-03-04 15:04:43 +0000
+
+
+Started GET "/assets/bootstrap/collapse-7a82a3d4fb154ded3d2702465e21ca00.js?body=1" for 127.0.0.1 at 2015-03-04 15:04:43 +0000
+
+
+Started GET "/assets/bootstrap/affix-31984abe1036c1c2f684af192191ce9f.js?body=1" for 127.0.0.1 at 2015-03-04 15:04:43 +0000
+
+
+Started GET "/assets/bootstrap/carousel-93f34f850a932957c93b7605c79faf45.js?body=1" for 127.0.0.1 at 2015-03-04 15:04:43 +0000
+
+
+Started GET "/assets/bootstrap/dropdown-65c3929585250221f53bae696936ed44.js?body=1" for 127.0.0.1 at 2015-03-04 15:04:43 +0000
+
+
+Started GET "/assets/bootstrap/tab-a90a1841af8c1eae12bfa5283a8093b0.js?body=1" for 127.0.0.1 at 2015-03-04 15:04:43 +0000
+
+
+Started GET "/assets/bootstrap/transition-9e4de96204f41141474e9dbb59570af9.js?body=1" for 127.0.0.1 at 2015-03-04 15:04:43 +0000
+
+
+Started GET "/assets/bootstrap/scrollspy-e550695030be1d627d1ba91b14792316.js?body=1" for 127.0.0.1 at 2015-03-04 15:04:43 +0000
+
+
+Started GET "/assets/bootstrap/modal-ce380b9327d2cf6c826d8df818ea48a1.js?body=1" for 127.0.0.1 at 2015-03-04 15:04:43 +0000
+
+
+Started GET "/assets/bootstrap/tooltip-4d90d4ee015d2df34a7696864b2ea83c.js?body=1" for 127.0.0.1 at 2015-03-04 15:04:43 +0000
+
+
+Started GET "/assets/bootstrap/popover-5a060f876311e7fcb18f35058070de5a.js?body=1" for 127.0.0.1 at 2015-03-04 15:04:43 +0000
+
+
+Started GET "/assets/bootstrap-sprockets-00b1738c651720f44abc4bbf70bedb3e.js?body=1" for 127.0.0.1 at 2015-03-04 15:04:43 +0000
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-04 15:04:43 +0000
+
+
+Started GET "/assets/buddy-580d1eaac8f55e59a3fae282a68b2b40.js?body=1" for 127.0.0.1 at 2015-03-04 15:04:43 +0000
+
+
+Started GET "/assets/events-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-04 15:04:43 +0000
+
+
+Started GET "/assets/jquery.raty-c82d49558fb10304a5bc21476147dae4.js?body=1" for 127.0.0.1 at 2015-03-04 15:04:43 +0000
+
+
+Started GET "/assets/letsrate-4d03cf7e7a11899cdc7957804b58f8cc.js?body=1" for 127.0.0.1 at 2015-03-04 15:04:43 +0000
+
+
+Started GET "/assets/playdates-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-04 15:04:43 +0000
+
+
+Started GET "/assets/questionnaire-18ba34f13851bc3e019c56c492b603d1.js?body=1" for 127.0.0.1 at 2015-03-04 15:04:43 +0000
+
+
+Started GET "/assets/reviews-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-04 15:04:43 +0000
+
+
+Started GET "/assets/users-e34c9418c0be04889133177f28523e58.js?body=1" for 127.0.0.1 at 2015-03-04 15:04:43 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mSQL (241.8ms)[0m  DELETE FROM "users"
+  [1m[36mSQL (1.5ms)[0m  [1mDELETE FROM "events"[0m
+  [1m[35mSQL (1.2ms)[0m  DELETE FROM "playdates"
+  [1m[36mSQL (0.8ms)[0m  [1mDELETE FROM "reviews"[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mUser Exists (0.9ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'bob@email.com' LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "dog_name", "dog_age", "breed", "owner_name", "address", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["email", "bob@email.com"], ["encrypted_password", "$2a$10$IZb7IBt6lhG4oHDYauydoeLIoNTsr2dHXgT6s1mkbJHD5dF5pKBUO"], ["dog_name", "bax"], ["dog_age", 1], ["breed", "golden retriever"], ["owner_name", "bob"], ["address", "\n  Imperial Wharf, \n  Townmead Road, Fulham, \n  London, SW6 2TW"], ["created_at", "2015-03-04 15:04:57.826859"], ["updated_at", "2015-03-04 15:04:57.826859"]]
+  [1m[36m (2.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mActsAsTaggableOn::Tag Load (1.2ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'preferences' AND taggings.tagger_id IS NULL)  [["taggable_id", 32], ["taggable_type", "User"]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  UPDATE "users" SET "updated_at" = $1 WHERE "users"."id" = $2  [["updated_at", "2015-03-04 15:04:57.862044"], ["id", 32]]
+  [1m[36mActsAsTaggableOn::Tag Load (1.6ms)[0m  [1mSELECT "tags".* FROM "tags" WHERE (LOWER(name) = LOWER('indoor') OR LOWER(name) = LOWER('male') OR LOWER(name) = LOWER('neutered') OR LOWER(name) = LOWER('weekends'))[0m
+  [1m[35mActsAsTaggableOn::Tag Exists (0.4ms)[0m  SELECT  1 AS one FROM "tags" WHERE "tags"."name" = 'weekends' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "tags" ("name") VALUES ($1) RETURNING "id"[0m  [["name", "weekends"]]
+  [1m[35mActsAsTaggableOn::Tag Load (0.8ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'preferences' AND taggings.tagger_id IS NULL)  [["taggable_id", 32], ["taggable_type", "User"]]
+  [1m[36mActsAsTaggableOn::Tagging Exists (0.7ms)[0m  [1mSELECT  1 AS one FROM "taggings" WHERE ("taggings"."tag_id" = 8 AND "taggings"."taggable_type" = 'User' AND "taggings"."taggable_id" = 32 AND "taggings"."context" = 'preferences' AND "taggings"."tagger_id" IS NULL AND "taggings"."tagger_type" IS NULL) LIMIT 1[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "taggings" ("tag_id", "context", "taggable_id", "taggable_type", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["tag_id", 8], ["context", "preferences"], ["taggable_id", 32], ["taggable_type", "User"], ["created_at", "2015-03-04 15:04:58.035466"]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.4ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = $1 LIMIT 1[0m  [["id", 8]]
+  [1m[35mSQL (0.4ms)[0m  UPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) + 1 WHERE "tags"."id" = $1  [["id", 8]]
+  [1m[36mActsAsTaggableOn::Tagging Exists (0.6ms)[0m  [1mSELECT  1 AS one FROM "taggings" WHERE ("taggings"."tag_id" = 1 AND "taggings"."taggable_type" = 'User' AND "taggings"."taggable_id" = 32 AND "taggings"."context" = 'preferences' AND "taggings"."tagger_id" IS NULL AND "taggings"."tagger_type" IS NULL) LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "taggings" ("tag_id", "context", "taggable_id", "taggable_type", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["tag_id", 1], ["context", "preferences"], ["taggable_id", 32], ["taggable_type", "User"], ["created_at", "2015-03-04 15:04:58.059796"]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.3ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mSQL (0.2ms)[0m  UPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) + 1 WHERE "tags"."id" = $1  [["id", 1]]
+  [1m[36mActsAsTaggableOn::Tagging Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "taggings" WHERE ("taggings"."tag_id" = 3 AND "taggings"."taggable_type" = 'User' AND "taggings"."taggable_id" = 32 AND "taggings"."context" = 'preferences' AND "taggings"."tagger_id" IS NULL AND "taggings"."tagger_type" IS NULL) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "taggings" ("tag_id", "context", "taggable_id", "taggable_type", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["tag_id", 3], ["context", "preferences"], ["taggable_id", 32], ["taggable_type", "User"], ["created_at", "2015-03-04 15:04:58.064965"]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.2ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mSQL (0.2ms)[0m  UPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) + 1 WHERE "tags"."id" = $1  [["id", 3]]
+  [1m[36mActsAsTaggableOn::Tagging Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "taggings" WHERE ("taggings"."tag_id" = 9 AND "taggings"."taggable_type" = 'User' AND "taggings"."taggable_id" = 32 AND "taggings"."context" = 'preferences' AND "taggings"."tagger_id" IS NULL AND "taggings"."tagger_type" IS NULL) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "taggings" ("tag_id", "context", "taggable_id", "taggable_type", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["tag_id", 9], ["context", "preferences"], ["taggable_id", 32], ["taggable_type", "User"], ["created_at", "2015-03-04 15:04:58.069396"]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.2ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = $1 LIMIT 1[0m  [["id", 9]]
+  [1m[35mSQL (0.2ms)[0m  UPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) + 1 WHERE "tags"."id" = $1  [["id", 9]]
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'sally@email.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "dog_name", "dog_age", "breed", "owner_name", "address", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["email", "sally@email.com"], ["encrypted_password", "$2a$10$5dacuLshMVFSJylX9IEeZ.p.KzABF5YJXhUgbsPeDp2J5bo3d.XK2"], ["dog_name", "ted"], ["dog_age", 7], ["breed", "Cavalier King Charles Spaniel"], ["owner_name", "sally"], ["address", "\n  Grosvenor Square, \n  London, \n  W1K"], ["created_at", "2015-03-04 15:04:58.151586"], ["updated_at", "2015-03-04 15:04:58.151586"]]
+  [1m[36m (22.2ms)[0m  [1mCOMMIT[0m
+  [1m[35mActsAsTaggableOn::Tag Load (0.9ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'preferences' AND taggings.tagger_id IS NULL)  [["taggable_id", 33], ["taggable_type", "User"]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'scruffy@woofy.com' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "dog_name", "dog_age", "breed", "owner_name", "address", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["email", "scruffy@woofy.com"], ["encrypted_password", "$2a$10$E13U8Q76ov2oMzqZvgn/yOLPSVsQx0h26TBL8lf9rS2.Zb9AT3j2e"], ["dog_name", "Mr Scruff"], ["dog_age", 2], ["breed", "Yorkshire Terrier"], ["owner_name", "Vinisha"], ["address", "\n  12 Queen's Terrace,\n  London,\n  NW8 6DF\n  "], ["created_at", "2015-03-04 15:04:58.267425"], ["updated_at", "2015-03-04 15:04:58.267425"]]
+  [1m[35m (17.0ms)[0m  COMMIT
+  [1m[36mActsAsTaggableOn::Tag Load (0.9ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'preferences' AND taggings.tagger_id IS NULL)[0m  [["taggable_id", 34], ["taggable_type", "User"]]
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mUser Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'spot@thedog.com' LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "dog_name", "dog_age", "breed", "owner_name", "address", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["email", "spot@thedog.com"], ["encrypted_password", "$2a$10$DXbq2fPs4NYy4RcEqtuuV.mx2goOk1C8oqwvzLiLQcG.pVLG3rsyu"], ["dog_name", "Spot"], ["dog_age", 12], ["breed", "Poodle"], ["owner_name", "Vince Vaun"], ["address", "\n  South Lodge,\n  Grove End Road, \n  London, \n  NW8 9ER"], ["created_at", "2015-03-04 15:04:58.376723"], ["updated_at", "2015-03-04 15:04:58.376723"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  [1m[35mActsAsTaggableOn::Tag Load (0.7ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'preferences' AND taggings.tagger_id IS NULL)  [["taggable_id", 35], ["taggable_type", "User"]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'coco@pops.com' LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "dog_name", "dog_age", "breed", "owner_name", "address", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["email", "coco@pops.com"], ["encrypted_password", "$2a$10$K2lkRjxl2BWldWtYoB.UberHJ0M6j5JaPu.n9uEKDDX2mSdJjqXC6"], ["dog_name", "coco"], ["dog_age", 15], ["breed", "Dachshund"], ["owner_name", "jane eyre"], ["address", "\n  2-3 Ladbroke Square, \n  London, \n  W11 3LX"], ["created_at", "2015-03-04 15:04:58.474888"], ["updated_at", "2015-03-04 15:04:58.474888"]]
+  [1m[35m (9.5ms)[0m  COMMIT
+  [1m[36mActsAsTaggableOn::Tag Load (0.9ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'preferences' AND taggings.tagger_id IS NULL)[0m  [["taggable_id", 36], ["taggable_type", "User"]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'perdita@dalmations.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "dog_name", "dog_age", "breed", "owner_name", "address", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["email", "perdita@dalmations.com"], ["encrypted_password", "$2a$10$brQBtFzq.ihwXxKFKvdQ.u7I.oUzDysFBNEuWoNprsdm5Gn9bWSbO"], ["dog_name", "perdita"], ["dog_age", 5], ["breed", "Siberian Husky"], ["owner_name", "pongo"], ["address", "\n  Berkeley Square, \n  Mayfair, \n  London, \n  W1J"], ["created_at", "2015-03-04 15:04:58.576474"], ["updated_at", "2015-03-04 15:04:58.576474"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  [1m[35mActsAsTaggableOn::Tag Load (0.2ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'preferences' AND taggings.tagger_id IS NULL)  [["taggable_id", 37], ["taggable_type", "User"]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "playdates" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "date at bax house"], ["created_at", "2015-03-04 15:04:58.588477"], ["updated_at", "2015-03-04 15:04:58.588477"]]
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "playdates" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "date at primrose hill park"], ["created_at", "2015-03-04 15:04:58.591882"], ["updated_at", "2015-03-04 15:04:58.591882"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "playdates" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "date at a cafe"], ["created_at", "2015-03-04 15:04:58.593784"], ["updated_at", "2015-03-04 15:04:58.593784"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "playdates" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "strole down marlyborne high street"], ["created_at", "2015-03-04 15:04:58.595540"], ["updated_at", "2015-03-04 15:04:58.595540"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "playdates" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "date at doggy yoga"], ["created_at", "2015-03-04 15:04:58.597361"], ["updated_at", "2015-03-04 15:04:58.597361"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "playdates" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "date at winter wonderland"], ["created_at", "2015-03-04 15:04:58.599232"], ["updated_at", "2015-03-04 15:04:58.599232"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "events" ("name", "place", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["name", "Doggy Brunch"], ["place", "Gaucho, Hampstead"], ["created_at", "2015-03-04 15:04:58.606657"], ["updated_at", "2015-03-04 15:04:58.606657"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "events" ("name", "place", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Doggy Walks"], ["place", "Regents Park"], ["created_at", "2015-03-04 15:04:58.610561"], ["updated_at", "2015-03-04 15:04:58.610561"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "events" ("name", "place", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["name", "Doggy Speed Dating"], ["place", "The Duke of York, St Johns Wood"], ["created_at", "2015-03-04 15:04:58.613600"], ["updated_at", "2015-03-04 15:04:58.613600"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "events" ("name", "place", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Dog Show"], ["place", "Royal Albert Hall"], ["created_at", "2015-03-04 15:04:58.615567"], ["updated_at", "2015-03-04 15:04:58.615567"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "events" ("name", "place", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["name", "Doggy Olympics"], ["place", "Hyde Park"], ["created_at", "2015-03-04 15:04:58.617476"], ["updated_at", "2015-03-04 15:04:58.617476"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "events" ("name", "place", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Doggy Obstical Course"], ["place", "Hampstead Heath"], ["created_at", "2015-03-04 15:04:58.619371"], ["updated_at", "2015-03-04 15:04:58.619371"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36mUser Load (1.5ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mActsAsTaggableOn::Tag Load (0.9ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND "taggings"."context" = $3  [["taggable_id", 32], ["taggable_type", "User"], ["context", "preferences"]]
