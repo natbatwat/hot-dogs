@@ -29,6 +29,8 @@ class UsersController < ApplicationController
       dog_requester_id: param_dog_requester_id,
       dog_requestee_id: param_dog_requestee_id
       )
+    current_user.user_matches << param_dog_requestee
+    param_dog_requestee.user_matches << current_user
   end
 
 
