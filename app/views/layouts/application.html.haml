@@ -25,20 +25,8 @@
     %p.notice= notice
     %p.alert= alert
 
-<<<<<<< HEAD
-    .index
-    %ul
-      %li= link_to("Events", events_path)
-    = render 'layouts/nav'
-    = yield
-
-
-    =image_tag "pointer.jpg"
-=======
-    
     - if user_signed_in?
       .nav
         = render 'layouts/nav'
 
     = yield
->>>>>>> b93ea10c89153aacc258144a89ef81b4bebafe76

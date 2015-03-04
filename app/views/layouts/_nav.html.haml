@@ -1,4 +1,4 @@
--# NAVIGATION BAR 
+-# NAVIGATION BAR
 -# only visible to logged in users
 
 %ul
@@ -8,4 +8,4 @@
   %li= link_to('New Event', new_event_path)
 
 %ul
-  %li=link_to('Profile', user_path(current_user))
+  %li= link_to('Profile', user_path(current_user))
