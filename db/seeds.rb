@@ -5,6 +5,52 @@ Review.delete_all
 
 # SEED DATA FOR ASSOCIATIONS TESTING #
 # USERS #
+
+40.times do |n|
+  breed= ["Yorkshire Terrier", "Poodle", "Dachshund", "Bull Dog", "Golden Retriever", "Dalmation", "Chihuahua", "Siberian Husky", "Labrador", "Maltease", "Cavalier King Charles Spaniel", "German Shepherd", "Pug"]
+  address= ["Imperial Wharf, 
+Townmead Road, Fulham, 
+London, SW6 2TW", "Grosvenor Square, 
+  London, 
+  W1K", "12 Queen's Terrace,
+  London,
+  NW8 6DF", "
+  South Lodge,
+  Grove End Road, 
+  London, 
+  NW8 9ER", "2-3 Ladbroke Square, 
+  London, 
+  W11 3LX", "Berkeley Square, 
+  Mayfair, 
+  London, 
+  W1J" ]  
+  a= ["female", "male", "both"]
+  b= ["outdoor", "indoor"]
+  c= ["neutered", "unneutered"]
+  d= ["weekends", "weekday-daytime", "weekday-evening"]
+  email="example-#{n+1}@test.com"
+  password= "password"
+  password_confirmation= "password"
+  dog_name= Faker::Name.first_name
+  dog_age= Faker::Number.number(1)
+  breed= breed.shuffle.pop
+  owner_name= Faker::Name.name
+  address= address.shuffle.pop
+  
+  User.create!(email: email,
+  password: password,
+  password_confirmation: password_confirmation,
+  dog_name: dog_name,
+  dog_age: dog_age,
+  breed: breed,
+  owner_name: owner_name,
+  address: address
+  )
+
+  u= User.last
+  u.preference_list.add(a.shuffle.pop, b.shuffle.pop, c.shuffle.pop, d.shuffle.pop)
+end
+
 u1 = User.create(
   email:"bob@email.com",
   password: "password",
