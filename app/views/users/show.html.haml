@@ -7,16 +7,27 @@
     %p= image_tag @user.gravatar_url
   -else 
     %p= @user.owner_picture 
-  %p= @user.email
-  %p#address= @user.address 
-  %p#owner-name= @user.owner_name 
-  %p#dog-name= @user.dog_name 
-  %p#dog-age= @user.dog_age
-  %p= @user.dog_bio 
+  %p Email Address:
+  = @user.email
+  %p Residential Address:
+  %address#address
+    = @user.address 
+  %p#owner-name Name of Owner:
+  = @user.owner_name 
+  %p#dog-name Name of Dog:
+  = @user.dog_name 
+  %p#dog-age Age of Dog:
+  = @user.dog_age
+  %p Dog's Bio:
+  = @user.dog_bio 
   %p= @user.gender 
-  %p= @user.breed 
-  %p= @user.neutered 
-
+  %p Breed of Dog:
+  = @user.breed 
+  %p Neutered Status:
+  = @user.neutered 
+  
+  %p user_rating :
+  -# = rating_for @user, "rating_for" , :star => 10
 -# Google Maps #
 #map-canvas
 
@@ -32,3 +43,6 @@
     - current_user.user_matches.each do |buddy|
       - buds = User.where(id:buddy.dog_requestee_id)
       
+
+
+= javascript_include_tag "application", params[:controller]

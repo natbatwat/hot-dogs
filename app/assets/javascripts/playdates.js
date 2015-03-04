@@ -1,5 +1,6 @@
 function initialise(){
-  var mapCanvas = $('#map-canvas2')[0];
+  console.log('hotdog!')
+  var mapCanvas = $('#map-canvas')[0];
   var myLatLng = new google.maps.LatLng(51.5361, -0.1751);
   var mapOptions = {
     center: myLatLng,
@@ -47,7 +48,7 @@ function initialise(){
 // //   map.setCenter(options.position);
 
 // // }
-// google.maps.event.addDomListener(document, 'ready', initialise);
 $(document).ready(function(){
+// google.maps.event.addDomListener(window, 'load', initialise);
   initialise();
 })
