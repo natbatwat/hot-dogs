@@ -1,19 +1,42 @@
 .suggest-by-preference
-  %p You like these things:
+  %p You want these qualities in your date:
   - current_user.preference_list.each do |pref|
     %p=pref
-    %p You are highly matches with these hot dogs: 
-    - if current_user.preference_list.include?("female") == true
-      - high_matches = User.tagged_with(pref, :any => true) && User.where(gender:"#{female}")
-    - elsif current_user.preference_list.include?("male") == true
-      - high_matches = User.tagged_with(pref, :any => true) && User.where(gender:"#{male}")
-    - else
-      - high_matches = User.tagged_with(pref, :any => true) && User.where(gender:"#{both}")
-    = high_matches.dog_name
+  %p You are highly matched with these hot dogs: 
+  - if current_user.preference_list.include?("female") && current_user.preference_list.include?("neutered") === true
+    - high_matches =  User.where(gender:"female", neutered:true) && User.tagged_with(current_user.preference_list, :any => true)
+    - high_matches.each do |highmatch|
+      %p= highmatch.dog_name
+  - elsif current_user.preference_list.include?("male") && current_user.preference_list.include?("neutered") === true
+    - high_matches = User.where(gender:"male", neutered:true) && User.tagged_with(current_user.preference_list, :any => true)
+    - high_matches.each do |highmatch|
+      = highmatch.dog_name
+  - elsif current_user.preference_list.include?("male") && current_user.preference_list.include?("unneutered") === true
+    - high_matches = User.where(gender:"male", neutered:false) && User.tagged_with(current_user.preference_list, :any => true)
+    - high_matches.each do |highmatch|
+      = highmatch.dog_name
+  - elsif current_user.preference_list.include?("female") && current_user.preference_list.include?("unneutered") === true
+    - high_matches = User.where(gender:"female", neutered:false) && User.tagged_with(current_user.preference_list, :any => true)
+    - high_matches.each do |highmatch|
+      = highmatch.dog_name
+  - elsif current_user.preference_list.include?("both") && current_user.preference_list.include?("unneutered") === true
+    - high_matches = User.where(neutered:false) && User.tagged_with(current_user.preference_list, :any => true)
+    - high_matches.each do |highmatch|
+      = highmatch.dog_name
+  - elsif current_user.preference_list.include?("both") && current_user.preference_list.include?("neutered") === true
+    - high_matches = User.where(neutered:true) && User.tagged_with(current_user.preference_list, :any => true)
+    - high_matches.each do |highmatch|
+      = highmatch.dog_name
+  - else
+    - high_matches = User.tagged_with(current_user.preference_list, :match_all => true) 
+    - high_matches.each do |highmatch|
+      = highmatch.dog_name
 
-    %p These hot dogs might be your dark horse: 
-    - low_matches = User.tagged_with(current_user.preference_list, :any => true)
-    =low_matches.dog_name
+  %p You might find something special in these hot dogs: 
+  - possible_low_matches = User.tagged_with(current_user.preference_list, :any => true)
+  - low_matches = possible_low_matches - high_matches
+  - low_matches.each do |lowmatch|
+    =lowmatch.dog_name
 
 -# .search-by
 -#   %button Male
