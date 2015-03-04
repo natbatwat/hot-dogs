@@ -16,6 +16,9 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
 gem 'acts-as-taggable-on', '~> 3.4'
 gem 'bootstrap-sass', '~> 3.3.3'
+gem 'omniauth-facebook'
+gem 'formtastic', '~> 3.0'
+gem 'gravtastic'
 
 gem 'chronic'
 gem "paperclip", "~> 4.2"
@@ -32,4 +35,6 @@ group :development, :test do
   gem 'pry-byebug'
   gem 'web-console', '~> 2.0'
   gem 'spring'
+  gem "better_errors"
+  gem "binding_of_caller"
 end

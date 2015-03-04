@@ -1,0 +1,14 @@
+%h2 My Playdates
+=current_user.owner_name
+and
+=current_user.dog_name
+Playdates
+
+- @user_playdates = current_user.playdates 
+- @user_playdates.each do |playdate|
+  %p= playdate.name
+  %p= playdate.description
+  %p= playdate.date
+  %p= playdate.time
+  %p= playdate.location
+  %p= link_to(playdate.name, playdate_path(playdate))
