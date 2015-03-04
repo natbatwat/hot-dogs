@@ -18,6 +18,19 @@ class UsersController < ApplicationController
     current_user.save
   end
 
+  def create_match
+    binding.pry
+    match_fields = params[:user]
+    param_dog_requester = match_fields[0] 
+    param_dog_requestee = match_fields[1] 
+    param_dog_requester_id = match_fields[2]
+    param_dog_requestee_id = match_fields[2]
+    @match = UserMatch.create(
+      dog_requester_id: param_dog_requester_id,
+      dog_requestee_id: param_dog_requestee_id
+      )
+  end
+
 
   def questionnaire
     @user = User.find(params[:id])
@@ -25,5 +38,9 @@ class UsersController < ApplicationController
 
   def user_params
     params.require(:user).permit(:id, :dog_name, :owner_name, :dog_age, :dog_bio, :owner_bio, :gender, :breed, :neutered, :address, :user_rating, :dog_picture, :owner_picture, :preference_list => [])
+  end
+
+  def user_match_params
+    params.require(:user_matches).permit(:id, :dog_requester_id, :dog_requestee_id)
   end
 end

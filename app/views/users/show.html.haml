@@ -1,17 +1,16 @@
 %p Preferences:
 = current_user.preference_list
 .profile-page
+  %p#dog-picture= @user.dog_picture 
   -if @user.owner_picture === nil 
     %p= image_tag @user.gravatar_url
   -else 
     %p= @user.owner_picture 
   %p= @user.email
   %p#address= @user.address 
-  %p= @user.owner_name 
-  
-  %p= @user.dog_name 
-  %p= @user.dog_picture 
-  %p= @user.dog_age
+  %p#owner-name= @user.owner_name 
+  %p#dog-name= @user.dog_name 
+  %p#dog-age= @user.dog_age
   %p= @user.dog_bio 
   %p= @user.gender 
   %p= @user.breed 
@@ -21,6 +20,6 @@
 #map-canvas
 
 -# Add Buddy Button #
-%button{:data => {:dog2_id => @user.id}}
-  %span Add Buddy
-  %span.hide Buddy Requested
+%button#add-buddy-button{:data => {:dog_requester_id => current_user.id, :dog_requester => current_user, :dog_requestee_id => @user.id, :dog_requestee => @user}}
+  %span.buddy-status Add Buddy
+  %span.buddy-status.hide Buddy Requested
