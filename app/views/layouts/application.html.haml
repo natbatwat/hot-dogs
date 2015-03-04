@@ -8,12 +8,13 @@
       = current_user.email
 
     = stylesheet_link_tag    'application', media: 'all'
- 
+
 
     -# %script{:src => "https://maps.googleapis.com/maps/api/js?key=AIzaSyA00iEetE8yy2uZY4ejEskfM6zypsXnhps&libraries=places"}
 
     %script{:src => "https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"}
     = javascript_include_tag 'application'
+    = javascript_include_tag :defaults
     = csrf_meta_tags
 
   %body
