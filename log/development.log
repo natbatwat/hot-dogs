@@ -49872,3 +49872,47 @@ WHERE c.contype = 'f'
   AND t3.nspname = ANY (current_schemas(false))
 ORDER BY c.conname
 
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36mUserMatch Load (0.6ms)[0m  [1mSELECT "user_matches".* FROM "user_matches"[0m
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (3.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36mUserMatch Load (0.6ms)[0m  [1mSELECT "user_matches".* FROM "user_matches" WHERE "user_matches"."dog_requester_id" = $1[0m  [["dog_requester_id", 1]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "user_matches" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", "2015-03-04 11:43:00.758599"], ["updated_at", "2015-03-04 11:43:00.758599"]]
+PG::NotNullViolation: ERROR:  null value in column "dog_requester_id" violates not-null constraint
+DETAIL:  Failing row contains (2, null, null, 2015-03-04 11:43:00.758599, 2015-03-04 11:43:00.758599).
+: INSERT INTO "user_matches" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36mUserMatch Load (0.4ms)[0m  [1mSELECT "user_matches".* FROM "user_matches"[0m
+  [1m[35mUserMatch Load (1.0ms)[0m  SELECT  "user_matches".* FROM "user_matches"  ORDER BY "user_matches"."id" ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.4ms)[0m  INSERT INTO "user_matches" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"  [["created_at", "2015-03-04 11:43:32.610056"], ["updated_at", "2015-03-04 11:43:32.610056"]]
+PG::NotNullViolation: ERROR:  null value in column "dog_requester_id" violates not-null constraint
+DETAIL:  Failing row contains (3, null, null, 2015-03-04 11:43:32.610056, 2015-03-04 11:43:32.610056).
+: INSERT INTO "user_matches" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "user_matches" ("dog_requester_id", "dog_requestee_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["dog_requester_id", 1], ["dog_requestee_id", 2], ["created_at", "2015-03-04 11:44:03.746109"], ["updated_at", "2015-03-04 11:44:03.746109"]]
+  [1m[35m (1.3ms)[0m  COMMIT
+  [1m[36mUserMatch Load (0.4ms)[0m  [1mSELECT "user_matches".* FROM "user_matches"[0m
+  [1m[35mUserMatch Load (0.4ms)[0m  SELECT "user_matches".* FROM "user_matches" WHERE "user_matches"."dog_requester_id" = $1  [["dog_requester_id", 2]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "user_matches" ("dog_requester_id", "dog_requestee_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["dog_requester_id", 1], ["dog_requestee_id", 2], ["created_at", "2015-03-04 11:47:09.753907"], ["updated_at", "2015-03-04 11:47:09.753907"]]
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mUserMatch Load (0.5ms)[0m  SELECT "user_matches".* FROM "user_matches"
+  [1m[36mUserMatch Load (0.6ms)[0m  [1mSELECT  "user_matches".* FROM "user_matches"  ORDER BY "user_matches"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (1.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
