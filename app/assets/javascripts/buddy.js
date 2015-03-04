@@ -12,7 +12,7 @@ $(document).ready(function(){
     match_fields.push(match_raw_data.dogRequester, match_raw_data.dogRequestee, match_raw_data.dogRequesterId, match_raw_data.dogRequesteeId)
     console.log(match_fields);
     $.ajax({
-      url: match_raw_data.dogRequesteeId + '/create_match',
+      url: match_raw_data.dogRequesterId + '/create_match',
       method: 'PUT',
       dataType: 'json',
       data: {user:match_fields}

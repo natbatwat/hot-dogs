@@ -29,8 +29,9 @@ class UsersController < ApplicationController
       dog_requestee_id: param_dog_requestee_id
       )
     current_user.user_matches << param_dog_requestee
+    param_dog_requester.save
     param_dog_requestee.user_matches << current_user
-    binding.pry
+    param_dog_requestee.save
   end
 
 

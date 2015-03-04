@@ -21,6 +21,14 @@
 #map-canvas
 
 -# Add Buddy Button #
-%button#add-buddy-button{:data => {:dog_requester_id => current_user.id, :dog_requester => current_user, :dog_requestee_id => @user.id, :dog_requestee => @user}}
-  %span.buddy-status Add Buddy
-  %span.buddy-status.hide Buddy Requested
+- if @user.id != current_user.id
+  %button#add-buddy-button{:data => {:dog_requester_id => current_user.id, :dog_requester => current_user, :dog_requestee_id => @user.id, :dog_requestee => @user}}
+    %span.buddy-status Add Buddy
+    %span.buddy-status.hide Buddy Requested
+
+- if @user.id === current_user.id
+  .buddies
+    %p Your buddies are: 
+    - current_user.user_matches.each do |buddy|
+      - buds = User.where(id:buddy.dog_requestee_id)
+      
