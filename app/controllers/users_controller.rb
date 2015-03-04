@@ -19,7 +19,6 @@ class UsersController < ApplicationController
   end
 
   def create_match
-    binding.pry
     match_fields = params[:user]
     param_dog_requester = match_fields[0] 
     param_dog_requestee = match_fields[1] 
@@ -31,6 +30,7 @@ class UsersController < ApplicationController
       )
     current_user.user_matches << param_dog_requestee
     param_dog_requestee.user_matches << current_user
+    binding.pry
   end
 
 
