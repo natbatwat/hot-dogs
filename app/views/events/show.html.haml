@@ -2,8 +2,6 @@
 
 %p= "This event takes place in #{@event.place}. This event is rated a #{@event.event_rating} star event."
 
-
-%p= link_to('Edit', edit_event_path(@event))
-%p= link_to('Delete', event_path(@event), method: :delete)
-
-%p= link_to('Add New Event', new_event_path)
+- if @event.organizer_id === current_user.id
+  %p= link_to('Edit', edit_event_path(@event))
+  %p= link_to('Delete', event_path(@event), method: :delete)

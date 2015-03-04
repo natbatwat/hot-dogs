@@ -56,21 +56,24 @@ u1 = User.create(
   password: "password",
   password_confirmation: "password",
   dog_name: "bax",
+  gender:"male",
   dog_age: 1,
   breed: "golden retriever",
   owner_name: "bob",
   address: "
-Imperial Wharf, 
-Townmead Road, Fulham, 
-London, SW6 2TW"
+  Imperial Wharf, 
+  Townmead Road, Fulham, 
+  London, SW6 2TW"
   )
-u1.preference_list.add("indoor", "male", "neutered", "weekends")
+u1.preference_list = "indoor, male, neutered, weekends"
+u1.save
 
 u2 = User.create(
   email:"sally@email.com",
   password: "password",
   password_confirmation: "password",
   dog_name: "ted",
+  gender:"male",
   dog_age: 7,
   breed: "Cavalier King Charles Spaniel",
   owner_name: "sally",
@@ -79,7 +82,8 @@ u2 = User.create(
   London, 
   W1K"
   )
-u2.preference_list.add("outdoor", "female", "unneutered", "weekday-daytime")
+u2.preference_list = "outdoor, female, unneutered, weekday-daytime"
+u2.save
 
 u3 = User.create!(
   email:"scruffy@woofy.com",
@@ -87,6 +91,7 @@ u3 = User.create!(
   password_confirmation: "password",
   dog_name: "Mr Scruff",
   dog_age: 2,
+  gender:"male",
   breed: "Yorkshire Terrier",
   owner_name: "Vinisha",
   address: "
@@ -95,7 +100,8 @@ u3 = User.create!(
   NW8 6DF
   "
   )
-u3.preference_list.add("indoor", "male", "neutered", "weekends")
+u3.preference_list = "indoor, male, neutered, weekends"
+u3.save
 
 u4 = User.create(
   email:"spot@thedog.com",
@@ -104,6 +110,7 @@ u4 = User.create(
   dog_name: "Spot",
   dog_age: 12,
   breed: "Poodle",
+  gender:"female",
   owner_name: "Vince Vaun",
   address: "
   South Lodge,
@@ -111,13 +118,15 @@ u4 = User.create(
   London, 
   NW8 9ER"
   )
-u4.preference_list.add("outdoor", "female", "unneutered", "weekday-daytime")
+u4.preference_list = "outdoor, female, unneutered, weekday-daytime"
+u4.save
 
 u5 = User.create(
   email:"coco@pops.com",
   password: "password",
   password_confirmation: "password",
   dog_name: "coco",
+  gender:"female",
   dog_age: 15,
   breed: "Dachshund",
   owner_name: "jane eyre",
@@ -126,13 +135,15 @@ u5 = User.create(
   London, 
   W11 3LX"
   )
-u5.preference_list.add("indoor", "outdoor", "both", "unneutered", "weekday-evening")
+u5.preference_list = "indoor, outdoor, both, unneutered, weekday-evening"
+u5.save
 
 u6 = User.create(
   email:"perdita@dalmations.com",
   password: "password",
   password_confirmation: "password",
   dog_name: "perdita",
+  gender:"female",
   dog_age: 5,
   breed: "Siberian Husky",
   owner_name: "pongo",
@@ -142,8 +153,8 @@ u6 = User.create(
   London, 
   W1J"
   )
-u6.preference_list.add("indoor", "outdoor", "both", "unneutered", "weekday-evening")
-
+u6.preference_list = "indoor, outdoor, both, unneutered, weekday-evening"
+u6.save
 
 p1 = Playdate.create(
   name:"date at bax house"

@@ -1,28 +1,60 @@
 .suggest-by-preference
-  %p You like these things:
-  = current_user.preference_list
+  %p You want these qualities in your date:
+  - current_user.preference_list.each do |pref|
+    %p=pref
+  %p You are highly matched with these hot dogs: 
+  - if current_user.preference_list.include?("female") && current_user.preference_list.include?("neutered") === true
+    - high_matches =  User.where(gender:"female", neutered:true) && User.tagged_with(current_user.preference_list, :any => true)
+    - high_matches -= [current_user]
+    - high_matches.each do |highmatch|
+      %p= link_to(highmatch.dog_name, user_path(highmatch))
 
-  %p These hot dogs like the same things too: 
-  - suggested_dates = current_user.find_related_preferences
-  - suggested_dates.each do |dog|
-    =link_to(dog.dog_name, user_path(dog))
+  - elsif current_user.preference_list.include?("male") && current_user.preference_list.include?("neutered") === true
+    - high_matches = User.where(gender:"male", neutered:true) && User.tagged_with(current_user.preference_list, :any => true)
+    - high_matches.each do |highmatch|
+      = link_to(highmatch.dog_name, user_path(highmatch))
+  - elsif current_user.preference_list.include?("male") && current_user.preference_list.include?("unneutered") === true
+    - high_matches = User.where(gender:"male", neutered:false) && User.tagged_with(current_user.preference_list, :any => true)
+    - high_matches.each do |highmatch|
+      = link_to(highmatch.dog_name, user_path(highmatch))
+  - elsif current_user.preference_list.include?("female") && current_user.preference_list.include?("unneutered") === true
+    - high_matches = User.where(gender:"female", neutered:false) && User.tagged_with(current_user.preference_list, :any => true)
+    - high_matches.each do |highmatch|
+      = link_to(highmatch.dog_name, user_path(highmatch))
+  - elsif current_user.preference_list.include?("both") && current_user.preference_list.include?("unneutered") === true
+    - high_matches = User.where(neutered:false) && User.tagged_with(current_user.preference_list, :any => true)
+    - high_matches.each do |highmatch|
+      = link_to(highmatch.dog_name, user_path(highmatch))
+  - elsif current_user.preference_list.include?("both") && current_user.preference_list.include?("neutered") === true
+    - high_matches = User.where(neutered:true) && User.tagged_with(current_user.preference_list, :any => true)
+    - high_matches.each do |highmatch|
+      = link_to(highmatch.dog_name, user_path(highmatch))
+  - else
+    - high_matches = User.tagged_with(current_user.preference_list, :match_all => true) 
+    - high_matches.each do |highmatch|
+      = link_to(highmatch.dog_name, user_path(highmatch))
 
-.search-by
-  %button Male
-  %button Female
+  %p You might find something special in these hot dogs: 
+  - possible_low_matches = User.tagged_with(current_user.preference_list, :any => true)
+  - low_matches = possible_low_matches - high_matches
+  - low_matches.each do |lowmatch|
+    =lowmatch.dog_name
 
-- User.tagged_with(["#{}"], :match_all => true)
-- User.tagged_with(["#{}"], :any => true)
-- User.tagged_with(["#{}"], :exclude => true)
+-# .search-by
+-#   %button Male
+-#   %button Female
 
--User.where(gender:"male").each do |male|
- =male.dog_name
--User.where(gender:"female").each do |female|
--User.where(breed:"#{}").each do |female|
--User.where(neutered:true).each do |neutered|
--User.where(neutered:false).each do |unneutered|
--User.where(neutered:false).each do |unneutered|
--User.where(dog_age>5).each do |young|
--User.where(5<dog_age<10).each do |middle|
--User.where(dog_age>10).each do |old|
+-# - User.tagged_with(["#{}"], :match_all => true)
+-# - User.tagged_with(["#{}"], :any => true)
+-# - User.tagged_with(["#{}"], :exclude => true)
 
+-# -User.where(gender:"male").each do |male|
+-#   =male.dog_name
+-# -User.where(gender:"female").each do |female|
+-# -User.where(breed:"#{}").each do |female|
+-# -User.where(neutered:true).each do |neutered|
+-# -User.where(neutered:false).each do |unneutered|
+-# -User.where(neutered:false).each do |unneutered|
+-# -User.where(dog_age>5).each do |young|
+-# -User.where(5<dog_age<10).each do |middle|
+-# -User.where(dog_age>10).each do |old|
