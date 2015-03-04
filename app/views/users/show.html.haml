@@ -25,8 +25,11 @@
   = @user.breed 
   %p Neutered Status:
   = @user.neutered 
-  
-  %p user_rating :
+
+  %p user_rating:
+  .exemple
+    .basic{data: {average: 12, id: 1}}
+    .basic{data: {average: 8, id: 2}}
   -# = rating_for @user, "rating_for" , :star => 10
 -# Google Maps #
 #map-canvas

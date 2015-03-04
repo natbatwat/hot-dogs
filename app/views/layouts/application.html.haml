@@ -8,7 +8,6 @@
       = current_user.email
 
     = stylesheet_link_tag    'application', media: 'all'
- 
 
     %script{:src => "https://maps.googleapis.com/maps/api/js?key=AIzaSyA00iEetE8yy2uZY4ejEskfM6zypsXnhps&libraries=places"}
 
@@ -28,5 +27,6 @@
     - if user_signed_in?
       .nav
         = render 'layouts/nav'
+  
 
   = yield
