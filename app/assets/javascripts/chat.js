@@ -7,17 +7,22 @@ function request(method, url, data){
   })
 }
 
-function getMessage() {
-  $('.send').on('click', function(){
-    $('#inputbox')
-  });
-
+function pushMessage() {
+    request('POST', '/messages', {message:{text: $('#inputbox').val()}}).done(function(data){
+      appendMessage(data);
+      $('#inputbox').val('');
+    });
 }
-function appendMessage(){
 
+function appendMessage(msg){
+  $('<li class="message">'+msg+'</li>').prependTo('#messages');
 }
 
 $(document).ready(function(){
-  getMessage();
-
+  $('.send').on('click', pushMessage);
+  $('#chatarea').on('keypress', function(e){
+    if (e.keycode == '13'){
+      pushMessage();
+    }
+  });
 });
