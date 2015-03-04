@@ -10,14 +10,20 @@ class User < ActiveRecord::Base
 
   # ASSOCIATIONS #
   has_and_belongs_to_many :events
-  has_many :buddies,  class_name:"User", foreign_key:"buddy_id"
   has_many :reviews, dependent: :destroy
   has_and_belongs_to_many :playdates, dependent: :destroy
+  has_many :user_matches, :foreign_key => :dog_requester_id
+  has_many :users, :through => :user_matches, :source => :dog_requestee
+
+  has_many(:user_matches, :foreign_key => :dog_requester_id, :dependent => :destroy)
+  has_many(:reverse_user_matches, :class_name => :UserMatch, :foreign_key => :dog_requestee_id, :dependent => :destroy)
+
+  has_many :users, :through => :user_matches, :source => :dog_requestee
 
   # TAGGABLE #
 
   acts_as_taggable
-  acts_as_taggable_on :matches, :preferences
+  acts_as_taggable_on :preferences
 
   # OMNIAUTH #
 

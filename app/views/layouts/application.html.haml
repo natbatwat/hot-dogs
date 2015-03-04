@@ -23,10 +23,8 @@
     %p.notice= notice
     %p.alert= alert
 
-    
     - if user_signed_in?
       .nav
         = render 'layouts/nav'
 
-    = yield
-
+  = yield
