@@ -16,8 +16,7 @@ class User < ActiveRecord::Base
   has_many :users, :through => :user_matches, :source => :dog_requestee
 
   has_many(:user_matches, :foreign_key => :dog_requester_id, :dependent => :destroy)
-  has_many(:reverse_user_matches, :class_name => :UserMatch,
-      :foreign_key => :dog_requestee_id, :dependent => :destroy)
+  has_many(:reverse_user_matches, :class_name => :UserMatch, :foreign_key => :dog_requestee_id, :dependent => :destroy)
 
   has_many :users, :through => :user_matches, :source => :dog_requestee
 
