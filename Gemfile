@@ -18,7 +18,7 @@ gem 'bootstrap-sass', '~> 3.3.3'
 gem 'omniauth-facebook'
 gem 'formtastic', '~> 3.0'
 gem 'gravtastic'
-
+gem 'faker', '~> 1.4.3'
 gem 'chronic'
 gem "paperclip", "~> 4.2"
 
