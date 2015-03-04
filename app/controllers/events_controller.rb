@@ -44,6 +44,11 @@ class EventsController < ApplicationController
     flash[:notice] = "You successfully deleted an event!"
   end
 
+  def like_event
+    @event = Event.find(params[:id])
+    @event.liked_by current_user
+  end
+
   private
   def event_params
     params.require(:event).permit(:name, :date, :place, :time, :event_rating)
