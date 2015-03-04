@@ -30,9 +30,6 @@ class UsersController < ApplicationController
       status: "pending"
       )
     render json: @match 
-    # current_user.user_matches.last = User.find(param_dog_requestee_id)
-    # param_dog_requestee.user_matches.last  User.find(param_dog_requester_id)
-
   end
 
 
