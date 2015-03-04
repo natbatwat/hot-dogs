@@ -5,3 +5,13 @@
 - if @event.organizer_id === current_user.id
   %p= link_to('Edit', edit_event_path(@event))
   %p= link_to('Delete', event_path(@event), method: :delete)
+
+
+
+%button#like{value: @event.id} Like
+
+=@event.get_likes.size 
+
+%button#dislike Dislike
+
+=@event.get_dislikes.size

@@ -29,6 +29,6 @@
 - if @user.id === current_user.id
   .buddies
     %p Your buddies are: 
-    - current_user.user_matches.each do |buddy|
-      - buds = User.where(id:buddy.dog_requestee_id)
+    - current_user.user_matches.each do |match|
+      = User.find(match.dog_requestee_id).dog_name
       

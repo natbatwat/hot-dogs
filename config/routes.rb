@@ -18,6 +18,10 @@ Rails.application.routes.draw do
 
   put 'users/:id/create_match', to: 'users#create_match', as: :create_match
 
+
+  get 'events/:id/like_event', to: 'users#like_event', as: :like_event
+  get 'events/:id/dislike_event', to: 'users#dislike_event', as: :dislike_event
+
   root 'events#home'
 
 end

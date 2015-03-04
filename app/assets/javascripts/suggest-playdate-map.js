@@ -6,7 +6,6 @@ function initialise(){
     zoom: 16
     // mapTypeId: google.maps.MapTypeId.ROADMAP
   }
-  debugger;
   var map2 = new google.maps.Map(mapCanvas, mapOptions);
   // addMarker(map);
   var marker = new google.maps.Marker({

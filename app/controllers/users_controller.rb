@@ -20,18 +20,19 @@ class UsersController < ApplicationController
 
   def create_match
     match_fields = params[:user]
-    param_dog_requester = match_fields[0] 
-    param_dog_requestee = match_fields[1] 
+    # param_dog_requester = match_fields[0] 
+    # param_dog_requestee = match_fields[1] 
     param_dog_requester_id = match_fields[2]
-    param_dog_requestee_id = match_fields[2]
+    param_dog_requestee_id = match_fields[3]
     @match = UserMatch.create(
       dog_requester_id: param_dog_requester_id,
-      dog_requestee_id: param_dog_requestee_id
+      dog_requestee_id: param_dog_requestee_id,
+      status: "pending"
       )
-    current_user.user_matches << param_dog_requestee
-    param_dog_requester.save
-    param_dog_requestee.user_matches << current_user
-    param_dog_requestee.save
+    render json: @match 
+    # current_user.user_matches.last = User.find(param_dog_requestee_id)
+    # param_dog_requestee.user_matches.last  User.find(param_dog_requester_id)
+
   end
 
 
