@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150302151001) do
+ActiveRecord::Schema.define(version: 20150304110942) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -83,6 +83,13 @@ ActiveRecord::Schema.define(version: 20150302151001) do
 
   add_index "tags", ["name"], name: "index_tags_on_name", unique: true, using: :btree
 
+  create_table "user_matches", force: :cascade do |t|
+    t.integer  "dog_requester_id", null: false
+    t.integer  "dog_requestee_id", null: false
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
+  end
+
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
     t.string   "encrypted_password",     default: "", null: false
@@ -108,10 +115,10 @@ ActiveRecord::Schema.define(version: 20150302151001) do
     t.boolean  "reported"
     t.string   "interest"
     t.integer  "user_rating"
-    t.string   "dog_picture"
-    t.string   "owner_picture"
     t.string   "provider"
     t.string   "uid"
+    t.string   "dog_picture"
+    t.string   "owner_picture"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree

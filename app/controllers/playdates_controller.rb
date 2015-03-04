@@ -44,6 +44,7 @@ class PlaydatesController < ApplicationController
   end
 
   def suggest
+    @users = User.all
   end
 
   private

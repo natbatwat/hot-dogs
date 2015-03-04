@@ -1,4 +1,10 @@
 = image_tag @user.gravatar_url
+<<<<<<< HEAD
+=======
+= @user.email
+= @user.address
+
+>>>>>>> master
 -# USER PROFILE PAGE #
 -# User information #
 = @user.email
@@ -8,6 +14,7 @@
 = @user.dog_name
 = @user.dog_picture
 = @user.dog_age
+<<<<<<< HEAD
 = @user.dog_bio
 = @user.gender
 = @user.breed
@@ -15,12 +22,40 @@
 = @user.interest
 = @user.match_list
 
+=======
+= @user.dog_bio 
+= @user.gender 
+= @user.breed 
+= @user.neutered 
+= @user.interest 
+= @user.match_list 
+>>>>>>> master
 
--# Google Maps #
-#map-canvas
-  = @user.address
+%p Preferences:
+= current_user.preference_list
+.profile-page
+  = image_tag @user.gravatar_url
 
--# Add Buddy Button #
-%button{:data => {:dog2_id => @user.id}}
-  %span Add Buddy
-  %span.hide Buddy Requested
+  -# USER PROFILE PAGE #
+  -# User information #
+  %p= @user.email
+  %p#address= @user.address 
+  %p= @user.owner_name 
+  %p= @user.owner_picture 
+  %p= @user.dog_name 
+  %p= @user.dog_picture 
+  %p= @user.dog_age
+  %p= @user.dog_bio 
+  %p= @user.gender 
+  %p= @user.breed 
+  %p= @user.neutered 
+  %p= @user.interest 
+  %p= @user.match_list 
+
+  -# Google Maps #
+  #map-canvas
+
+  -# Add Buddy Button #
+  %button{:data => {:dog2_id => @user.id}}
+    %span Add Buddy
+    %span.hide Buddy Requested

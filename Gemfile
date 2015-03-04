@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'rails_12factor'
 gem 'devise'
 gem 'letsrate'
 gem 'rails_admin'
