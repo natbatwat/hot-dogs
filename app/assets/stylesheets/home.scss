@@ -1,0 +1,34 @@
+  #about-us {
+
+    text-align: center;
+    margin: 0 auto;
+  
+    #hotdogs {
+      font-family: 'Raleway', sans-serif;
+      font-weight: 800;
+      font-size: 90px;
+      text-align: center;
+    }
+
+    .window {
+      position:absolute;
+      padding-top: 200px;
+      width: 100%;
+    }
+
+    p {
+      margin-left: 300px;
+      margin-right: 300px;
+    }
+
+    h2 {
+      margin-bottom: 40px;
+    }
+
+    @for $i from 1 through 7 {
+      .window:nth-child(#{$i}){
+          top:($i - 1) * 100%;
+      }
+    }
+  }
+
