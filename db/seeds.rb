@@ -18,7 +18,7 @@ u1 = User.create(
   Townmead Road, Fulham, 
   London, SW6 2TW"
   )
-u1.preference_list = "indoor", "male", "neutered", "weekends"
+u1.preference_list = "indoor, male, neutered, weekends"
 
 u2 = User.create(
   email:"sally@email.com",
@@ -33,7 +33,7 @@ u2 = User.create(
   London, 
   W1K"
   )
-u2.preference_list = "outdoor", "female", "unneutered", "weekday-daytime"
+u2.preference_list = "outdoor, female, unneutered, weekday-daytime"
 
 u3 = User.create!(
   email:"scruffy@woofy.com",
@@ -49,7 +49,7 @@ u3 = User.create!(
   NW8 6DF
   "
   )
-u3.preference_list = "indoor", "male", "neutered", "weekends"
+u3.preference_list = "indoor, male, neutered, weekends"
 
 u4 = User.create(
   email:"spot@thedog.com",
@@ -65,7 +65,7 @@ u4 = User.create(
   London, 
   NW8 9ER"
   )
-u4.preference_list = "outdoor", "female", "unneutered", "weekday-daytime"
+u4.preference_list = "outdoor, female, unneutered, weekday-daytime"
 
 u5 = User.create(
   email:"coco@pops.com",
@@ -80,7 +80,7 @@ u5 = User.create(
   London, 
   W11 3LX"
   )
-u5.preference_list = "indoor", "outdoor", "both", "unneutered", "weekday-evening"
+u5.preference_list = "indoor, outdoor, both, unneutered, weekday-evening"
 
 u6 = User.create(
   email:"perdita@dalmations.com",
@@ -96,7 +96,7 @@ u6 = User.create(
   London, 
   W1J"
   )
-u6.preference_list = "indoor", "outdoor", "both", "unneutered", "weekday-evening"
+u6.preference_list = "indoor, outdoor, both, unneutered, weekday-evening"
 
 
 p1 = Playdate.create(

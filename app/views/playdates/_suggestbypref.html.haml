@@ -1,7 +1,6 @@
 .suggest-by-preference
   %p You like these things:
   = current_user.preference_list
-  = current_user.preferences
 
   %p These hot dogs like the same things too: 
   - suggested_dates = current_user.find_related_preferences
