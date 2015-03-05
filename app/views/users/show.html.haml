@@ -34,8 +34,7 @@
 %p Neutered Status:
 = @user.neutered
 
-<<<<<<< HEAD
-=======
+
 .profile-page
   = image_tag @user.dog_picture.detail.url
   -if @user.owner_picture === nil 
@@ -61,12 +60,12 @@
   %p Neutered Status:
   = @user.neutered 
 
-  %p user_rating:
-  .exemple
-    .basic{data: {average: 12, id: 1}}
-    .basic{data: {average: 8, id: 2}}
+  -# %p user_rating:
+  -# .exemple
+  -#   .basic{data: {average: 12, id: 1}}
+  -#   .basic{data: {average: 8, id: 2}}
   -# = rating_for @user, "rating_for" , :star => 10
->>>>>>> rating
+
 -# Google Maps #
 #map-canvas
 
@@ -81,13 +80,11 @@
     %p Your buddies are:
     - current_user.user_matches.each do |buddy|
       - buds = User.where(id:buddy.dog_requestee_id)
-<<<<<<< HEAD
-=======
+
       
       -# AVATAR STUFF
       -# u = User.new
       -# u.avatar = params[:file] # Assign a file like this, or
->>>>>>> rating
 
       -# # like this
       -# File.open('somewhere') do |f|

@@ -60,6 +60,7 @@ u1 = User.create(
   gender:"male",
   dog_age: 1,
   breed: "golden retriever",
+  neutered: true,
   owner_name: "bob",
   address: "
   Imperial Wharf, 
@@ -78,6 +79,7 @@ u2 = User.create(
   dog_age: 7,
   breed: "Cavalier King Charles Spaniel",
   owner_name: "sally",
+  neutered: true,
   address: "
   Grosvenor Square, 
   London, 
@@ -87,7 +89,7 @@ u2.preference_list = "outdoor, female, unneutered, weekday-daytime"
 u2.save
 
 u3 = User.create!(
-  email:"scruffy@woofy.com",
+  email:"scruffy@woof.com",
   password: "password",
   password_confirmation: "password",
   dog_name: "Mr Scruff",
@@ -95,6 +97,7 @@ u3 = User.create!(
   dog_age: 2,
   gender:"male",
   breed: "Yorkshire Terrier",
+  neutered: false,
   owner_name: "Vinisha",
   address: "
   12 Queen's Terrace,
@@ -112,6 +115,7 @@ u4 = User.create(
   dog_name: "Spot",
   dog_age: 12,
   breed: "Poodle",
+  neutered: true,
   gender:"female",
   owner_name: "Vince Vaun",
   address: "
@@ -131,6 +135,7 @@ u5 = User.create(
   gender:"female",
   dog_age: 15,
   breed: "Dachshund",
+  neutered: false,
   owner_name: "jane eyre",
   address: "
   2-3 Ladbroke Square, 
@@ -148,6 +153,7 @@ u6 = User.create(
   gender:"female",
   dog_age: 5,
   breed: "Siberian Husky",
+  neutered: false,
   owner_name: "pongo",
   address: "
   Berkeley Square, 
