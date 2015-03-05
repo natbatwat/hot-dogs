@@ -7,27 +7,39 @@ if ($('map-canvas')){
       zoom: 16,
       mapTypeId: google.maps.MapTypeId.ROADMAP
     }
-    var map = new google.maps.Map(mapCanvas, mapOptions);
+    map = new google.maps.Map(mapCanvas, mapOptions);
     addMarker(map);
   
     var marker = new google.maps.Marker({
       position: myLatLng,
       map: map,
     });
-}
-    function addMarker(map) {
+
+    }
+
+    
+    function addMarker(map_one) {
 
      if(navigator.geolocation){
        navigator.geolocation.getCurrentPosition(function(position){
          var pos = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
 
          var infowindow = new google.maps.InfoWindow({
-           map: map,
+           map: map_one,
            position: pos,
-           content: "Location set using HTML5"
+           content: "You are here WOOF!"
          });
 
-         map.setCenter(pos);
+         var request = {
+            location: pos,
+            radius: '500',
+            types: ['park']
+          };
+// console.log(map);
+          service = new google.maps.places.PlacesService(map);
+          service.nearbySearch(request, callback);
+
+         map_one.setCenter(pos);
        }, function() {
          handleNoGeolocation(true);
        });
@@ -47,28 +59,24 @@ if ($('map-canvas')){
    map.setCenter(options.position);
 
      }
+
+     function callback(results, status) {
+       if (status == google.maps.places.PlacesServiceStatus.OK) {
+         for (var i = 0; i < results.length; i++) {
+           var place = results[i];
+           createMarker(results[i]);
+         }
+       }
+     }
+
+     function createMarker(place) {
+       var placeLoc = place.geometry.location;
+       var marker = new google.maps.Marker({
+         map: map,
+         position: place.geometry.location
+       });
+      }
+
+
   google.maps.event.addDomListener(window, 'load', initialize);
 }
-
-//     map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
-//     codeAddress();
-//   }
-
-//   function codeAddress() {
-//     var address = $('#address').text();
-//     console.log(address)
-//     geocoder.geocode( { 'address': address}, function(results, status) {
-//       if (status == google.maps.GeocoderStatus.OK) {
-//         map.setCenter(results[0].geometry.location);
-//         var marker = new google.maps.Marker({
-//             map: map,
-//             position: results[0].geometry.location
-//         });
-//       } else {
-//         alert('Geocode was not successful for the following reason: ' + status);
-//       }
-//     });
-//   }
-
-//   google.maps.event.addDomListener(window, 'load', initialize);
-// }
