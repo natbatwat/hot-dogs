@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  if(window.location.pathname === "/") {
+  if(window.location.pathname == "/") {
     $('.window').windows({
       snapping: true,
       snapSpeed: 400,
@@ -15,8 +15,6 @@ $(document).ready(function(){
       }
     })
   }
-
-
 });
 
 
