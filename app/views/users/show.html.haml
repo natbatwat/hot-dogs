@@ -3,7 +3,7 @@
     -user_match_id1 = UserMatch.where(dog_requester_id:current_user.id, dog_requestee_id:@user.id)[0]
     -user_match_id2 = UserMatch.where(dog_requestee_id:current_user.id, dog_requester_id:@user.id)[0]
     - if user_match_id2 === nil
-      =link_to('Chat', user_match_path(user_match_id1.id)) 
+      =link_to('Chat', user_match_path(user_match_id1.id))
     - else
       =link_to('Chat', user_match_path(user_match_id2.id))
 
@@ -40,12 +40,9 @@
 
 .profile-page
   = image_tag @user.dog_picture.detail.url
-<<<<<<< HEAD
   -if @user.owner_picture === nil
-=======
   = image_tag @user.dog_picture
-  -if @user.owner_picture === nil 
->>>>>>> css
+  -if @user.owner_picture === nil
     %p= @user.gravatar_url
   -else
   = image_tag @user.owner_picture.detail.url
