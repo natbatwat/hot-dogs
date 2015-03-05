@@ -13,7 +13,7 @@ Rails.application.routes.draw do
   get '/', to: 'events#home', as: :home
   get 'users/:id/questionnaire', to: 'users#questionnaire', as: :questionnaire
   get '/suggestmedates', to: 'playdates#suggest', as: :suggest
-
+  get 'users/:id/messages', to: 'users#message', as :message
   put 'users/:id/update_preferences', to: 'users#update_preferences', as: :update_preferences
 
   root 'events#home'
