@@ -12,3 +12,21 @@
  *= require_self
  *= require_tree .
  */
+
+ .nav {
+   li {
+    display: inline-block;
+     a {
+      display: inline-block;
+     }
+   }
+ }
+
+ .login {
+   li {
+    display: inline-block;
+     a {
+      display: inline-block;
+     }
+   }
+ }
