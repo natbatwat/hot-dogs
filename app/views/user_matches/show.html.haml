@@ -1,0 +1,22 @@
+%h1 hello
+#chatarea
+  #messagesbox
+    %ul#messages.message-screen
+      - msg_arr = []
+      - msg_arr.push(@user_match.messages.order(created_at: :desc))
+      - msg_arr.each do |msg|
+        - msg.each do |content|
+          %li= content.content
+  %input#inputbox
+  - id1 = @user_match.dog_requester_id 
+  - id2 = @user_match.dog_requestee_id 
+  =id1
+  =id2
+  - if id1 == current_user.id
+    %button#create-msg{value:id2} Send
+  - else 
+    %button#create-msg{value:id1} Send
+  %button.hide Sent
+
+
+.uid.hidden=current_user.dog_name

@@ -123,11 +123,14 @@ ActiveRecord::Schema.define(version: 20150305103740) do
     t.string   "address"
     t.boolean  "reported"
     t.integer  "user_rating"
-    t.string   "provider"
-    t.string   "uid"
     t.string   "dog_picture"
     t.string   "owner_picture"
+<<<<<<< HEAD
     t.string   "avatar"
+=======
+    t.string   "provider"
+    t.string   "uid"
+>>>>>>> 2fdb062777ac45eefe268061837ec16b46849415
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
