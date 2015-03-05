@@ -23,8 +23,8 @@ gem 'chronic'
 gem "paperclip", "~> 4.2"
 gem 'carrierwave'
 gem 'fog'
-gem "fog-aws"
-gem 'rmagick', '2.13.2'
+# gem "fog-aws"
+gem 'rmagick', '2.13.2', require: false
 
 gem 'jquery-rails'
 gem 'turbolinks'

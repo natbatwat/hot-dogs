@@ -2,11 +2,11 @@
 = current_user.preference_list
 
 .profile-page
-  %p#dog-picture= @user.dog-picture-scruffy.detail.url
+  = image_tag @user.dog_picture.detail.url
   -if @user.owner_picture === nil 
-    %p= image_tag @user.gravatar_url
+    %p= @user.gravatar_url
   -else 
-    %p= @user.owner_picture.detail.url
+  = image_tag @user.owner_picture.detail.url
   %p Email Address:
   = @user.email
   %p Residential Address:
