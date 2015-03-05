@@ -1,8 +1,16 @@
 $(document).ready(function(){
-  console.log('ready');
+  console.log('checkbox ready');
   var currentURL = window.location.pathname
   var ajaxURL = currentURL.substring(0, currentURL.length - 13)
  
+  $('input').iCheck({
+    checkboxClass: 'icheckbox_flat-green',
+    radioClass: 'iradio_flat-green',
+    hoverClass: 'hover-green',
+    increaseArea: '30%',
+    cursor: true
+    });
+
   $('.qn').click(function(){
     console.log('checked')
   })

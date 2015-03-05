@@ -42,33 +42,26 @@
 
 - if @user.id === current_user.id
   .buddies
-
     %p Your buddies are: 
     - current_user.user_matches.each do |buddy|
       - buds = User.where(id:buddy.dog_requestee_id)
       
 
+%p Your buddy requests: 
+- current_user.reverse_user_matches.each do |match|
+  -if match.dog_requestee_id == current_user.id
+    %p= User.find(match.dog_requester_id).dog_name
+  -if match.status == "pending"
+    %button#accept-request{:data => {:id => match.id}} Accept
+    %button#reject-request Reject
+  -else 
+    %button#delete-buddy Delete Buddy
 
-= javascript_include_tag "application", params[:controller]
-
-    %p Your buddy requests: 
-    - current_user.reverse_user_matches.each do |match|
-      -if match.dog_requestee_id == current_user.id
-        %p= User.find(match.dog_requester_id).dog_name
-      -if match.status == "pending"
-        %button#accept-request{:data => {:id => match.id}} Accept
-        %button#delete Delete
-      -else 
-        %button Delete Buddy
-
-    %p The buddies you have requested: 
-    - current_user.user_matches.each do |match|
-      - if match.dog_requester_id == current_user.id
-        %p= User.find(match.dog_requestee_id).dog_name
-      -if match.status == "pending"
-        %button#pending Pending
-      -else 
-        %button#accepted Accepted
-
-      
-
+%p The buddies you have requested: 
+- current_user.user_matches.each do |match|
+  - if match.dog_requester_id == current_user.id
+    %p= User.find(match.dog_requestee_id).dog_name
+  -if match.status == "pending"
+    %button#pending Pending
+  -else 
+    %button#accepted Accepted

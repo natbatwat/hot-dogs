@@ -7,7 +7,7 @@
       %p you are logged in as
       = current_user.email
 
-    = stylesheet_link_tag    'application', media: 'all'
+    = stylesheet_link_tag 'application', media: 'all'
 
 
     %script{:src => "https://maps.googleapis.com/maps/api/js?key=AIzaSyA00iEetE8yy2uZY4ejEskfM6zypsXnhps&libraries=places"}
@@ -21,7 +21,7 @@
   %body
 
     %p.notice= notice
-    %p.alert= alert
+    -# %p.alert= alert
 
     - if user_signed_in?
       .nav

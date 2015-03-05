@@ -3,7 +3,6 @@ $(document).ready(function(){
   var like = $("#like");
   var dislike = $("#dislike");
   var event_id = $('#like').val();
-
   like.click(function(){
     console.log('liked');
     $.ajax({
@@ -11,6 +10,21 @@ $(document).ready(function(){
       method: 'GET',
       dataType: 'json',
       data: {},
-    })
+    });
+  });
+
+
+  $('.indiv-event').mouseenter(function(){
+    console.log($(this));
+    $(this).addClass("animated pulse");
+    $(this).find(".event-place").removeClass("place-hide");
   })
+
+
+  $('.indiv-event').mouseleave(function(){
+    console.log($(this));
+    $(this).removeClass("animated pulse");
+    $(this).find(".event-place").addClass("place-hide");
+  })
+
 })
