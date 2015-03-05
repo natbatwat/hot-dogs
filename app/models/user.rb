@@ -6,7 +6,7 @@ class User < ActiveRecord::Base
 
   # GRAVATASTIC #
   include Gravtastic
-  gravtastic :default => "wavatar"
+  gravtastic :default => "wavatar", :size => 400
 
   # MOUNTING UPLOADER
   mount_uploader :dog_picture, UserImageUploader

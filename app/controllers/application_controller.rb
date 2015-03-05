@@ -20,6 +20,14 @@ class ApplicationController < ActionController::Base
     devise_parameter_sanitizer.for(:account_update) << :owner_name
     devise_parameter_sanitizer.for(:account_update) << :dog_name
     devise_parameter_sanitizer.for(:account_update) << :address
+    devise_parameter_sanitizer.for(:account_update) << :dog_age
+    devise_parameter_sanitizer.for(:account_update) << :gender
+    devise_parameter_sanitizer.for(:account_update) << :dog_bio
+    devise_parameter_sanitizer.for(:account_update) << :breed
+    devise_parameter_sanitizer.for(:account_update) << :owner_picture
+    devise_parameter_sanitizer.for(:account_update) << :dog_picture
+    devise_parameter_sanitizer.for(:account_update) << :neutered
+ 
   end
 
 end

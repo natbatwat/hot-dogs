@@ -9,13 +9,19 @@ class PlaydatesController < ApplicationController
   end
 
   def create
-    @playdate = Playdate.create(playdate_params)
+    name = params[:playdate][:dog2_id]
+    user = User.where(dog_name:name)[0]
+    user_id = user.id
+    @playdate = Playdate.new(playdate_params)
+    @playdate.dog2_id = user
+    @playdate.save
     if @playdate.save
       redirect_to playdates_path
       flash[:notice] = "You successfully created a playdate!"
     else
       # redirect_to playdate form
     end
+    binding.pry
   end
 
   def edit
@@ -49,7 +55,7 @@ class PlaydatesController < ApplicationController
 
   private
   def playdate_params
-    params.require(:playdate).permit(:name, :date, :place, :time, :event_rating)
+    params.require(:playdate).permit(:dog1_id, :dog2_id, :name, :date, :place, :description)
   end
 
 end
