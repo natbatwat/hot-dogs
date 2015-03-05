@@ -1,21 +1,21 @@
 class MessagesController < ApplicationController
-  def index
-    @messages = Message.all
-    respond_to do |format|
-      format.html
-      format.json {render json: @messages }
-    end
-  end
 
   def create
-    binding.pry
-    @message = Message.create!(message_params)
-    render json: @message, status: :created
+    message_data = params[:message]
+    user_id = message_data[0]
+    user_match_id = message_data[1]
+    content = message_data[2]
+    @message = Message.create(
+      content: content,
+      user_match_id: user_match_id,
+      user_id: user_id
+      )
+    @message.save
+    render json: @message
   end
 
   private
-
   def message_params
-    params.require(:message).permit(:content, :user_id: current_user)
+    params.require(:message).permit(:content, :user_id)
   end
 end

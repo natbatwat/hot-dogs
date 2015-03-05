@@ -1,90 +1,39 @@
--user_match_id1 = UserMatch.where(dog_requester_id:current_user.id, dog_requestee_id:@user.id).id
--user_match_id2 = UserMatch.where(dog_requestee_id:current_user.id, dog_requester_id:@user.id).id
--if user_match_id1.length > 0
-  =link_to 'Chat' user_match_path(user_match_id1)
--if user_match_id2.length > 0
-  =link_to 'Chat' user_match_path(user_match_id2)
-
-= image_tag @user.gravatar_url
-= @user.email
-= @user.address
-
--# USER PROFILE PAGE #
--# User information #
-= @user.email
-= @user.address
-= @user.owner_name
-= @user.owner_picture
-= @user.dog_name
-= @user.dog_picture
-= @user.dog_age
-= @user.dog_bio
-= @user.gender
-= @user.breed
-= @user.neutered
-= @user.interest
-= @user.match_list
+-if current_user.id != @user.id
+  -user_match_id1 = UserMatch.where(dog_requester_id:current_user.id, dog_requestee_id:@user.id)[0]
+  -user_match_id2 = UserMatch.where(dog_requestee_id:current_user.id, dog_requester_id:@user.id)[0]
+  - if user_match_id2 === nil
+    =link_to('Chat', user_match_path(user_match_id1.id)) 
+  - else
+    =link_to('Chat', user_match_path(user_match_id2.id))
 
 
 %p Preferences:
 = current_user.preference_list
-
-.profile-page
-  = image_tag @user.gravatar_url
-
-  -# USER PROFILE PAGE #
-  -# User information #
-  %p= @user.email
-  %p#address= @user.address
-  %p= @user.owner_name
+%p#dog-picture= @user.dog_picture
+-if @user.owner_picture === nil
+  %p= image_tag @user.gravatar_url
+-else
   %p= @user.owner_picture
-  %p= @user.dog_name
-  %p= @user.dog_picture
-  %p= @user.dog_age
-  %p= @user.dog_bio
-  %p= @user.gender
-  %p= @user.breed
-  %p= @user.neutered
-  %p= @user.interest
-  %p= @user.match_list
 
-  -# Google Maps #
-  #map-canvas
+%p Email Address:
+= @user.email
+%p Residential Address:
+%address#address
+  = @user.address
+%p#owner-name Name of Owner:
+= @user.owner_name
+%p#dog-name Name of Dog:
+= @user.dog_name
+%p#dog-age Age of Dog:
+= @user.dog_age
+%p Dog's Bio:
+= @user.dog_bio
+%p= @user.gender
+%p Breed of Dog:
+= @user.breed
+%p Neutered Status:
+= @user.neutered
 
-  -# Add Buddy Button #
-  %button{:data => {:dog2_id => @user.id}}
-    %span Add Buddy
-    %span.hide Buddy Requested
-
-  %p#dog-picture= @user.dog_picture
-  -if @user.owner_picture === nil
-    %p= image_tag @user.gravatar_url
-  -else
-    %p= @user.owner_picture
-  %p Email Address:
-  = @user.email
-  %p Residential Address:
-  %address#address
-    = @user.address
-  %p#owner-name Name of Owner:
-  = @user.owner_name
-  %p#dog-name Name of Dog:
-  = @user.dog_name
-  %p#dog-age Age of Dog:
-  = @user.dog_age
-  %p Dog's Bio:
-  = @user.dog_bio
-  %p= @user.gender
-  %p Breed of Dog:
-  = @user.breed
-  %p Neutered Status:
-  = @user.neutered
-
-  %p user_rating:
-  .exemple
-    .basic{data: {average: 12, id: 1}}
-    .basic{data: {average: 8, id: 2}}
-  -# = rating_for @user, "rating_for" , :star => 10
 -# Google Maps #
 #map-canvas
 

@@ -6,8 +6,9 @@ Rails.application.routes.draw do
 
   resources :users do
     resources :reviews
-    resources :messages
   end
+
+  resources :messages
   resources :playdates
   resources :events
   resources :user_matches
