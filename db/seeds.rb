@@ -91,6 +91,7 @@ u3 = User.create!(
   password: "password",
   password_confirmation: "password",
   dog_name: "Mr Scruff",
+  # dog_picture: "images/dog-picture-scruffy.jpg",
   dog_age: 2,
   gender:"male",
   breed: "Yorkshire Terrier",

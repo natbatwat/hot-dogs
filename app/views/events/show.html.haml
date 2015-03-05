@@ -10,8 +10,10 @@
 
 %button#like{value: @event.id} Like
 
-=@event.get_likes.size 
+-likes = @event.get_likes.size 
+#like-size=likes
 
 %button#dislike Dislike
 
-=@event.get_dislikes.size
+- dislikes = @event.get_downvotes.size
+#dislike-size=dislikes

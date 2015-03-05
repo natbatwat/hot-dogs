@@ -1,12 +1,26 @@
+-if current_user.id != @user.id
+  -user_match_id1 = UserMatch.where(dog_requester_id:current_user.id, dog_requestee_id:@user.id)[0]
+  -user_match_id2 = UserMatch.where(dog_requestee_id:current_user.id, dog_requester_id:@user.id)[0]
+  - if user_match_id2 === nil
+    =link_to('Chat', user_match_path(user_match_id1.id)) 
+  - else
+    =link_to('Chat', user_match_path(user_match_id2.id))
+
+
 %p Preferences:
 = current_user.preference_list
+%p#dog-picture= @user.dog_picture
+-if @user.owner_picture === nil
+  %p= image_tag @user.gravatar_url
+-else
+  %p= @user.owner_picture
 
 .profile-page
-  %p#dog-picture= @user.dog_picture 
+  = image_tag @user.dog_picture.detail.url
   -if @user.owner_picture === nil 
-    %p= image_tag @user.gravatar_url
+    %p= @user.gravatar_url
   -else 
-    %p= @user.owner_picture 
+  = image_tag @user.owner_picture.detail.url
   %p Email Address:
   = @user.email
   %p Residential Address:
@@ -26,11 +40,6 @@
   %p Neutered Status:
   = @user.neutered 
 
-  %p user_rating:
-  .exemple
-    .basic{data: {average: 12, id: 1}}
-    .basic{data: {average: 8, id: 2}}
-  -# = rating_for @user, "rating_for" , :star => 10
 -# Google Maps #
 #map-canvas
 
@@ -42,26 +51,26 @@
 
 - if @user.id === current_user.id
   .buddies
-    %p Your buddies are: 
+    %p Your buddies are:
     - current_user.user_matches.each do |buddy|
       - buds = User.where(id:buddy.dog_requestee_id)
-      
 
-%p Your buddy requests: 
+
+%p Your buddy requests:
 - current_user.reverse_user_matches.each do |match|
   -if match.dog_requestee_id == current_user.id
     %p= User.find(match.dog_requester_id).dog_name
   -if match.status == "pending"
     %button#accept-request{:data => {:id => match.id}} Accept
     %button#reject-request Reject
-  -else 
+  -else
     %button#delete-buddy Delete Buddy
 
-%p The buddies you have requested: 
+%p The buddies you have requested:
 - current_user.user_matches.each do |match|
   - if match.dog_requester_id == current_user.id
     %p= User.find(match.dog_requestee_id).dog_name
   -if match.status == "pending"
     %button#pending Pending
-  -else 
+  -else
     %button#accepted Accepted

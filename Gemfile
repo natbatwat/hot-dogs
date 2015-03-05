@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'rails_12factor'
 gem 'bootstrap-sass', '~> 3.2.0'
 gem 'autoprefixer-rails'
 gem 'devise'
@@ -22,6 +23,10 @@ gem 'gravtastic'
 gem 'faker', '~> 1.4.3'
 gem 'chronic'
 gem "paperclip", "~> 4.2"
+gem 'carrierwave'
+gem 'fog'
+# gem "fog-aws"
+gem 'rmagick', '2.13.2', require: false
 
 gem 'jquery-rails'
 gem 'turbolinks'

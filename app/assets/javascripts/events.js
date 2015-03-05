@@ -10,7 +10,22 @@ $(document).ready(function(){
       method: 'GET',
       dataType: 'json',
       data: {},
-    });
+    })
+    .done(function(data){
+      location.reload();
+    })
+  });
+  dislike.click(function(){
+    console.log('disliked');
+    $.ajax({
+      url: event_id + '/dislike_event',
+      method: 'GET',
+      dataType: 'json',
+      data: {},
+    })
+    .done(function(data){
+      location.reload();
+    })
   });
 
 
