@@ -15,7 +15,6 @@
     <link href='http://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Dosis:400,500' rel='stylesheet' type='text/css'>
     = javascript_include_tag 'application'
-    = javascript_include_tag :defaults
     = csrf_meta_tags
 
   %body
@@ -27,5 +26,4 @@
       .nav
         = render 'layouts/nav'
 
-
-  = yield
+    = yield
