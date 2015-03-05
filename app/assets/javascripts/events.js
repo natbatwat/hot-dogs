@@ -10,7 +10,10 @@ $(document).ready(function(){
       method: 'GET',
       dataType: 'json',
       data: {},
-    });
+    })
+    .done(function(data){
+      
+    })
   });
 
 

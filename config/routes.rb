@@ -22,8 +22,9 @@ Rails.application.routes.draw do
   put 'user_matches/:id/accept_match', to: 'user_matches#accept_match', as: :accept_match
   put 'user_matches/:id/reject_match', to: 'user_matches#reject_match', as: :reject_match
 
-  get 'events/:id/like_event', to: 'users#like_event', as: :like_event
-  get 'events/:id/dislike_event', to: 'users#dislike_event', as: :dislike_event
+  get 'events/:id/like_event', to: 'events#like_event', as: :like_event
+
+  get 'events/:id/dislike_event', to: 'events#dislike_event', as: :dislike_event
 
   root 'events#home'
 

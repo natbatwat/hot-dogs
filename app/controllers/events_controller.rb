@@ -47,6 +47,7 @@ class EventsController < ApplicationController
   def like_event
     @event = Event.find(params[:id])
     @event.liked_by current_user
+    binding.pry
   end
 
   private
