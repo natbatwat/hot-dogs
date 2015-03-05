@@ -2,7 +2,7 @@
   -user_match_id1 = UserMatch.where(dog_requester_id:current_user.id, dog_requestee_id:@user.id)[0]
   -user_match_id2 = UserMatch.where(dog_requestee_id:current_user.id, dog_requester_id:@user.id)[0]
   - if user_match_id2 === nil
-    =link_to('Chat', user_match_path(user_match_id1.id)) 
+    =link_to('Chat', user_match_path(user_match_id1.id))
   - else
     =link_to('Chat', user_match_path(user_match_id2.id))
 
@@ -34,39 +34,37 @@
 %p Neutered Status:
 = @user.neutered
 
-<<<<<<< HEAD
-=======
 .profile-page
   = image_tag @user.dog_picture.detail.url
-  -if @user.owner_picture === nil 
+  -if @user.owner_picture === nil
     %p= @user.gravatar_url
-  -else 
+  -else
   = image_tag @user.owner_picture.detail.url
   %p Email Address:
   = @user.email
   %p Residential Address:
   %address#address
-    = @user.address 
+    = @user.address
   %p#owner-name Name of Owner:
-  = @user.owner_name 
+  = @user.owner_name
   %p#dog-name Name of Dog:
-  = @user.dog_name 
+  = @user.dog_name
   %p#dog-age Age of Dog:
   = @user.dog_age
   %p Dog's Bio:
-  = @user.dog_bio 
-  %p= @user.gender 
+  = @user.dog_bio
+  %p= @user.gender
   %p Breed of Dog:
-  = @user.breed 
+  = @user.breed
   %p Neutered Status:
-  = @user.neutered 
+  = @user.neutered
 
   %p user_rating:
   .exemple
     .basic{data: {average: 12, id: 1}}
     .basic{data: {average: 8, id: 2}}
   -# = rating_for @user, "rating_for" , :star => 10
->>>>>>> rating
+
 -# Google Maps #
 #map-canvas
 
@@ -81,13 +79,11 @@
     %p Your buddies are:
     - current_user.user_matches.each do |buddy|
       - buds = User.where(id:buddy.dog_requestee_id)
-<<<<<<< HEAD
-=======
-      
+
+
       -# AVATAR STUFF
       -# u = User.new
-      -# u.avatar = params[:file] # Assign a file like this, or
->>>>>>> rating
+      -# u.avatar = params[:file] # Assign a file like this, or rating
 
       -# # like this
       -# File.open('somewhere') do |f|

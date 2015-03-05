@@ -123,10 +123,10 @@ ActiveRecord::Schema.define(version: 20150305103740) do
     t.string   "address"
     t.boolean  "reported"
     t.integer  "user_rating"
-    t.string   "dog_picture"
-    t.string   "owner_picture"
     t.string   "provider"
     t.string   "uid"
+    t.string   "dog_picture"
+    t.string   "owner_picture"
     t.string   "avatar"
   end
 
