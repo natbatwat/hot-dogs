@@ -1,3 +1,10 @@
+-user_match_id1 = UserMatch.where(dog_requester_id:current_user.id, dog_requestee_id:@user.id).id
+-user_match_id2 = UserMatch.where(dog_requestee_id:current_user.id, dog_requester_id:@user.id).id
+-if user_match_id1.length > 0
+  =link_to 'Chat' user_match_path(user_match_id1)
+-if user_match_id2.length > 0
+  =link_to 'Chat' user_match_path(user_match_id2)
+
 = image_tag @user.gravatar_url
 = @user.email
 = @user.address

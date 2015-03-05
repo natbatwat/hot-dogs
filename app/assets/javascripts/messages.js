@@ -7,8 +7,10 @@ function request(method, url, data){
   })
 }
 
-function pushMessage() {
-    request('POST', '/messages', {message:{text: $('#inputbox').val()}}).done(function(data){
+function pushMessage(e) {
+    request('POST', '/messages', {message:{content: $('#inputbox').val()}}).done(function(data){
+      console.log(data);
+
       appendMessage(data);
       $('#inputbox').val('');
     });
@@ -19,6 +21,7 @@ function appendMessage(msg){
 }
 
 $(document).ready(function(){
+
   $('.send').on('click', pushMessage);
   $('#chatarea').on('keypress', function(e){
     if (e.keycode == '13'){
