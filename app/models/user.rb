@@ -8,6 +8,11 @@ class User < ActiveRecord::Base
   include Gravtastic
   gravtastic :default => "wavatar"
 
+  # MOUNTING UPLOADER
+  mount_uploader :dog_picture, UserImageUploader
+  mount_uploader :owner_picture, UserImageUploader
+  # mount_uploader :avatar, AvatarUploader
+
   # ASSOCIATIONS #
   has_and_belongs_to_many :events
   has_many :reviews, dependent: :destroy
@@ -17,7 +22,7 @@ class User < ActiveRecord::Base
   has_many(:user_matches, :foreign_key => :dog_requester_id, :dependent => :destroy)
   has_many(:reverse_user_matches, :class_name => :UserMatch, :foreign_key => :dog_requestee_id, :dependent => :destroy)
 
-  has_many :users, :through => :user_matches, :source => :dog_requestee
+  # has_many :users, :through => :user_matches, :source => :dog_requestee
 
   has_many :messages, through: :user_matches 
 

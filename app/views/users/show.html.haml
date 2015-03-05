@@ -34,6 +34,39 @@
 %p Neutered Status:
 = @user.neutered
 
+<<<<<<< HEAD
+=======
+.profile-page
+  = image_tag @user.dog_picture.detail.url
+  -if @user.owner_picture === nil 
+    %p= @user.gravatar_url
+  -else 
+  = image_tag @user.owner_picture.detail.url
+  %p Email Address:
+  = @user.email
+  %p Residential Address:
+  %address#address
+    = @user.address 
+  %p#owner-name Name of Owner:
+  = @user.owner_name 
+  %p#dog-name Name of Dog:
+  = @user.dog_name 
+  %p#dog-age Age of Dog:
+  = @user.dog_age
+  %p Dog's Bio:
+  = @user.dog_bio 
+  %p= @user.gender 
+  %p Breed of Dog:
+  = @user.breed 
+  %p Neutered Status:
+  = @user.neutered 
+
+  %p user_rating:
+  .exemple
+    .basic{data: {average: 12, id: 1}}
+    .basic{data: {average: 8, id: 2}}
+  -# = rating_for @user, "rating_for" , :star => 10
+>>>>>>> rating
 -# Google Maps #
 #map-canvas
 
@@ -48,7 +81,23 @@
     %p Your buddies are:
     - current_user.user_matches.each do |buddy|
       - buds = User.where(id:buddy.dog_requestee_id)
+<<<<<<< HEAD
+=======
+      
+      -# AVATAR STUFF
+      -# u = User.new
+      -# u.avatar = params[:file] # Assign a file like this, or
+>>>>>>> rating
 
+      -# # like this
+      -# File.open('somewhere') do |f|
+      -#   u.avatar = f
+      -# end
+
+      -# u.save!
+      -# u.avatar.url # => '/url/to/file.png'
+      -# u.avatar.current_path # => 'path/to/file.png'
+      -# u.avatar.identifier # => 'file.png'
 
 %p Your buddy requests:
 - current_user.reverse_user_matches.each do |match|

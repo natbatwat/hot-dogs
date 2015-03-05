@@ -13,6 +13,9 @@ class ApplicationController < ActionController::Base
     devise_parameter_sanitizer.for(:sign_up) << :gender
     devise_parameter_sanitizer.for(:sign_up) << :dog_bio
     devise_parameter_sanitizer.for(:sign_up) << :breed
+    devise_parameter_sanitizer.for(:sign_up) << :owner_picture
+    devise_parameter_sanitizer.for(:sign_up) << :dog_picture
+    devise_parameter_sanitizer.for(:sign_up) << :neutered
     
     devise_parameter_sanitizer.for(:account_update) << :owner_name
     devise_parameter_sanitizer.for(:account_update) << :dog_name
