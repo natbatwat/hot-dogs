@@ -47,7 +47,15 @@ class EventsController < ApplicationController
   def like_event
     @event = Event.find(params[:id])
     @event.liked_by current_user
-    binding.pry
+    @event.save
+    render json: @event
+  end
+
+  def dislike_event
+    @event = Event.find(params[:id])
+    @event.unliked_by current_user
+    @event.save
+    render json: @event
   end
 
   private
