@@ -2,11 +2,11 @@
 = current_user.preference_list
 
 .profile-page
-  %p#dog-picture= @user.dog_picture 
+  %p#dog-picture= @user.dog-picture-scruffy.detail.url
   -if @user.owner_picture === nil 
     %p= image_tag @user.gravatar_url
   -else 
-    %p= @user.owner_picture 
+    %p= @user.owner_picture.detail.url
   %p Email Address:
   = @user.email
   %p Residential Address:
@@ -46,6 +46,18 @@
     - current_user.user_matches.each do |buddy|
       - buds = User.where(id:buddy.dog_requestee_id)
       
+      -# AVATAR STUFF
+      -# u = User.new
+      -# u.avatar = params[:file] # Assign a file like this, or
 
+      -# # like this
+      -# File.open('somewhere') do |f|
+      -#   u.avatar = f
+      -# end
+
+      -# u.save!
+      -# u.avatar.url # => '/url/to/file.png'
+      -# u.avatar.current_path # => 'path/to/file.png'
+      -# u.avatar.identifier # => 'file.png'
 
 = javascript_include_tag "application", params[:controller]

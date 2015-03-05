@@ -8,6 +8,11 @@ class User < ActiveRecord::Base
   include Gravtastic
   gravtastic :default => "wavatar"
 
+  # MOUNTING UPLOADER
+  mount_uploader :dog_picture, UserImageUploader
+  mount_uploader :owner_picture, UserImageUploader
+  # mount_uploader :avatar, AvatarUploader
+
   # ASSOCIATIONS #
   has_and_belongs_to_many :events
   has_many :reviews, dependent: :destroy
