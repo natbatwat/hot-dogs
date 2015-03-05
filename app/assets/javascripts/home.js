@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  if(window.location.href === "http://localhost:3000/") {
+  if(window.location.pathname === "/") {
     $('.window').windows({
       snapping: true,
       snapSpeed: 400,
