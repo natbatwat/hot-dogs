@@ -3,55 +3,47 @@
   - current_user.preference_list.each do |pref|
     %p=pref
   %p You are highly matched with these hot dogs: 
-  - if current_user.preference_list.include?("female") && current_user.preference_list.include?("neutered") === true
-    - high_matches =  User.where(gender:"female", neutered:true) && User.tagged_with(current_user.preference_list, :any => true)
-    - high_matches.each do |highmatch|
-      - unless highmatch.dog_name == current_user.dog_name
-        %p= link_to(highmatch.dog_name, user_path(highmatch))
+  - high_matches =  User.tagged_with(current_user.preference_list, :match_all => true)
+  - high_matches.each do |highmatch|
+    - unless highmatch.dog_name == current_user.dog_name
+      %p= link_to(highmatch.dog_name, user_path(highmatch))
 
-  - elsif current_user.preference_list.include?("male") && current_user.preference_list.include?("neutered") === true
-    - high_matches = User.where(gender:"male", neutered:true) && User.tagged_with(current_user.preference_list, :any => true)
-    - high_matches.each do |highmatch|
-      - unless highmatch.dog_name == current_user.dog_name 
-        = highmatch.owner_picture
-        = link_to(highmatch.dog_name, user_path(highmatch))
+  -# - elsif current_user.preference_list.include?("male") && current_user.preference_list.include?("neutered") === true
+  -#   - high_matches = User.where(gender:"male", neutered:true) && User.tagged_with(current_user.preference_list, :any => true)
+  -#   - high_matches.each do |highmatch|
+  -#     - unless highmatch.dog_name == current_user.dog_name 
+  -#       = highmatch.owner_picture
+  -#       = link_to(highmatch.dog_name, user_path(highmatch))
 
-  - elsif current_user.preference_list.include?("male") && current_user.preference_list.include?("unneutered") === true
-    - high_matches = User.where(gender:"male", neutered:false) && User.tagged_with(current_user.preference_list, :any => true)
-    - high_matches.each do |highmatch|
-      - unless highmatch.dog_name == current_user.dog_name
-        = link_to(highmatch.dog_name, user_path(highmatch))
+  -# - elsif current_user.preference_list.include?("male") && current_user.preference_list.include?("unneutered") === true
+  -#   - high_matches = User.where(gender:"male", neutered:false) && User.tagged_with(current_user.preference_list, :any => true)
+  -#   - high_matches.each do |highmatch|
+  -#     - unless highmatch.dog_name == current_user.dog_name
+  -#       = link_to(highmatch.dog_name, user_path(highmatch))
 
-  - elsif current_user.preference_list.include?("female") && current_user.preference_list.include?("unneutered") === true
-    - high_matches = User.where(gender:"female", neutered:false) && User.tagged_with(current_user.preference_list, :any => true)
-    - high_matches.each do |highmatch|
-      - unless highmatch.dog_name == current_user.dog_name
-        = link_to(highmatch.dog_name, user_path(highmatch))
+  -# - elsif current_user.preference_list.include?("female") && current_user.preference_list.include?("unneutered") === true
+  -#   - high_matches = User.where(gender:"female", neutered:false) && User.tagged_with(current_user.preference_list, :any => true)
+  -#   - high_matches.each do |highmatch|
+  -#     - unless highmatch.dog_name == current_user.dog_name
+  -#       = link_to(highmatch.dog_name, user_path(highmatch))
 
-  - elsif current_user.preference_list.include?("both") && current_user.preference_list.include?("unneutered") === true
-    - high_matches = User.where(neutered:false) && User.tagged_with(current_user.preference_list, :any => true)
-    - high_matches.each do |highmatch|
-      - unless highmatch.dog_name == current_user.dog_name
-        = link_to(highmatch.dog_name, user_path(highmatch))
+  -# - elsif current_user.preference_list.include?("both") && current_user.preference_list.include?("unneutered") === true
+  -#   - high_matches = User.where(neutered:false) && User.tagged_with(current_user.preference_list, :any => true)
+  -#   - high_matches.each do |highmatch|
+  -#     - unless highmatch.dog_name == current_user.dog_name
+  -#       = link_to(highmatch.dog_name, user_path(highmatch))
 
-  - elsif current_user.preference_list.include?("both") && current_user.preference_list.include?("neutered") === true
-    - high_matches = User.where(neutered:true) && User.tagged_with(current_user.preference_list, :any => true)
-    - high_matches.each do |highmatch|
-      - unless highmatch.dog_name == current_user.dog_name
-        = link_to(highmatch.dog_name, user_path(highmatch))
+  -# - elsif current_user.preference_list.include?("both") && current_user.preference_list.include?("neutered") === true
+  -#   - high_matches = User.where(neutered:true) && User.tagged_with(current_user.preference_list, :any => true)
+  -#   - high_matches.each do |highmatch|
+  -#     - unless highmatch.dog_name == current_user.dog_name
+  -#       = link_to(highmatch.dog_name, user_path(highmatch))
 
-  - else
-    - high_matches = User.tagged_with(current_user.preference_list, :match_all => true) 
-    - high_matches.each do |highmatch|
-      - unless highmatch.dog_name == current_user.dog_name
-        = link_to(highmatch.dog_name, user_path(highmatch))
-
-  %p You might find something special in these hot dogs: 
-  - possible_low_matches = User.tagged_with(current_user.preference_list, :any => true)
-  - low_matches = possible_low_matches - high_matches
-  - low_matches.each do |lowmatch|
-    - unless lowmatch.dog_name == current_user.dog_name
-      =link_to(lowmatch.dog_name, user_path(lowmatch))
+  -# - else
+  -#   - high_matches = User.tagged_with(current_user.preference_list, :match_all => true) 
+  -#   - high_matches.each do |highmatch|
+  -#     - unless highmatch.dog_name == current_user.dog_name
+  -#       = link_to(highmatch.dog_name, user_path(highmatch))
 
 -# .search-by
 -#   %button Male

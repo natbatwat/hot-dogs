@@ -15,6 +15,7 @@
 -else
   %p= @user.owner_picture
 
+
 %p Email Address:
 = @user.email
 %p Residential Address:
@@ -33,6 +34,8 @@
 = @user.breed
 %p Neutered Status:
 = @user.neutered
+
+
 
 .profile-page
   = image_tag @user.dog_picture.detail.url
@@ -59,11 +62,13 @@
   %p Neutered Status:
   = @user.neutered
 
+
   %p user_rating:
   .exemple
     .basic{data: {average: 12, id: 1}}
     .basic{data: {average: 8, id: 2}}
   -# = rating_for @user, "rating_for" , :star => 10
+
 
 -# Google Maps #
 #map-canvas
@@ -81,6 +86,7 @@
       - buds = User.where(id:buddy.dog_requestee_id)
 
 
+
       -# AVATAR STUFF
       -# u = User.new
       -# u.avatar = params[:file] # Assign a file like this, or rating
@@ -90,10 +96,8 @@
       -#   u.avatar = f
       -# end
 
-      -# u.save!
-      -# u.avatar.url # => '/url/to/file.png'
-      -# u.avatar.current_path # => 'path/to/file.png'
-      -# u.avatar.identifier # => 'file.png'
+
+
 
 %p Your buddy requests:
 - current_user.reverse_user_matches.each do |match|
