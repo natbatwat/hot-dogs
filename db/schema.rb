@@ -127,9 +127,6 @@ ActiveRecord::Schema.define(version: 20150305103740) do
     t.string   "uid"
     t.string   "dog_picture"
     t.string   "owner_picture"
-
-    t.string   "provider"
-
     t.string   "avatar"
   end
 

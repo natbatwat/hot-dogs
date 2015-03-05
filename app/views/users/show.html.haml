@@ -9,46 +9,63 @@
 
 %p Preferences:
 = current_user.preference_list
-%p#dog-picture= @user.dog_picture
--if @user.owner_picture === nil
-  %p= image_tag @user.gravatar_url
--else
-  %p= @user.owner_picture
 
 .profile-page
-  = image_tag @user.dog_picture.detail.url
-  -if @user.owner_picture === nil 
+  %p#dog-name 
+    Name of Dog:
+    = @user.dog_name 
+    %br/
+    = image_tag @user.dog_picture.detail.url
+  %br/
+
+  %p#dog-age.dog 
+    Age of Dog:
+    = @user.dog_age
+  %br/
+
+  %p.dog Dog's Bio:
+  %p.dog Puppy kitty ipsum dolor sit good dog swimming meow rover vaccine chew wagging critters fish leash feeder barky foot. Vaccine heel wet nose vitamins feathers window fleas food Scooby snacks bark parrot meow wet nose slobber toys Spike slobbery barky. Aquatic throw roll over teeth gimme five tooth toys good boy run fetch run fast tuxedo lazy dog brush fur chow. Fetch finch water dog birds dog house speak ferret purr harness. Tigger throw puppy tooth lick scratch dragging stick bark food. Kitten run swimming walk heel run fast roll over gimme five drool tabby teeth dinnertime walk leash pet food smooshy pet toys. Behavior Spike parakeet dinnertime yawn licks grooming play dead parrot roll over. Walk smooshy cockatiel catch cage purr Mittens paws collar. Polydactyl harness fish smooshy pet supplies biscuit slobber furry good boy.Heel collar slobber gimme five polydactyl stay barky lazy cat pet. Scratch warm pet gate lazy cat drool scratcher tooth fetch tabby carrier groom Fido. 
+  %br/
+
+  %p.dog 
+    Gender of Dog:
+    = @user.gender 
+  %br/
+
+  %p.dog 
+    Breed of Dog:
+    = @user.breed
+  %br/
+
+  %p.dog
+    Neutered Status:
+    = @user.neutered 
+  %br/
+
+  %p#owner-name.owner
+    Name of Owner:
+    = @user.owner_name
+    %br/
+  -if @user.owner_picture == nil 
     %p= @user.gravatar_url
   -else 
-  = image_tag @user.owner_picture.detail.url
-  %p Email Address:
-  = @user.email
-  %p Residential Address:
+    = image_tag @user.owner_picture.detail.url
+
+  %p.owner Owner's Bio:
+  %p.owner Attitude is everything. Jeans represent democracy in fashion. The difference between style and fashion is quality. I think there is something about luxury - it's not something people need, but it's what they want. It really pulls at their heart. Fashion can be this mysterious thing that you can't explain.  
+
+  %p.owner 
+    Email Address:
+    = @user.email
+  %br/
+
+  %p.owner
+  Residential Address:
   %address#address
-    = @user.address 
-  %p#owner-name Name of Owner:
-  = @user.owner_name 
-  %p#dog-name Name of Dog:
-  = @user.dog_name 
-  %p#dog-age Age of Dog:
-  = @user.dog_age
-  %p Dog's Bio:
-  = @user.dog_bio 
-  %p= @user.gender 
-  %p Breed of Dog:
-  = @user.breed 
-  %p Neutered Status:
-  = @user.neutered 
+    = @user.address  
+  
 
-<<<<<<< HEAD
-  -# %p user_rating:
-  -# .exemple
-  -#   .basic{data: {average: 12, id: 1}}
-  -#   .basic{data: {average: 8, id: 2}}
-  -# = rating_for @user, "rating_for" , :star => 10
 
-=======
->>>>>>> development
 -# Google Maps #
 #map-canvas
 
@@ -63,19 +80,7 @@
     %p Your buddies are:
     - current_user.user_matches.each do |buddy|
       - buds = User.where(id:buddy.dog_requestee_id)
-<<<<<<< HEAD
 
-      
-      -# AVATAR STUFF
-      -# u = User.new
-      -# u.avatar = params[:file] # Assign a file like this, or
-
-      -# # like this
-      -# File.open('somewhere') do |f|
-      -#   u.avatar = f
-      -# end
-=======
->>>>>>> development
 
 
 %p Your buddy requests:
@@ -96,3 +101,41 @@
     %button#pending Pending
   -else
     %button#accepted Accepted
+
+:javascript
+
+  var geocoder;
+  var map;
+  function initialize() {
+
+
+    geocoder = new google.maps.Geocoder();
+
+    var latlng = new google.maps.LatLng(51.519889, -0.068799);
+    var mapOptions = {
+      zoom: 16,
+      center: latlng
+    }
+    map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+    codeAddress();
+  }
+
+  function codeAddress() {
+    var address = $('#address').text();
+    if (address) {
+      geocoder.geocode( { 'address': address}, function(results, status) {
+        if (status == google.maps.GeocoderStatus.OK) {
+          map.setCenter(results[0].geometry.location);
+          var marker = new google.maps.Marker({
+            map: map,
+            position: results[0].geometry.location
+          });
+        } else {
+          alert('Geocode was not successful for the following reason: ' + status);
+        }
+      });
+      
+    };
+  }
+
+  google.maps.event.addDomListener(window, 'load', initialize);
