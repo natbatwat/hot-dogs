@@ -115,7 +115,7 @@
     padding: 0;
     width: 20px;
     height: 20px;
-    background: url('https://s3-eu-west-1.amazonaws.com/wdi-11-natalie/hotdogs/icons/green.png') no-repeat;
+    background: url('https://s3-eu-west-1.amazonaws.com/hotdogs-app/uploads/form/green.png') no-repeat;
     border: none;
     cursor: pointer;
     margin-right:5px;
@@ -154,7 +154,7 @@
 @media (-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
     .icheckbox_flat-green,
     .iradio_flat-green {
-        background-image: url('https://s3-eu-west-1.amazonaws.com/wdi-11-natalie/hotdogs/icons/green%402x.png');
+        background-image: url('https://s3-eu-west-1.amazonaws.com/hotdogs-app/uploads/form/green%402x.png');
         -webkit-background-size: 176px 22px;
         background-size: 176px 22px;
     }
