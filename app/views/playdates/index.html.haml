@@ -1,7 +1,9 @@
+= javascript_include_tag params[:controller]
+
 %h2 My Playdates
-=current_user.owner_name
+= current_user.owner_name
 and
-=current_user.dog_name
+= current_user.dog_name
 Playdates
 
 - @user_playdates = current_user.playdates 
@@ -12,3 +14,7 @@ Playdates
   %p= playdate.time
   %p= playdate.location
   %p= link_to(playdate.name, playdate_path(playdate))
+
+#map-canvas
+
+%p hello

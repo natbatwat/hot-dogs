@@ -1,48 +1,74 @@
-= image_tag @user.gravatar_url
-= @user.email
-= @user.address
-
--# USER PROFILE PAGE #
--# User information #
-= @user.email
-= @user.address 
-= @user.owner_name 
-= @user.owner_picture 
-= @user.dog_name 
-= @user.dog_picture 
-= @user.dog_age
-= @user.dog_bio 
-= @user.gender 
-= @user.breed 
-= @user.neutered 
-= @user.interest 
-= @user.match_list 
-
 %p Preferences:
 = current_user.preference_list
+
 .profile-page
-  = image_tag @user.gravatar_url
-
-  -# USER PROFILE PAGE #
-  -# User information #
-  %p= @user.email
-  %p#address= @user.address 
-  %p= @user.owner_name 
-  %p= @user.owner_picture 
-  %p= @user.dog_name 
-  %p= @user.dog_picture 
-  %p= @user.dog_age
-  %p= @user.dog_bio 
+  %p#dog-picture= @user.dog_picture 
+  -if @user.owner_picture === nil 
+    %p= image_tag @user.gravatar_url
+  -else 
+    %p= @user.owner_picture 
+  %p Email Address:
+  = @user.email
+  %p Residential Address:
+  %address#address
+    = @user.address 
+  %p#owner-name Name of Owner:
+  = @user.owner_name 
+  %p#dog-name Name of Dog:
+  = @user.dog_name 
+  %p#dog-age Age of Dog:
+  = @user.dog_age
+  %p Dog's Bio:
+  = @user.dog_bio 
   %p= @user.gender 
-  %p= @user.breed 
-  %p= @user.neutered 
-  %p= @user.interest 
-  %p= @user.match_list 
+  %p Breed of Dog:
+  = @user.breed 
+  %p Neutered Status:
+  = @user.neutered 
 
-  -# Google Maps #
-  #map-canvas
+  %p user_rating:
+  .exemple
+    .basic{data: {average: 12, id: 1}}
+    .basic{data: {average: 8, id: 2}}
+  -# = rating_for @user, "rating_for" , :star => 10
+-# Google Maps #
+#map-canvas
 
-  -# Add Buddy Button #
-  %button{:data => {:dog2_id => @user.id}}
-    %span Add Buddy
-    %span.hide Buddy Requested
+-# Add Buddy Button #
+- if @user.id != current_user.id
+  %button#add-buddy-button{:data => {:dog_requester_id => current_user.id, :dog_requester => current_user, :dog_requestee_id => @user.id, :dog_requestee => @user}}
+    %span.buddy-status Add Buddy
+    %span.buddy-status.hide Buddy Requested
+
+- if @user.id === current_user.id
+  .buddies
+
+    %p Your buddies are: 
+    - current_user.user_matches.each do |buddy|
+      - buds = User.where(id:buddy.dog_requestee_id)
+      
+
+
+= javascript_include_tag "application", params[:controller]
+
+    %p Your buddy requests: 
+    - current_user.reverse_user_matches.each do |match|
+      -if match.dog_requestee_id == current_user.id
+        %p= User.find(match.dog_requester_id).dog_name
+      -if match.status == "pending"
+        %button#accept-request{:data => {:id => match.id}} Accept
+        %button#delete Delete
+      -else 
+        %button Delete Buddy
+
+    %p The buddies you have requested: 
+    - current_user.user_matches.each do |match|
+      - if match.dog_requester_id == current_user.id
+        %p= User.find(match.dog_requestee_id).dog_name
+      -if match.status == "pending"
+        %button#pending Pending
+      -else 
+        %button#accepted Accepted
+
+      
+
