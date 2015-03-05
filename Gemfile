@@ -1,6 +1,8 @@
 source 'https://rubygems.org'
 
 gem 'rails_12factor'
+gem 'bootstrap-sass', '~> 3.2.0'
+gem 'autoprefixer-rails'
 gem 'devise'
 gem 'letsrate'
 gem 'rails_admin'
@@ -15,11 +17,10 @@ gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
 gem 'acts-as-taggable-on', '~> 3.4'
-gem 'bootstrap-sass', '~> 3.3.3'
 gem 'omniauth-facebook'
 gem 'formtastic', '~> 3.0'
 gem 'gravtastic'
-
+gem 'faker', '~> 1.4.3'
 gem 'chronic'
 gem "paperclip", "~> 4.2"
 
