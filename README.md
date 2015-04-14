@@ -1,5 +1,5 @@
 # Hotdogs
-#####[Hotdogs (Demo) https://www.hot-dogs.herokuapp.com](https://www.hot-dogs.herokuapp.com)
+#####[Hotdogs (Demo) https://hot-dogs.herokuapp.com](https://hot-dogs.herokuapp.com)
 > *Dating website for doggies. Featuring a javascript chat feature on Rails.*
 
 ### Versions & Setup
