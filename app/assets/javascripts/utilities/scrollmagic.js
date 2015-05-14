@@ -1354,7 +1354,7 @@
      * @returns {Scene} `set` -  Parent object for chaining.
      */
 
-    /**
+    *
      * **Get** or **Set** the offset option value.
      * @method ScrollMagic.Scene#offset
      * @example
@@ -1369,7 +1369,7 @@
      * @param {number} [newOffset] - The new offset of the scene.
      * @returns {number} `get` -  Current scene offset.
      * @returns {Scene} `set` -  Parent object for chaining.
-     */
+     
 
     /**
      * **Get** or **Set** the triggerElement option value.

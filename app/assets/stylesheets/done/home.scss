@@ -1,6 +1,9 @@
+$colors: purple, red, orange, yellow, green, blue, pink;
+
 #about-us {
   text-align: center;
   margin: 0 auto;
+  
 
   #hotdogs {
     font-family: 'Raleway', sans-serif;
@@ -15,14 +18,13 @@
     padding-top: 200px;
     width: 100%;
     height:100%;
+    padding-bottom: 5px;
   }
 
   p {
     margin-left: 300px;
     margin-right: 300px;
-    font-size: 25px;
-    padding-bottom: 30px;
-    
+    font-size: 25px;    
   }
 
   h2 {
@@ -36,6 +38,7 @@
   @for $i from 1 through 7 {
     .window:nth-child(#{$i}){
         top:($i - 1) * 100%;
+        background-color: lighten(nth($colors, random(length($colors))), 3%);
     }
   }
 
